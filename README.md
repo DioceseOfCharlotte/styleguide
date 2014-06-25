@@ -1,4 +1,4 @@
 DioceseOfCharlotte.github.io
 ============================
 
-Style Guide for DOC
+Web guides and pattern libraries for the Diocese of Charlotte

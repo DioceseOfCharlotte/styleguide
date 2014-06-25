@@ -10,7 +10,6 @@
 /*==========  VARIABLES  ==========*/
 /*==========  FUNCTIONS  ==========*/
 /*==========  MIXINS  ==========*/
-@import url("//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700,900");
 /* line 11, sass/utilities/_mixins.scss */
 .alert:before {
   display: inline-block;
@@ -7270,19 +7269,19 @@ h2.sg-pattern-head a:before, h2.sg-pattern-head a:after {
 /* line 182, sass/_sguide.scss */
 h2.sg-pattern-head a:hover {
   background-color: #fbfcfc;
-  border-radius: 0.1875em;
   color: #939598;
 }
-/* line 186, sass/_sguide.scss */
+/* line 185, sass/_sguide.scss */
 h2.sg-pattern-head a:hover:before, h2.sg-pattern-head a:hover:after {
   color: #fbfcfc;
 }
 
-/* line 192, sass/_sguide.scss */
+/* line 191, sass/_sguide.scss */
 h2.sg-pattern-head {
   border-bottom: none;
-  margin: 1em 0 0.61875rem;
+  margin: 1em auto 0.61875rem;
   line-height: 1.2;
+  max-width: 1200px;
 }
 
 /* line 198, sass/_sguide.scss */
@@ -7290,47 +7289,67 @@ h2.sg-pattern-head {
   margin-bottom: 11em;
 }
 
-/* line 201, sass/_sguide.scss */
-.sg-main {
-  max-width: 72em;
-  margin: 0 auto;
-  padding: 0.5em;
+/* line 202, sass/_sguide.scss */
+.sg-pattern-body {
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 207, sass/_sguide.scss */
+@media (min-width: 35.5em) {
+  /* line 213, sass/_sguide.scss */
+  .sg-pattern-body {
+    padding-left: 4.8%;
+    padding-right: 4.8%;
+    max-width: 688px;
+  }
+}
+@media (min-width: 35.5em) and (min-width: 48em) {
+  /* line 220, sass/_sguide.scss */
+  .sg-pattern-body {
+    padding-left: 4.4%;
+    padding-right: 4.4%;
+    max-width: 864px;
+  }
+}
+/* line 228, sass/_sguide.scss */
 .sg-centering {
   text-align: center;
 }
 
 /* line 261, /Users/Magnus/Documents/thoughtbot/refills/source/stylesheets/_refills-styles.scss */
-/* line 210, sass/_sguide.scss */
+/* line 231, sass/_sguide.scss */
 .sg-centering > * {
   display: inline-block;
 }
 
 /* line 263, /Users/Magnus/Documents/thoughtbot/refills/source/stylesheets/_refills-styles.scss */
-/* line 213, sass/_sguide.scss */
+/* line 234, sass/_sguide.scss */
 .sg-centering > * > * {
   text-align: left;
 }
 
-/* line 218, sass/_sguide.scss */
+/* line 239, sass/_sguide.scss */
 .demo-animate {
   cursor: default;
 }
 
-/* line 222, sass/_sguide.scss */
+/* line 243, sass/_sguide.scss */
 .animate-highlight {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   background: #cbd0d3;
 }
-/* line 225, sass/_sguide.scss */
+/* line 246, sass/_sguide.scss */
 .animate-highlight:hover {
   background: #ecf0f1;
 }
 
-/* line 230, sass/_sguide.scss */
+/* line 251, sass/_sguide.scss */
 .animate-move > .demo-shape {
   -webkit-transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
@@ -7339,7 +7358,7 @@ h2.sg-pattern-head {
   transition: all 0.6s ease-in-out;
 }
 
-/* line 238, sass/_sguide.scss */
+/* line 259, sass/_sguide.scss */
 .loading {
   /* IE 8 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
@@ -7353,7 +7372,7 @@ h2.sg-pattern-head {
   opacity: 0.5;
 }
 
-/* line 255, sass/_sguide.scss */
+/* line 276, sass/_sguide.scss */
 .demo [class*="u-size-"] {
   background-color: #ecf0f1;
   text-align: center;
@@ -7362,41 +7381,41 @@ h2.sg-pattern-head {
   color: #5e6768;
 }
 
-/* line 263, sass/_sguide.scss */
+/* line 284, sass/_sguide.scss */
 .demo [class*="u-size-"]:nth-of-type(2n) {
   background-color: #cbd0d3;
 }
 
-/* line 268, sass/_sguide.scss */
+/* line 289, sass/_sguide.scss */
 .sg-pattern-body .sg-code, .sg-pattern .sg-annotations {
   background: #777;
 }
 
-/* line 272, sass/_sguide.scss */
+/* line 293, sass/_sguide.scss */
 .sg-pattern .sg-annotations {
   margin-top: 3em;
   padding-top: 3em;
 }
 
-/* line 278, sass/_sguide.scss */
+/* line 299, sass/_sguide.scss */
 .sg-annotation {
   padding: 1em 0.5em;
   margin-bottom: 50px;
 }
 
-/* line 283, sass/_sguide.scss */
+/* line 304, sass/_sguide.scss */
 .sg-annotation:last-child {
   margin-bottom: 0;
 }
 
-/* line 287, sass/_sguide.scss */
+/* line 308, sass/_sguide.scss */
 .sg-annotation, .sg-code .sg-code-html {
   background: #F0F0F0;
   border: none;
   border-radius: 3px;
 }
 
-/* line 295, sass/_sguide.scss */
+/* line 316, sass/_sguide.scss */
 .sg-code .sg-code-head {
   color: #F0F0F0;
   font-size: 2.2em;
@@ -7409,7 +7428,7 @@ h2.sg-pattern-head {
   line-height: .7;
 }
 
-/* line 307, sass/_sguide.scss */
+/* line 328, sass/_sguide.scss */
 .sg-annotation h3 {
   color: #F0F0F0;
   font-size: 2.2em;
@@ -7420,31 +7439,26 @@ h2.sg-pattern-head {
   margin-top: -50px;
 }
 
-/* line 317, sass/_sguide.scss */
+/* line 338, sass/_sguide.scss */
 .sg-code-html .hljs {
   background: none;
 }
 
-/* line 321, sass/_sguide.scss */
-#atoms-colors .sg-pattern-body {
-  display: inline-block;
-}
-
-/* line 325, sass/_sguide.scss */
+/* line 346, sass/_sguide.scss */
 .sg-nav .sg-acc-panel li {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16);
 }
 
-/* line 329, sass/_sguide.scss */
+/* line 350, sass/_sguide.scss */
 .sg-code .sg-code-contains {
   margin-bottom: 0;
   font-size: 100%;
 }
-/* line 332, sass/_sguide.scss */
+/* line 353, sass/_sguide.scss */
 .sg-code .sg-code-contains a {
   text-decoration: none;
 }
-/* line 336, sass/_sguide.scss */
+/* line 357, sass/_sguide.scss */
 .sg-code .sg-code-contains code {
   background-color: #f0f0f0;
   border-radius: 0.1875em;
@@ -7452,7 +7466,7 @@ h2.sg-pattern-head {
   padding: 3px 5px;
   color: #5d84c0;
 }
-/* line 342, sass/_sguide.scss */
+/* line 363, sass/_sguide.scss */
 .sg-code .sg-code-contains code:hover {
   color: #426aa8;
 }

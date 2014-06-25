@@ -1,0 +1,351 @@
+@function set-swatch-text-color($color) {
+    @if (lightness( $color ) > 60) {
+      @return #444;
+    }
+    @else {
+      @return #FFFFFF;
+    }
+}
+
+.sg-swatch {
+text-align: center;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.sg-swatch:before {
+  font-size: 1.4em;
+  //@include scut-vcenter-lh(100px);
+}
+
+.shield-blue {
+    background-color: $shield-blue;
+    color: $shield-blue;
+    &:hover {
+      color: set-swatch-text-color($shield-blue);
+    }
+    &:before {
+      content: "#{$shield-blue}";
+    }
+  }
+
+.shield-green {
+  background-color: $shield-green;
+  color: $shield-green;
+    &:hover {
+      color: set-swatch-text-color($shield-green);
+    }
+    &:before {
+      content: "#{$shield-green}";
+    }
+}
+
+.light-gold {
+  background-color: $light-gold;
+  color: $light-gold;
+    &:hover {
+      color: set-swatch-text-color($light-gold);
+    }
+    &:before {
+      content: "#{$light-gold}";
+    }
+}
+
+.dark-gold {
+  background-color: $dark-gold;
+  color: $dark-gold;
+    &:hover {
+      color: set-swatch-text-color($dark-gold);
+    }
+    &:before {
+      content: "#{$dark-gold}";
+    }
+}
+
+.flat-ruby {
+  background-color: $flat-ruby;
+  color: $flat-ruby;
+    &:hover {
+      color: set-swatch-text-color($flat-ruby);
+    }
+    &:before {
+      content: "#{$flat-ruby}";
+    }
+}
+
+// .gray {
+//  background-color: $gray ;
+//  color: $gray;
+//    &:hover {
+//      color: set-swatch-text-color($gray);
+//    }
+//  &:before {
+//    content: "#{$gray}";
+//  }
+// }
+.gray-light {
+  background-color: $gray-light;
+  color: $gray-light;
+    &:hover {
+      color: set-swatch-text-color($gray-light);
+    }
+  &:before {
+    content: "#{$gray-light}";
+  }
+}
+.gray-light-2 {
+  background-color: $gray-light-2;
+  color: $gray-light-2;
+    &:hover {
+      color: set-swatch-text-color($gray-light-2);
+    }
+  &:before {
+    content: "#{$gray-light-2}";
+  }
+}
+.gray-light-3 {
+  background-color: $gray-light-3;
+  color: $gray-light-3;
+    &:hover {
+      color: set-swatch-text-color($gray-light-3);
+    }
+  &:before {
+    content: "#{$gray-light-3}";
+  }
+}
+.gray-med {
+  background-color: $gray-med;
+  color: $gray-med;
+    &:hover {
+      color: set-swatch-text-color($gray-med);
+    }
+  &:before {
+    content: "#{$gray-med}";
+  }
+}
+.gray-dark {
+  background-color: $gray-dark ;
+  color: $gray-dark;
+    &:hover {
+      color: set-swatch-text-color($gray-dark);
+    }
+  &:before {
+    content: "#{$gray-dark}";
+  }
+}
+.gray-dark-2 {
+  background-color: $gray-dark-2;
+  color: $gray-dark-2;
+    &:hover {
+      color: set-swatch-text-color($gray-dark-2);
+    }
+  &:before {
+    content: "#{$gray-dark-2}";
+  }
+}
+
+
+
+
+.sg-color-label {
+color: $gray-dark-2;
+font-size: 1em;
+position: absolute;
+bottom: 0;
+left: 0;
+background-color: $pale;
+width: 100%;
+line-height: 3;
+cursor: default;
+}
+
+
+
+
+
+body {
+  padding: 1em 0;
+}
+
+.sg-code, .sg-annotations {
+  border-radius: $base-border-radius;
+}
+h2.sg-pattern-head a {
+@extend %scut-side-lined;
+@include ease(.1s);
+&:before, &:after {
+  @include ease(.1s);
+  color: $gray-light-2;
+}
+&:hover {
+  background-color: $gray-light;
+  border-radius: $base-border-radius;
+  color: $gray-med;
+&:before, &:after {
+  color: $gray-light;
+}
+}
+}
+
+h2.sg-pattern-head {
+	border-bottom: none;
+	margin: 1em 0 0.61875rem;
+  line-height: 1.2;
+}
+
+#molecules-primary-nav, #organisms-header {
+  margin-bottom: 11em;
+}
+
+.sg-pattern {
+-ms-box-sizing: content-box;
+box-sizing: content-box;
+position: relative;
+padding-left: 4.4%;
+padding-right: 4.4%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.sg-centering {
+  text-align: center; }
+  /* line 261, /Users/Magnus/Documents/thoughtbot/refills/source/stylesheets/_refills-styles.scss */
+  .sg-centering > * {
+    display: inline-block; }
+    /* line 263, /Users/Magnus/Documents/thoughtbot/refills/source/stylesheets/_refills-styles.scss */
+    .sg-centering > * > * {
+      text-align: left; }
+
+
+
+.demo-animate {
+  cursor: default;
+}
+
+  .animate-highlight {
+@include ease;
+background: $gray-light-3;
+  &:hover {
+background: $gray-light-2;
+  }
+}
+
+.animate-move > .demo-shape {
+-webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-ms-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+
+.loading {
+    /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=50);
+
+  /* Netscape */
+  -moz-opacity: 0.5;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.5;
+
+  /* Good browsers */
+  opacity: 0.5;
+}
+
+.demo [class*="u-size-"] {
+background-color: $gray-light-2;
+text-align: center;
+margin-bottom: 0.5em;
+padding: 1em;
+color: $gray-dark;
+}
+
+.demo [class*="u-size-"]:nth-of-type(2n) {
+background-color: $gray-light-3;
+//color: #ecf0f1;
+}
+
+.sg-pattern-body .sg-code, .sg-pattern .sg-annotations {
+background: #777;
+}
+
+.sg-pattern .sg-annotations {
+margin-top: 3em;
+padding-top: 3em;
+}
+
+
+.sg-annotation {
+  padding: 1em 0.5em;
+margin-bottom: 50px;
+  } 
+
+.sg-annotation:last-child {
+margin-bottom: 0;
+}
+
+.sg-annotation, .sg-code .sg-code-html {
+  background: #F0F0F0;
+border: none;
+// border-right: 2px solid rgba(206, 206, 206, 0.5);
+// border-bottom: 3px solid rgba(206, 206, 206, 0.5);
+border-radius: 3px;
+}
+
+.sg-code .sg-code-head {
+color: #F0F0F0;
+font-size: 2.2em;
+font-weight: bold;
+margin-top: 1em;
+margin-bottom: 0;
+padding: 0 0 0 .4em;
+text-align: left;
+text-transform: uppercase;
+line-height: .7;
+}
+
+.sg-annotation h3 {
+  color: #F0F0F0;
+font-size: 2.2em;
+font-weight: bold;
+padding: 0 0 0 .4em;
+text-align: left;
+text-transform: uppercase;
+margin-top: -50px;
+}
+
+.sg-code-html .hljs {
+  background: none;
+}
+
+// #atoms-colors .sg-pattern-body {
+// display: inline-block;
+// }
+
+.sg-nav .sg-acc-panel li {
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16);
+}
+
+.sg-code .sg-code-contains {
+margin-bottom: 0;
+font-size: 100%;
+& a {
+text-decoration: none;
+
+}
+& code {
+  background-color: #f0f0f0;
+  border-radius: $base-border-radius;
+font-size: .85em;
+padding: 3px 5px;
+color: $base-link-color;
+&:hover {
+  color: $hover-link-color;
+}
+}
+}

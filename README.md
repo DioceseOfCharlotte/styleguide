@@ -1,2 +1,4 @@
-.github.io
-==========
+DioceseOfCharlotte.github.io
+============================
+
+Style Guide for DOC

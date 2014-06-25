@@ -1,0 +1,91 @@
+/*------------------------------------*\
+    $PATTERN LAB-SPECIFIC STYLES
+\*------------------------------------*/
+/**
+ * This stylesheet is for styles you want to include only when the interface is being viewed within Pattern Lab.
+ * This is helpful for displaying demo styles for grids, animations, color swatches, etc
+ * It's also helpful for overriding context-specific styles like fixed or absolutely positioned elements
+ * These styles will not be your production CSS.
+ */
+/* Style Guide Interface Colors */
+/* Typography */
+/* Defaults */
+/* Dimensions */
+/* Breakpoints */
+.demo {
+  overflow: hidden;
+  margin-bottom: 1rem; }
+
+.demo .gi, .demo .demo-block {
+  background: #dddddd;
+  color: gray;
+  text-align: center;
+  margin-bottom: 0.5em;
+  padding: 1em !important; }
+  .demo .gi:nth-of-type(2n), .demo .demo-block:nth-of-type(2n) {
+    color: #dddddd;
+    background: gray; }
+  .demo .gi .gi, .demo .demo-block .gi {
+    background: rgba(0, 0, 0, 0.1);
+    color: #dddddd; }
+    .demo .gi .gi:nth-of-type(2n), .demo .demo-block .gi:nth-of-type(2n) {
+      background: rgba(0, 0, 0, 0.3); }
+
+.demo-animate {
+  background: #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center; }
+
+.animate-move {
+  position: relative; }
+  .animate-move .demo-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    background: gray; }
+  .animate-move:hover > .demo-shape {
+    left: 100%;
+    margin-left: -20px; }
+
+.sg-colors li {
+  display: inline-block;
+  float: left;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100px; }
+
+.sg-swatch {
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 100%; }
+
+.sg-hex {
+  background: #000;
+  background: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  color: #fff;
+  margin: 0;
+  opacity: 0;
+  padding: 5px 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out; }
+
+.sg-swatch:hover span {
+  opacity: 1; }
+
+.sg-color-name {
+  color: #7f8c8d;
+  font-size: .8em; }

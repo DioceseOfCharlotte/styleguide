@@ -43,8 +43,7 @@ if (self != top) {
 	for (var i = 0; i < keys.length; i++) {
 		jwerty.key('ctrl+shift+'+keys[i],  function (k,t) {
 			return function(e) {
-				var obj = JSON.stringify({ "keyPress": "ctrl+shift+"+k });
-				parent.postMessage(obj,t);
+				parent.postMessage({ "keyPress": "ctrl+shift+"+k },t);
 				return false;
 			}
 		}(keys[i],targetOrigin));
@@ -56,8 +55,7 @@ if (self != top) {
 		jwerty.key('ctrl+shift+'+i, function (k,t) {
 			return function(e) {
 				var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
-				var obj = JSON.stringify({ "keyPress": "ctrl+shift+"+k });
-				parent.postMessage(obj,t);
+				parent.postMessage({ "keyPress": "ctrl+shift+"+k },t);
 				return false;
 			}
 		}(i,targetOrigin));
@@ -70,8 +68,7 @@ if (self != top) {
 var body = document.getElementsByTagName('body');
 body[0].onclick = function() {
 	var targetOrigin = (window.location.protocol == "file:") ? "*" : window.location.protocol+"//"+window.location.host;
-	var obj = JSON.stringify({ "bodyclick": "bodyclick" });
-	parent.postMessage(obj,targetOrigin);
+	parent.postMessage({ "bodyclick": "bodyclick" },targetOrigin);
 };
 
 // watch the iframe source so that it can be sent back to everyone else.

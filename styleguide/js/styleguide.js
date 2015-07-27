@@ -1,27 +1,28 @@
-(function (w) {
+(function(w){
 	
 	var sw = document.body.clientWidth, //Viewport Width
 		sh = $(document).height(), //Viewport Height
-		minViewportWidth = ishMinimum, //Minimum Size for Viewport
-		maxViewportWidth = ishMaximum, //Maxiumum Size for Viewport
+		minViewportWidth = 240, //Minimum Size for Viewport
+		maxViewportWidth = 2600, //Maxiumum Size for Viewport
 		viewportResizeHandleWidth = 14, //Width of the viewport drag-to-resize handle
 		$sgViewport = $('#sg-viewport'), //Viewport element
 		$sizePx = $('.sg-size-px'), //Px size input element in toolbar
 		$sizeEms = $('.sg-size-em'), //Em size input element in toolbar
-		$bodySize = parseInt($('body').css('font-size')), //Body size of the document,
+		$bodySize = parseInt($('body').css('font-size')), //Body size of the document
 		$headerHeight = $('.sg-header').height(),
 		discoID = false,
 		discoMode = false,
 		hayMode = false;
 	
-	//Update dimensions on resize
-	$(w).resize(function() {
+	
+	$(w).resize(function(){ //Update dimensions on resize
 		sw = document.body.clientWidth;
 		sh = $(document).height();
 
 		setAccordionHeight();
 	});
 
+	/* Pattern Lab accordion dropdown */
 	// Accordion dropdown
 	$('.sg-acc-handle').on("click", function(e){
 		e.preventDefault();
@@ -56,7 +57,7 @@
 		$('.sg-nav-container').toggleClass('active');
 	});
 	
-	// "View (containing clean, code, raw, etc options) Trigger
+	//"View (containing clean, code, raw, etc options) Trigger
 	$('#sg-t-toggle').on("click", function(e){
 		e.preventDefault();
 		$(this).parents('ul').toggleClass('active');
@@ -80,7 +81,7 @@
 			$bodySize = 1;
 		}
 		
-		val = val.replace(/[^\d.-]/g,'');
+		val = val.replace(/[^\d.-]/g,'')		
 		sizeiframe(Math.floor(val*$bodySize));
 	});
 	
@@ -116,7 +117,7 @@
 	});
 	
 	jwerty.key('ctrl+shift+m', function(e) {
-		goLarge();
+		goMedium();
 		return false;
 	});
 	
@@ -178,6 +179,7 @@
 	}
 	
 	function startDisco() {
+		killHay();
 		discoMode = true;
 		discoID = setInterval(disco, 800);
 	}
@@ -213,6 +215,7 @@
 	
 	// start Hay! mode
 	function startHay() {
+		killDisco();
 		hayMode = true;
 		$('#sg-gen-container').removeClass("vp-animate").width(minViewportWidth+viewportResizeHandleWidth);
 		$sgViewport.removeClass("vp-animate").width(minViewportWidth);
@@ -227,11 +230,12 @@
 	
 	// start hay from a keyboard shortcut
 	jwerty.key('ctrl+shift+h', function(e) {
-		if (!hayMode) {
-			startHay();
-		} else {
+		if (hayMode) {
 			killHay();
+		} else {
+			startHay();
 		}
+		return false;
 	});
 
 	//Pixel input
@@ -321,7 +325,7 @@
 	//'animate' is a boolean for switching the CSS animation on or off. 'animate' is true by default, but can be set to false for things like nudging and dragging
 	function sizeiframe(size,animate) {
 		var theSize;
-		
+
 		if(size>maxViewportWidth) { //If the entered size is larger than the max allowed viewport size, cap value at max vp size
 			theSize = maxViewportWidth;
 		} else if(size<minViewportWidth) { //If the entered size is less than the minimum allowed viewport size, cap value at min vp size
@@ -329,30 +333,20 @@
 		} else {
 			theSize = size;
 		}
-		
+
 		//Conditionally remove CSS animation class from viewport
-		if(animate===false) {
+		if(animate==false) { 
 			$('#sg-gen-container,#sg-viewport').removeClass("vp-animate"); //If aninate is set to false, remove animate class from viewport
 		} else {
 			$('#sg-gen-container,#sg-viewport').addClass("vp-animate");
 		}
-		
+
 		$('#sg-gen-container').width(theSize+viewportResizeHandleWidth); //Resize viewport wrapper to desired size + size of drag resize handler
 		$sgViewport.width(theSize); //Resize viewport to desired size
-		
-		var targetOrigin = (window.location.protocol === "file:") ? "*" : window.location.protocol+"//"+window.location.host;
-		var obj = JSON.stringify({ "resize": "true" });
-		document.getElementById('sg-viewport').contentWindow.postMessage(obj,targetOrigin);
-		
+
 		updateSizeReading(theSize); //Update values in toolbar
 		saveSize(theSize); //Save current viewport to cookie
 	}
-	
-	$("#sg-gen-container").on('transitionend webkitTransitionEnd', function(e){
-		var targetOrigin = (window.location.protocol === "file:") ? "*" : window.location.protocol+"//"+window.location.host;
-		var obj = JSON.stringify({ "resize": "true" });
-		document.getElementById('sg-viewport').contentWindow.postMessage(obj,targetOrigin);
-	});
 	
 	function saveSize(size) {
 		if (!DataSaver.findValue('vpWidth')) {
@@ -368,9 +362,7 @@
 	//'unit' is the type of unit: either px or em. Default is px. Accepted values are 'px' and 'em'
 	//'target' is what inputs to update. Defaults to both
 	function updateSizeReading(size,unit,target) {
-		var emSize, pxSize;
-
-		if(unit==='em') { //If size value is in em units
+		if(unit=='em') { //If size value is in em units
 			emSize = size;
 			pxSize = Math.floor(size*$bodySize);
 		} else { //If value is px or absent
@@ -378,42 +370,28 @@
 			emSize = size/$bodySize;
 		}
 		
-		if (target === 'updatePxInput') {
+		if (target == 'updatePxInput') {
 			$sizePx.val(pxSize);
-		} else if (target === 'updateEmInput') {
+		} else if (target == 'updateEmInput') {
 			$sizeEms.val(emSize.toFixed(2));
 		} else {
 			$sizeEms.val(emSize.toFixed(2));
 			$sizePx.val(pxSize);
-		}
+		}	
 	}
 	
 	/* Returns a random number between min and max */
 	function getRandom (min, max) {
-		return Math.floor(Math.random() * (max - min) + min);
+	    return Math.random() * (max - min) + min;
 	}
 	
-	//Update The viewport size
 	function updateViewportWidth(size) {
+	
 		$("#sg-viewport").width(size);
 		$("#sg-gen-container").width(size*1 + 14);
 		
 		updateSizeReading(size);
 	}
-
-	//Detect larger screen and no touch support
-	/*
-	if('ontouchstart' in document.documentElement && window.matchMedia("(max-width: 700px)").matches) {
-		$('body').addClass('no-resize');
-		$('#sg-viewport ').width(sw);
-
-		alert('workit');
-	} else {
-		
-	}
-	*/
-	
-	$('#sg-gen-container').on('touchstart', function(event){});
 
 	// handles widening the "viewport"
 	//   1. on "mousedown" store the click location
@@ -430,9 +408,8 @@
 		
 		// add the mouse move event and capture data. also update the viewport width
 		$('#sg-cover').mousemove(function(event) {
-			var viewportWidth;
 			
-			viewportWidth = origViewportWidth + 2*(event.clientX - origClientX);
+			viewportWidth = (origClientX > event.clientX) ? origViewportWidth - ((origClientX - event.clientX)*2) : origViewportWidth + ((event.clientX - origClientX)*2);
 			
 			if (viewportWidth > minViewportWidth) {
 				
@@ -445,47 +422,33 @@
 				sizeiframe(viewportWidth,false);
 			}
 		});
-		
-		return false;
-		
 	});
 
 	// on "mouseup" we unbind the "mousemove" event and hide the cover again
-	$('body').mouseup(function() {
+	$('body').mouseup(function(event) {
 		$('#sg-cover').unbind('mousemove');
 		$('#sg-cover').css("display","none");
 	});
 
-
 	// capture the viewport width that was loaded and modify it so it fits with the pull bar
 	var origViewportWidth = $("#sg-viewport").width();
 	$("#sg-gen-container").width(origViewportWidth);
-	
-	var testWidth = screen.width;
-	if (window.orientation !== undefined) {
-		testWidth = (window.orientation == 0) ? screen.width : screen.height;
-	}
-	if (($(window).width() == testWidth) && ('ontouchstart' in document.documentElement) && ($(window).width() <= 1024)) {
-		$("#sg-rightpull-container").width(0);
-	} else {
-		$("#sg-viewport").width(origViewportWidth - 14);
-	}
+	$("#sg-viewport").width(origViewportWidth - 14);
 	updateSizeReading($("#sg-viewport").width());
-	
+
 	// get the request vars
 	var oGetVars = urlHandler.getRequestVars();
 	
 	// pre-load the viewport width
 	var vpWidth = 0;
 	var trackViewportWidth = true; // can toggle this feature on & off
-
-	if ((oGetVars.h !== undefined) || (oGetVars.hay !== undefined)) {
+	if ((oGetVars.h != undefined) || (oGetVars.hay != undefined)) {
 		startHay();
-	} else if ((oGetVars.d !== undefined) || (oGetVars.disco !== undefined)) {
+	} else if ((oGetVars.d != undefined) || (oGetVars.disco != undefined)) {
 		startDisco();
-	} else if ((oGetVars.w !== undefined) || (oGetVars.width !== undefined)) {
-		vpWidth = (oGetVars.w !== undefined) ? oGetVars.w : oGetVars.width;
-		vpWidth = (vpWidth.indexOf("em") !== -1) ? Math.floor(Math.floor(vpWidth.replace("em",""))*$bodySize) : Math.floor(vpWidth.replace("px",""));
+	} else if ((oGetVars.w != undefined) || (oGetVars.width != undefined)) {
+		vpWidth = (oGetVars.w != undefined) ? oGetVars.w : oGetVars.width;
+		vpWidth = (vpWidth.indexOf("em") != -1) ? Math.floor(Math.floor(vpWidth.replace("em",""))*$bodySize) : Math.floor(vpWidth.replace("px",""));
 		DataSaver.updateValue("vpWidth",vpWidth);
 		updateViewportWidth(vpWidth);
 	} else if (trackViewportWidth && (vpWidth = DataSaver.findValue("vpWidth"))) {
@@ -496,131 +459,129 @@
 	var patternName = "all";
 	var patternPath = "";
 	var iFramePath  = window.location.protocol+"//"+window.location.host+window.location.pathname.replace("index.html","")+"styleguide/html/styleguide.html";
-	if ((oGetVars.p !== undefined) || (oGetVars.pattern !== undefined)) {
-		patternName = (oGetVars.p !== undefined) ? oGetVars.p : oGetVars.pattern;
+	if ((oGetVars.p != undefined) || (oGetVars.pattern != undefined)) {
+		patternName = (oGetVars.p != undefined) ? oGetVars.p : oGetVars.pattern;
 		patternPath = urlHandler.getFileName(patternName);
-		iFramePath  = (patternPath !== "") ? window.location.protocol+"//"+window.location.host+window.location.pathname.replace("index.html","")+patternPath : iFramePath;
+		iFramePath  = (patternPath != "") ? window.location.protocol+"//"+window.location.host+window.location.pathname.replace("index.html","")+patternPath : iFramePath;
 	}
 	
-	if (patternName !== "all") {
+	if (patternName != "all") {
 		document.getElementById("title").innerHTML = "Pattern Lab - "+patternName;
 		history.replaceState({ "pattern": patternName }, null, null);
 	}
 	
-	if (document.getElementById("sg-raw") != undefined) {
-		document.getElementById("sg-raw").setAttribute("href",urlHandler.getFileName(patternName));
-	}
+	document.getElementById("sg-raw").setAttribute("href",urlHandler.getFileName(patternName));
 	
 	urlHandler.skipBack = true;
 	document.getElementById("sg-viewport").contentWindow.location.replace(iFramePath);
+	
+	//IFrame functionality
+	
 
-	//Close all dropdowns and navigation
-	function closePanels() {
-		$('.sg-nav-container, .sg-nav-toggle, .sg-acc-handle, .sg-acc-panel').removeClass('active');
-		patternFinder.closeFinder();
-	}
 
-	// update the iframe with the source from clicked element in pull down menu. also close the menu
-	// having it outside fixes an auto-close bug i ran into
-	$('.sg-nav a').not('.sg-acc-handle').on("click", function(e){
-		e.preventDefault();
-		// update the iframe via the history api handler
-		var obj = JSON.stringify({ "path": urlHandler.getFileName($(this).attr("data-patternpartial")) });
-		document.getElementById("sg-viewport").contentWindow.postMessage(obj, urlHandler.targetOrigin);
-		closePanels();
-	});
+// update the iframe with the source from clicked element in pull down menu. also close the menu
+// having it outside fixes an auto-close bug i ran into
+$('.sg-nav a').not('.sg-acc-handle').on("click", function(e){
+	
+	e.preventDefault();
+	
+	// update the iframe via the history api handler
+	document.getElementById("sg-viewport").contentWindow.postMessage( { "path": urlHandler.getFileName($(this).attr("data-patternpartial")) }, urlHandler.targetOrigin);
+	
+	// close up the menu
+	$(this).parents('.sg-acc-panel').toggleClass('active');
+	$(this).parents('.sg-acc-panel').siblings('.sg-acc-handle').toggleClass('active');
+	
+	return false;
+	
+});
 
-	// handle when someone clicks on the grey area of the viewport so it auto-closes the nav
-	$('#sg-vp-wrap').click(function() {
-		closePanels();
+// handle when someone clicks on the grey area of the viewport so it auto-closes the nav
+function closePanels() {
+	// close up the menu
+	$('.sg-acc-panel').each(function() {
+		if ($(this).hasClass('active')) {
+			$(this).toggleClass('active');
+		}
 	});
 	
-	// Listen for resize changes
-	if (window.orientation !== undefined) {
-		var origOrientation = window.orientation;
-		window.addEventListener("orientationchange", function() {
-			if (window.orientation != origOrientation) {
-				$("#sg-gen-container").width($(window).width());
-				$("#sg-viewport").width($(window).width());
-				updateSizeReading($(window).width());
-				origOrientation = window.orientation;
+	$('.sg-acc-handle').each(function() {
+		if ($(this).hasClass('active')) {
+			$(this).toggleClass('active');
+		}
+	});
+}
+
+$('#sg-vp-wrap').click(function(e) {
+	
+	closePanels();
+	
+});
+
+// watch the iframe source so that it can be sent back to everyone else.
+// based on the great MDN docs at https://developer.mozilla.org/en-US/docs/Web/API/window.postMessage
+function receiveIframeMessage(event) {
+	
+	var data = (typeof event.data !== "string") ? event.data : JSON.parse(event.data);
+	
+	// does the origin sending the message match the current host? if not dev/null the request
+	if ((window.location.protocol !== "file:") && (event.origin !== window.location.protocol+"//"+window.location.host)) {
+		return;
+	}
+	
+	if (data.bodyclick !== undefined) {
+		
+		closePanels();
+		
+	} else if (data.patternpartial !== undefined) {
+		
+		if (!urlHandler.skipBack) {
+			
+			if ((history.state === undefined) || (history.state === null) || (history.state.pattern !== data.patternpartial)) {
+				urlHandler.pushPattern(data.patternpartial, data.path);
 			}
-		}, false);
-		
-	}
-	
-	// watch the iframe source so that it can be sent back to everyone else.
-	// based on the great MDN docs at https://developer.mozilla.org/en-US/docs/Web/API/window.postMessage
-	function receiveIframeMessage(event) {
-		
-		var data = (typeof event.data !== "string") ? event.data : JSON.parse(event.data);
-		
-		// does the origin sending the message match the current host? if not dev/null the request
-		if ((window.location.protocol !== "file:") && (event.origin !== window.location.protocol+"//"+window.location.host)) {
-			return;
+			
+			if (wsnConnected) {
+				var iFramePath = urlHandler.getFileName(data.patternpartial);
+				wsn.send( '{"url": "'+iFramePath+'", "patternpartial": "'+event.data.patternpartial+'" }' );
+			}
 		}
 		
-		if (data.bodyclick !== undefined) {
-			
-			closePanels();
-			
-		} else if (data.patternpartial !== undefined) {
-			
-			if (!urlHandler.skipBack) {
-				
-				if ((history.state === undefined) || (history.state === null) || (history.state.pattern !== data.patternpartial)) {
-					urlHandler.pushPattern(data.patternpartial, data.path);
-				}
-				
-				if (wsnConnected) {
-					var iFramePath = urlHandler.getFileName(data.patternpartial);
-					wsn.send( '{"url": "'+iFramePath+'", "patternpartial": "'+event.data.patternpartial+'" }' );
-				}
+		// reset the defaults
+		urlHandler.skipBack = false;
+		
+	} else if (data.keyPress !== undefined) {
+		if (data.keyPress == 'ctrl+shift+s') {
+			goSmall();
+		} else if (data.keyPress == 'ctrl+shift+m') {
+			goMedium();
+		} else if (data.keyPress == 'ctrl+shift+l') {
+			goLarge();
+		} else if (data.keyPress == 'ctrl+shift+d') {
+			if (!discoMode) {
+				startDisco();
+			} else {
+				killDisco();
 			}
-			
-			// reset the defaults
-			urlHandler.skipBack = false;
-			
-		} else if (data.keyPress !== undefined) {
-			if (data.keyPress == 'ctrl+shift+s') {
-				goSmall();
-			} else if (data.keyPress == 'ctrl+shift+m') {
-				goMedium();
-			} else if (data.keyPress == 'ctrl+shift+l') {
-				goLarge();
-			} else if (data.keyPress == 'ctrl+shift+d') {
-				if (!discoMode) {
-					startDisco();
-				} else {
-					killDisco();
-				}
-			} else if (data.keyPress == 'ctrl+shift+h') {
-				if (!hayMode) {
-					startHay();
-				} else {
-					killHay();
-				}
-			} else if (data.keyPress == 'ctrl+shift+0') {
-				sizeiframe(320,true);
-			} else if (found = data.keyPress.match(/ctrl\+shift\+([1-9])/)) {
-				var val = mqs[(found[1]-1)];
-				var type = (val.indexOf("px") !== -1) ? "px" : "em";
-				val = val.replace(type,"");
-				var width = (type === "px") ? val*1 : val*$bodySize;
-				sizeiframe(width,true);
+		} else if (data.keyPress == 'ctrl+shift+h') {
+			if (!hayMode) {
+				startHay();
+			} else {
+				killHay();
 			}
-			return false;
+		} else if (data.keyPress == 'ctrl+shift+0') {
+			sizeiframe(320,true);
+		} else if (found = data.keyPress.match(/ctrl\+shift\+([1-9])/)) {
+			var val = mqs[(found[1]-1)];
+			var type = (val.indexOf("px") !== -1) ? "px" : "em";
+			val = val.replace(type,"");
+			var width = (type === "px") ? val*1 : val*$bodySize;
+			sizeiframe(width,true);
 		}
+		return false;
 	}
-	window.addEventListener("message", receiveIframeMessage, false);
-	
-	if (qrCodeGeneratorOn) {
-		$('.sg-tools').click(function() {
-			if ((qrCodeGenerator.lastGenerated == "") || (qrCodeGenerator.lastGenerated != window.location.search)) {
-				qrCodeGenerator.getQRCode();
-				qrCodeGenerator.lastGenerated = window.location.search;
-			}
-		});
-	}
-	
+}
+
+window.addEventListener("message", receiveIframeMessage, false);
+
 })(this);

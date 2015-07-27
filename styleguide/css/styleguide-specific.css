@@ -12,36 +12,30 @@
 /* Defaults */
 /* Dimensions */
 /* Breakpoints */
-/* line 48, styleguide-specific.scss */
 .demo {
   overflow: hidden;
   margin-bottom: 1rem;
 }
 
-/* line 53, styleguide-specific.scss */
 .demo .gi, .demo .demo-block {
-  background: #dddddd;
-  color: gray;
+  background: #ddd;
+  color: #808080;
   text-align: center;
   margin-bottom: 0.5em;
   padding: 1em !important;
 }
-/* line 60, styleguide-specific.scss */
 .demo .gi:nth-of-type(2n), .demo .demo-block:nth-of-type(2n) {
-  color: #dddddd;
-  background: gray;
+  color: #ddd;
+  background: #808080;
 }
-/* line 65, styleguide-specific.scss */
 .demo .gi .gi, .demo .demo-block .gi {
   background: rgba(0, 0, 0, 0.1);
-  color: #dddddd;
+  color: #ddd;
 }
-/* line 69, styleguide-specific.scss */
 .demo .gi .gi:nth-of-type(2n), .demo .demo-block .gi:nth-of-type(2n) {
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 76, styleguide-specific.scss */
 .demo-animate {
   background: #ddd;
   padding: 1em;
@@ -49,71 +43,59 @@
   text-align: center;
 }
 
-/* line 84, styleguide-specific.scss */
 .animate-move {
   position: relative;
 }
-/* line 87, styleguide-specific.scss */
 .animate-move .demo-shape {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   width: 20px;
-  background: gray;
+  background: #808080;
 }
-/* line 97, styleguide-specific.scss */
 .animate-move:hover > .demo-shape {
   left: 100%;
   margin-left: -20px;
 }
 
-/* line 144, styleguide-specific.scss */
+.sg-colors {
+  overflow: hidden;
+}
 .sg-colors li {
-  display: inline-block;
-  float: left;
-  height: 100px;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  width: 100px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  padding: 0.3em;
+  margin: 0 0.2em 0.2em 0;
+}
+@media all and (min-width: 30em) {
+  .sg-colors li {
+    float: left;
+    width: 5em;
+  }
 }
 
-/* line 154, styleguide-specific.scss */
 .sg-swatch {
   display: block;
-  height: 100%;
-  position: relative;
-  width: 100%;
+  height: 1.5em;
+  width: 50%;
+}
+@media all and (max-width: 30em) {
+  .sg-swatch {
+    float: left;
+    margin-right: 0.3em;
+  }
+}
+@media all and (min-width: 30em) {
+  .sg-swatch {
+    width: 100%;
+    height: 4em;
+    margin-bottom: 0.2em;
+  }
 }
 
-/* line 161, styleguide-specific.scss */
-.sg-hex {
-  background: #000;
-  background: rgba(0, 0, 0, 0.7);
-  bottom: 0;
-  color: #fff;
-  margin: 0;
-  opacity: 0;
-  padding: 5px 0;
-  position: absolute;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-  -webkit-transition: all 0.6s ease-out;
-  -moz-transition: all 0.6s ease-out;
-  -ms-transition: all 0.6s ease-out;
-  -o-transition: all 0.6s ease-out;
-  transition: all 0.6s ease-out;
+.sg-label {
+  line-height: 1;
 }
 
-/* line 181, styleguide-specific.scss */
-.sg-swatch:hover span {
-  opacity: 1;
-}
-
-/* line 185, styleguide-specific.scss */
-.sg-color-name {
-  color: #7f8c8d;
-  font-size: .8em;
-}
+/*# sourceMappingURL=styleguide-specific.css.map */

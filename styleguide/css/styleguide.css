@@ -43,29 +43,24 @@
 /* Defaults */
 /* Dimensions */
 /* Breakpoints */
-
-@import url("http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 /*------------------------------------*\
     $PATTERN LAB MIXINS 
 \*------------------------------------*/
 /*------------------------------------*\
     $PATTERN LAB INTERFACE 
 \*------------------------------------*/
-/* line 108, styleguide.scss */
 #patternlab-html, #patternlab-body {
   margin: 0;
   padding: 0;
-  background: #ecf0f1;
+  background: #ddd;
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 115, styleguide.scss */
 .sg-nav-wrapper {
   overflow: hidden;
-  //background: #ecf0f1;
+  background: #ddd;
 }
 
-/* line 120, styleguide.scss */
 .is-vishidden {
   position: absolute !important;
   overflow: hidden;
@@ -76,16 +71,13 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 132, styleguide.scss */
 .sg-cf, .sg-pattern {
   /**zoom: 1;*/
 }
-/* line 135, styleguide.scss */
 .sg-cf:before, .sg-pattern:before, .sg-cf:after, .sg-pattern:after {
   content: " ";
   display: table;
 }
-/* line 140, styleguide.scss */
 .sg-cf:after, .sg-pattern:after {
   clear: both;
 }
@@ -94,10 +86,9 @@
     $PATTERN LAB HEADER 
 \*------------------------------------*/
 /* Header */
-/* line 151, styleguide.scss */
 .sg-header {
- // background: #5e6768;
-  color: #fbfcfc;
+  background: #222;
+  color: #fff;
   font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   text-transform: uppercase;
   position: fixed;
@@ -106,26 +97,22 @@
   z-index: 2;
   width: 100%;
 }
-/* line 162, styleguide.scss */
 .sg-header * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 168, styleguide.scss */
 .sg-header ul, .sg-header ol {
   padding: 0;
   margin: 0;
 }
-/* line 173, styleguide.scss */
 .sg-header li {
   list-style: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
-/* line 178, styleguide.scss */
 .sg-header a {
   font-size: 70%;
-  color: #cbd0d3;
+  color: #808080;
   text-decoration: none;
   display: block;
   line-height: 1;
@@ -141,19 +128,16 @@
   -o-transition: color 0.15s ease-out;
   transition: color 0.15s ease-out;
 }
-/* line 188, styleguide.scss */
 .sg-header a:hover, .sg-header a:focus, .sg-header a.active {
-  color: #fbfcfc;
- // background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
 }
-/* line 194, styleguide.scss */
 .sg-header ol ol ol a {
   padding-left: 2em;
   text-transform: none;
 }
 
 /* Navigation */
-/* line 203, styleguide.scss */
 .sg-header .sg-nav-toggle {
   display: inline-block;
   padding: 0.9em 1em;
@@ -162,20 +146,17 @@
   text-transform: uppercase;
   z-index: 2;
 }
-/* line 211, styleguide.scss */
 .sg-header .sg-nav-toggle span {
   display: inline-block;
   padding-right: 0.2em;
 }
 @media all and (min-width: 48em) {
-  /* line 203, styleguide.scss */
   .sg-header .sg-nav-toggle {
     display: none;
   }
 }
 
 @media all and (max-width: 48em) {
-  /* line 221, styleguide.scss */
   .sg-nav-container {
     overflow: hidden;
     max-height: 0;
@@ -185,32 +166,27 @@
     -o-transition: max-height 0.1s ease-out;
     transition: max-height 0.1s ease-out;
   }
-  /* line 227, styleguide.scss */
   .sg-nav-container.active {
     max-height: 50em;
   }
 }
 
-/* line 233, styleguide.scss */
 .sg-nav {
   z-index: 1;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 239, styleguide.scss */
 .sg-nav > li {
   cursor: pointer;
 }
 @media all and (min-width: 48em) {
-  /* line 239, styleguide.scss */
   .sg-nav > li {
     border-bottom: 0;
-    border-right: 1px solid rgba(255, 255, 255, 0.07);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
     float: left;
     position: relative;
   }
-  /* line 248, styleguide.scss */
   .sg-nav > li > ol {
     position: absolute;
     top: 2em;
@@ -219,40 +195,33 @@
 }
 
 /* Accordion */
-/* line 260, styleguide.scss */
 .sg-acc-handle:after {
   content: ' +';
   float: right;
   font-size: 70%;
 }
 @media all and (min-width: 48em) {
-  /* line 260, styleguide.scss */
   .sg-acc-handle:after {
     float: none;
   }
 }
-/* line 270, styleguide.scss */
 .sg-acc-handle.active {
-  color: #fbfcfc;
- // background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
 }
-/* line 273, styleguide.scss */
 .sg-acc-handle.active:after {
   content: ' -';
 }
-/* line 278, styleguide.scss */
 .sg-acc-handle.sg-icon:after {
   content: "";
 }
 
-/* line 283, styleguide.scss */
 .sg-header .sg-icon {
   width: auto;
   font-size: 1rem;
   padding: 0.5rem 1rem;
 }
 
-/* line 289, styleguide.scss */
 .sg-acc-panel {
   overflow: hidden;
   max-height: 0;
@@ -263,34 +232,28 @@
   -o-transition: max-height 0.1s ease-out;
   transition: max-height 0.1s ease-out;
 }
-/* line 295, styleguide.scss */
 .sg-acc-panel li {
- // background: #5e6768;
+  background: #222;
 }
-/* line 299, styleguide.scss */
 .sg-acc-panel.active {
   max-height: 120em;
   overflow: auto;
 }
-/* line 304, styleguide.scss */
 .sg-acc-panel.sg-right {
   position: absolute;
   left: auto;
   right: 0;
 }
-/* line 310, styleguide.scss */
 .sg-acc-panel.sg-left {
   position: absolute;
   left: auto;
 }
-/* line 316, styleguide.scss */
 .sg-acc-panel [class^="sg-icon-"]:before {
   display: inline-block;
   margin-right: 0.4em;
 }
 
 /* Controls (sizing, view mode) */
-/* line 324, styleguide.scss */
 .sg-controls {
   border: 0;
   position: absolute;
@@ -299,36 +262,30 @@
   z-index: 2;
 }
 
-/* line 332, styleguide.scss */
 .sg-control-trigger {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 @media all and (min-width: 48em) {
-  /* line 332, styleguide.scss */
   .sg-control-trigger {
     border: 0;
   }
 }
 @media all and (min-width: 72em) {
-  /* line 332, styleguide.scss */
   .sg-control-trigger {
     float: left;
     width: 6em;
   }
 }
 
-/* line 346, styleguide.scss */
 .sg-control > li {
   float: left;
 }
 @media all and (min-width: 48em) {
-  /* line 346, styleguide.scss */
   .sg-control > li {
     border-bottom: 0;
-    border-left: 1px solid rgba(255, 255, 255, 0.07);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
   }
 }
-/* line 355, styleguide.scss */
 .sg-control .sg-input {
   padding: 0.1em;
   -webkit-transition: all 0.2s ease-out;
@@ -337,118 +294,100 @@
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-/* line 363, styleguide.scss */
 .sg-control .sg-input:active, .sg-control .sg-input:focus {
   outline: 0;
-//  background: #ecf0f1;
-  color: #5e6768;
+  background: #999;
+  color: #000;
 }
 
-/* line 371, styleguide.scss */
 .sg-current-size {
   font-size: 70%;
-  color: #777;
+  color: #808080;
   padding: 0.85em 0.7em;
 }
-/* line 377, styleguide.scss */
 .sg-current-size:hover .sg-input {
-  background: #cbd0d3;
-  color: #5e6768;
+  background: #999;
+  color: #000;
 }
 @media all and (min-width: 72em) {
-  /* line 371, styleguide.scss */
   .sg-current-size {
     float: left;
   }
 }
 
-/* line 388, styleguide.scss */
 .sg-size {
   width: 135px;
 }
 @media all and (min-width: 48em) {
-  /* line 388, styleguide.scss */
   .sg-size {
     width: auto;
   }
 }
 
 @media all and (min-width: 72em) {
-  /* line 396, styleguide.scss */
   .sg-size-options {
     float: left;
     position: static;
     max-height: none;
     max-width: none;
   }
-  /* line 404, styleguide.scss */
   .sg-size-options > li {
     float: left;
     border: 0;
-    border-left: 1px solid rgba(255, 255, 255, 0.07);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
   }
 }
 
-/* line 413, styleguide.scss */
 #sg-size-mq {
   display: none;
 }
 @media all and (min-width: 72em) {
-  /* line 413, styleguide.scss */
   #sg-size-mq {
     display: block;
   }
 }
 
-/* line 421, styleguide.scss */
 #sg-form {
   margin: 0;
   border: 0;
   padding: 0;
 }
 
-/* line 427, styleguide.scss */
 .sg-input {
   margin: -2px 0 0 0;
   padding: 0;
   border: 0;
-  background-color: #eee;
-  color: #222;
+  background-color: #222;
+  color: gray;
   width: 25px;
   text-align: right;
 }
 @media all and (min-width: 48em) {
-  /* line 427, styleguide.scss */
   .sg-input {
     width: 35px;
   }
 }
 
-/* line 441, styleguide.scss */
 .sg-input-active {
   background-color: #fff;
-  color: #5e6768;
+  color: #000;
 }
 
-/* line 446, styleguide.scss */
 .sg-view {
   position: relative;
 }
-/* line 449, styleguide.scss */
 .sg-view > ul {
   position: absolute;
   top: 2em;
   left: 0;
 }
 
-/* line 460, styleguide.scss */
 .sg-checkbox:before {
   display: inline-block;
   margin-right: 0.4em;
 }
 
 /* basic styling */
-/* line 473, styleguide.scss */
 .sg-pattern-state:before {
   margin-right: 4px;
   content: "\2022";
@@ -459,7 +398,6 @@
 }
 
 /* nav styling */
-/* line 483, styleguide.scss */
 .sg-nav .sg-pattern-state:before {
   margin-top: -4px;
   margin-bottom: 0;
@@ -469,36 +407,30 @@
   float: left;
 }
 
-/* line 492, styleguide.scss */
 .sg-sub-nav .sg-pattern-state:before {
   margin-left: -11px;
   margin-right: 4px;
 }
 
 /* call out for pattern's pattern state */
-/* line 498, styleguide.scss */
 span.sg-pattern-state {
   color: #999;
 }
 
-/* line 502, styleguide.scss */
 span.sg-pattern-state:before {
   margin-bottom: -3px;
   margin-left: 4px;
 }
 
 /* pattern states */
-/* line 508, styleguide.scss */
 .inprogress:before {
   color: #FF4136 !important;
 }
 
-/* line 512, styleguide.scss */
 .inreview:before {
   color: #FFCC00 !important;
 }
 
-/* line 516, styleguide.scss */
 .complete:before {
   color: #2ECC40 !important;
 }
@@ -507,7 +439,6 @@ span.sg-pattern-state:before {
     $PATTERN LAB VIEWPORT
 \*------------------------------------*/
 /* Viewport */
-/* line 527, styleguide.scss */
 #sg-vp-wrap {
   text-align: center;
   width: 100%;
@@ -518,7 +449,6 @@ span.sg-pattern-state:before {
   right: 0;
   z-index: 0;
 }
-/* line 537, styleguide.scss */
 #sg-vp-wrap.wrap-animate {
   -webkit-transition: left 0.3s ease-out;
   -moz-transition: left 0.3s ease-out;
@@ -527,7 +457,6 @@ span.sg-pattern-state:before {
   transition: left 0.3s ease-out;
 }
 
-/* line 547, styleguide.scss */
 #sg-viewport {
   position: absolute;
   height: 100%;
@@ -541,7 +470,6 @@ span.sg-pattern-state:before {
   right: 0;
   background-color: white;
 }
-/* line 560, styleguide.scss */
 #sg-viewport.hay-mode {
   -webkit-transition: all 40s linear;
   -moz-transition: all 40s linear;
@@ -550,16 +478,13 @@ span.sg-pattern-state:before {
   transition: all 40s linear;
 }
 
-/* line 570, styleguide.scss */
 .no-resize #sg-cover, .no-resize #sg-rightpull-container {
   display: none;
 }
-/* line 574, styleguide.scss */
 .no-resize #sg-viewport {
   overflow: hidden !important;
 }
 
-/* line 580, styleguide.scss */
 #sg-cover {
   width: 100%;
   height: 100%;
@@ -569,7 +494,6 @@ span.sg-pattern-state:before {
   cursor: col-resize;
 }
 
-/* line 589, styleguide.scss */
 #sg-gen-container {
   height: 100%;
   position: relative;
@@ -579,7 +503,6 @@ span.sg-pattern-state:before {
   overflow-y: auto;
   overflow-x: hidden;
 }
-/* line 598, styleguide.scss */
 #sg-gen-container.hay-mode {
   -webkit-transition: all 40s linear;
   -moz-transition: all 40s linear;
@@ -588,7 +511,6 @@ span.sg-pattern-state:before {
   transition: all 40s linear;
 }
 
-/* line 607, styleguide.scss */
 #sg-rightpull-container {
   width: 14px;
   float: right;
@@ -597,7 +519,6 @@ span.sg-pattern-state:before {
   cursor: col-resize;
 }
 
-/* line 615, styleguide.scss */
 #sg-rightpull {
   margin: 0;
   width: 100%;
@@ -609,17 +530,14 @@ span.sg-pattern-state:before {
   -o-transition: background 0.2s ease-out;
   transition: background 0.2s ease-out;
 }
-/* line 626, styleguide.scss */
 #sg-rightpull:hover {
   background: #666;
 }
-/* line 630, styleguide.scss */
 #sg-rightpull:active {
   cursor: col-resize;
   background: #444;
 }
 
-/* line 636, styleguide.scss */
 .vp-animate {
   -webkit-transition: width 0.8s ease-out;
   -moz-transition: width 0.8s ease-out;
@@ -632,34 +550,30 @@ span.sg-pattern-state:before {
     $PATTERN LAB CONTENT 
 \*------------------------------------*/
 /* Section Pattern */
-/* line 653, styleguide.scss */
 .sg-pattern {
   margin-bottom: 2em;
   position: relative;
 }
 
 /* Section Head */
-/* line 660, styleguide.scss */
 .sg-pattern-head {
   margin: 2em 0;
   font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-size: 70%;
   font-weight: normal;
   padding: 1em 0;
-  border-bottom: 1px solid #cbd0d3;
+  border-bottom: 1px solid #808080;
 }
-/* line 667, styleguide.scss */
 .sg-pattern-head a {
   display: block;
-  color: #cbd0d3;
+  color: #808080;
   text-decoration: none;
   cursor: pointer;
 }
-/* line 673, styleguide.scss */
 .sg-pattern-head a:hover {
-  color: #5e6768;
+  color: #222;
 }
 
-/* line 680, styleguide.scss */
 .sg-view-container {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -667,8 +581,8 @@ span.sg-pattern-state:before {
   font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   line-height: 1.4;
   font-size: 90%;
-  background: #5e6768;
-  color: #cbd0d3;
+  background: #222;
+  color: #808080;
   position: fixed;
   top: auto;
   padding: 1em;
@@ -680,15 +594,12 @@ span.sg-pattern-state:before {
   overflow-y: auto;
   overflow-x: hidden;
 }
-/* line 700, styleguide.scss */
 .sg-view-container a {
-  color: #999999;
+  color: #999;
 }
-/* line 704, styleguide.scss */
 .sg-view-container pre {
   padding: 0 1em;
 }
-/* line 708, styleguide.scss */
 .sg-view-container.anim-ready {
   -webkit-transition: bottom 0.3s ease-out;
   -moz-transition: bottom 0.3s ease-out;
@@ -698,13 +609,11 @@ span.sg-pattern-state:before {
   transition: bottom 0.3s ease-out;
 }
 
-/* line 719, styleguide.scss */
 .sg-view-close {
   width: 100%;
   margin-bottom: -10px;
 }
 
-/* line 724, styleguide.scss */
 .sg-view-close-btn {
   color: #fff;
   text-transform: uppercase;
@@ -713,25 +622,20 @@ span.sg-pattern-state:before {
   display: block;
 }
 
-/* line 733, styleguide.scss */
 .has-annotation {
   cursor: help !important;
-  box-shadow: 0 0 10px #cbd0d3;
+  box-shadow: 0 0 10px #808080;
 }
-/* line 737, styleguide.scss */
 .has-annotation a, .has-annotation input {
   cursor: help !important;
 }
-/* line 741, styleguide.scss */
 .has-annotation:hover {
-  box-shadow: 0 0 10px #5e6768;
+  box-shadow: 0 0 10px #222;
 }
-/* line 745, styleguide.scss */
 .has-annotation.active {
-  box-shadow: inset 0 0 20px #cbd0d3;
+  box-shadow: inset 0 0 20px #808080;
 }
 
-/* line 751, styleguide.scss */
 .annotation-tip {
   display: block;
   position: absolute;
@@ -748,41 +652,34 @@ span.sg-pattern-state:before {
   z-index: 100;
 }
 
-/* line 767, styleguide.scss */
 #sg-comments-container {
   max-width: 60em;
   margin: 0 auto;
 }
 
-/* line 772, styleguide.scss */
 .sg-comment-container {
   padding-bottom: 2em;
   margin-bottom: 1em;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
-/* line 777, styleguide.scss */
 .sg-comment-container p:last-child {
   margin-bottom: 0;
 }
-/* line 781, styleguide.scss */
 .sg-comment-container h2 {
   margin-bottom: 0.25em;
 }
 
-/* line 786, styleguide.scss */
 .sg-code, .sg-annotations {
   clear: both;
-  background: #F8F8F8;
-  color: #5e6768;
+  background: #ddd;
+  color: #222;
   padding: 1em 0.5em;
   margin: 1em 0;
 }
-/* line 793, styleguide.scss */
 .sg-code a, .sg-annotations a {
   text-decoration: underline;
 }
 
-/* line 799, styleguide.scss */
 .sg-code pre {
   white-space: -moz-pre-line;
   white-space: -pre-line;
@@ -793,40 +690,34 @@ span.sg-pattern-state:before {
   padding: 0.5em;
 }
 
-/* line 810, styleguide.scss */
 .sg-code-contains {
   margin-bottom: 1rem;
   font-size: 85%;
-  color: #cbd0d3;
+  color: #808080;
 }
-/* line 815, styleguide.scss */
 .sg-code-contains code {
   padding: 0.2em;
   background: rgba(0, 0, 0, 0.3);
-  color: #999999;
+  color: #999;
   position: relative;
   top: -2px;
 }
 
-/* line 824, styleguide.scss */
 .sg-code-head {
-  color: #cbd0d3;
+  color: #808080;
   font-size: 1em;
 }
 
-/* line 829, styleguide.scss */
 #sg-code-markup {
   padding-top: 10px;
 }
 
-/* line 833, styleguide.scss */
 #sg-code-tabs {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 839, styleguide.scss */
 #sg-code-tabs li {
   float: left;
   background-color: #333;
@@ -838,23 +729,19 @@ span.sg-pattern-state:before {
   cursor: pointer;
 }
 
-/* line 850, styleguide.scss */
 .sg-code-title-active {
   color: #bbb;
   background-color: #272822 !important;
 }
 
-/* line 855, styleguide.scss */
 div.clear {
   clear: both;
 }
 
-/* line 859, styleguide.scss */
 .sg-code-patternname {
   color: #aaa;
 }
 
-/* line 863, styleguide.scss */
 #sg-code-loader {
   display: none;
   position: absolute;
@@ -868,7 +755,6 @@ div.clear {
   z-index: 100;
 }
 
-/* line 876, styleguide.scss */
 .spinner {
   height: 30px;
   width: 30px;
@@ -889,7 +775,6 @@ div.clear {
   font-weight: normal;
   font-style: normal;
 }
-/* line 899, styleguide.scss */
 .sg-icon-search, .sg-icon-cog, .sg-icon-minus, .sg-icon-plus, .sg-icon-menu, .sg-icon-radio-checked, .sg-checkbox.active, .sg-icon-radio-unchecked, .sg-checkbox, .sg-icon-file, .sg-icon-link, .sg-icon-keyboard, .sg-icon-qrcode, .sg-icon-eye, .sg-checkbox {
   font-family: 'icomoon';
   speak: none;
@@ -903,63 +788,51 @@ div.clear {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 913, styleguide.scss */
 .sg-icon-search:before {
   content: "\e600";
   font-size: 85%;
 }
 
-/* line 917, styleguide.scss */
 .sg-icon-cog:before {
   content: "\e601";
 }
 
-/* line 920, styleguide.scss */
 .sg-icon-minus:before {
   content: "\e602";
 }
 
-/* line 923, styleguide.scss */
 .sg-icon-plus:before {
   content: "\e603";
 }
 
-/* line 926, styleguide.scss */
 .sg-icon-menu:before {
   content: "\e604";
 }
 
-/* line 929, styleguide.scss */
 .sg-icon-radio-checked:before, .sg-checkbox.active:before, .sg-checkbox.active:before {
   content: "\e605";
 }
 
-/* line 932, styleguide.scss */
 .sg-icon-radio-unchecked:before, .sg-checkbox:before, .sg-checkbox:before {
   content: "\e606";
 }
 
-/* line 935, styleguide.scss */
 .sg-icon-file:before {
   content: "\e607";
 }
 
-/* line 938, styleguide.scss */
 .sg-icon-link:before {
   content: "\e608";
 }
 
-/* line 941, styleguide.scss */
 .sg-icon-keyboard:before {
   content: "\e609";
 }
 
-/* line 944, styleguide.scss */
 .sg-icon-qrcode:before {
   content: "\e60a";
 }
 
-/* line 947, styleguide.scss */
 .sg-icon-eye:before {
   content: "\e60b";
 }
@@ -967,68 +840,4 @@ div.clear {
 /******************************************************************/
 /* End Pattern Lab Interface code */
 
-
-
-a#sg-size-s:before {
-  content: "\f10b"; 
-    display: inline-block;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    padding-right: 7px;
-    font-size: 1.5em;
-line-height: 0;
-}
-
-a#sg-size-m:before {
-  content: "\f10a"; 
-    display: inline-block;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    padding-right: 7px;
-    font-size: 1.5em;
-line-height: 0;
-}
-
-a#sg-size-l:before {
-  content: "\f108"; 
-    display: inline-block;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    padding-right: 7px;
-    font-size: 1.5em;
-line-height: 0;
-}
-
-
-.sg-header {
-background: rgba(255, 255, 255, 0.9);
-color: #777;
-box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
-}
-
-.sg-header a {
-  color: #777;
-}
-.sg-acc-panel li {
-background: #f1f1f1;
-}
-
-.sg-header a:hover, .sg-header a:focus, .sg-header a.active {
-  color: #777;
-background: rgba(238, 238, 238, 0.9);
-}
-.sg-header a:focus, .sg-header a.active {
-color: #222;
-}
+/*# sourceMappingURL=styleguide.css.map */

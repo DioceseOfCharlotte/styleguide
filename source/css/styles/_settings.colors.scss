@@ -148,3 +148,10 @@ $aqua-600: darken($aqua, 10);
 $aqua-700: darken($aqua, 20);
 $aqua-800: darken($aqua, 30);
 $aqua-900: darken($aqua, 40);
+
+
+
+$color-dark-contrast: $white !default;
+$color-light-contrast: $black !default;
+
+$color-1-contrast: $color-dark-contrast !default;

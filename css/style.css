@@ -10,47 +10,8 @@ P"Ybmmd"  `Mbmo`Ybmd9'  MMbmmd'      .JMML.   .JMML.YMMMMMb .JMML  JMML.`Mbmo   
                         MM                         6'     dP
                       .JMML.                       Ybmmmd'
 
-Pattern Lab doesn't have any CSS requirements, which means you can write your styles however you want. Hooray!
-You can use Sass, Less, vanilla CSS, or some other crazy thing I haven't heard of yet.
-So please don't use these styles. They're just here to put together the demo, and nothing more.
-They're intentionally gray, boring, and crappy because you're supposed to do this stuff yourself.
-
-Atomic design is philosophically complimentary with these CSS approaches:
-
-* SMACSS by Jonathan Snook http://smacss.com/
-* OOCSS by Nicole Sullivan http://oocss.org/
-* BEM CSS Methology : http://bem.info/method/
-* CSS Guidelines by Harry Roberts : https://github.com/csswizardry/CSS-Guidelines
-
-So feel free to use any of these approaches. Or don't. It's totally up to you.
-
 */
-/*------------------------------------*\
-    $TABLE OF CONTENTS
-    based generally on Harry Roberts excellent CSS Guidelines https://github.com/csswizardry/CSS-Guidelines
-\*------------------------------------*/
-/**
- * VARIABLES..............................Declarations of Sass variables
- * .....Colors
- * .....Typography
- * .....Layout
- * .....Defaults
- * .....Breakpoints
- * MIXINS.................................Sass mixins
- * RESET..................................Set reset defaults
- * GLOBAL CLASSES.........................Set reset defaults
- * GLOBAL ELEMENTS........................Establish global styles
- * .....Main
- * .....Headings
- * .....Text-related elements (p, blockquote, lists)
- * .....Defaults
- * .....Breakpoints
- * TYPOGRAPHY------------------------------
- * MEDIA------------------------------
- * LAYOUT------------------------------
- * NAVIGATION------------------------------
- * TOC To Be Continued
- */
+/* ==========  Standard Buttons  ========== */
 :root {
   -ms-overflow-style: -ms-autohiding-scrollbar;
   overflow-y: scroll;
@@ -490,7 +451,7 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
 button:hover {
-  background-color: rgba(158,158,158, 0.20);
+  background-color: rgba(#808080, 0.20);
   text-decoration: none;
   opacity: 1;
 }
@@ -500,7 +461,7 @@ input[type="button"]:focus:not(:active),
 input[type="reset"]:focus:not(:active),
 input[type="submit"]:focus:not(:active),
 button:focus:not(:active) {
-  background-color: rgba(0,0,0, 0.12);
+  background-color: rgba(#111, 0.12);
 }
 .btn:active, .nav-links a:active,
 .button:active,
@@ -508,7 +469,7 @@ input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active,
 button:active {
-  background-color: rgba(158,158,158, 0.40);
+  background-color: rgba(#808080, 0.40);
 }
 .btn.button--colored, .nav-links a.button--colored,
 .button.button--colored,
@@ -516,7 +477,7 @@ input.button--colored[type="button"],
 input.button--colored[type="reset"],
 input.button--colored[type="submit"],
 button.button--colored {
-  color: rgb(63,81,181);
+  color: rgb(#0074d9);
 }
 .btn.button--colored:focus:not(:active), .nav-links a.button--colored:focus:not(:active),
 .button.button--colored:focus:not(:active),
@@ -524,7 +485,7 @@ input.button--colored[type="button"]:focus:not(:active),
 input.button--colored[type="reset"]:focus:not(:active),
 input.button--colored[type="submit"]:focus:not(:active),
 button.button--colored:focus:not(:active) {
-  background-color: rgba(0,0,0, 0.12);
+  background-color: rgba(#111, 0.12);
 }
 
 /* #GRID
@@ -689,25 +650,25 @@ button.button--colored:focus:not(:active) {
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background: rgba(158,158,158, 0.20);
+  background: rgba(#808080, 0.20);
 }
 input[type="button"]:active, input[type="button"]:hover,
 input[type="reset"]:active,
 input[type="reset"]:hover,
 input[type="submit"]:active,
 input[type="submit"]:hover {
-  background-color: rgba(158,158,158, 0.40);
+  background-color: rgba(#808080, 0.40);
 }
 input[type="button"]:focus:not(:active),
 input[type="reset"]:focus:not(:active),
 input[type="submit"]:focus:not(:active) {
-  background-color: rgba(158,158,158, 0.40);
+  background-color: rgba(#808080, 0.40);
 }
 input[type="button"][disabled][disabled],
 input[type="reset"][disabled][disabled],
 input[type="submit"][disabled][disabled] {
-  background-color: rgba(0,0,0, 0.12);
-  color: rgba(0,0,0, 0.26);
+  background-color: rgba(#111, 0.12);
+  color: rgba(#111, 0.26);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -718,20 +679,20 @@ input[type="submit"] {
 }
 
 .btn1 {
-  background: rgb(63,81,181);
-  color: rgb(255,255,255);
+  background: rgb(#0074d9);
+  color: rgb(#fff);
 }
 .btn1:hover {
-  background-color: rgb(48,63,159);
+  background-color: rgb(#0074d9);
 }
 .btn1:active {
-  background-color: rgb(63,81,181);
+  background-color: rgb(#0074d9);
 }
 .btn1:focus:not(:active) {
-  background-color: rgb(63,81,181);
+  background-color: rgb(#0074d9);
 }
 .btn1 .ripple {
-  background: rgb(255,255,255);
+  background: rgb(#fff);
 }
 
 /* #BREADCRUMBS

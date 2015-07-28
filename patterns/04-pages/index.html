@@ -19,19 +19,22 @@
             <h2 class="sg-pattern-head" ><a href="../../patterns/04-pages-00-homepage-emergency&#x2F;04-pages-00-homepage-emergency.html" class="patternLink" data-patternpartial="">homepage-emergency</a></h2>
             <div class="sg-pattern-body">
               <div class="page" id="page">
-<!-- Begin .header -->
-<header class="header cf" role="banner">
-<a href="/"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /></a>	<a href="#" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
-	<a href="#" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
-<nav id="nav" class="nav">
+<header class="app-bar promote-layer hide@md">
+	<div class="app-bar-container">
+		<button class="menu">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/></svg>		</button>
+	</div>
+</header>
+
+<nav class="navdrawer-container text-shadow flex@md flex-center promote-layer">
+	<h1 class="logo hide@sm mt1 mb1 ml3">
+		<a class="border0 white" href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">
+			<a href="/"><img src="../../images/logo.svg" class="logo" alt="Logo Alt Text" /></a>
+Diocese of Charlotte</a>
+	</h1>
+	<h3 class="hide@md">Diocese of Charlotte</h3>
 	<ul>
-		<li><a href="&#x2F;patterns&#x2F;04-pages-00-homepage&#x2F;04-pages-00-homepage.html">Home</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">Blog</a></li>
-		<li><a href="#">Contact</a></li>
-	</ul>
-</nav><!--end .nav-->
-<form action="#" method="post" class="inline-form search-form">           
+		<li class="u-1/1@sm"><form action="#" method="post" class="inline-form search-form">           
     <fieldset>
 	    <legend class="is-vishidden">Search</legend>
 	    <label for="search-field" class="is-vishidden">Search</label>
@@ -41,8 +44,12 @@
 	    	<span class="is-vishidden">Search</span>
 	    </button>
     </fieldset>
-</form></header>
-<!-- End .header -->
+</form></li>
+		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-00-homepage&#x2F;04-pages-00-homepage.html">Home</a></li>
+		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">Home 2</a></li>
+		<li class="u-1/1@sm"><a class="br" href="#">Home 3</a></li>
+	</ul>
+</nav>
 	<div role="main">
 <div class="alert alert-error">
   Emergency! This is a variation of the core homepage template.
@@ -141,31 +148,92 @@
 </section>			</div><!--end .l-sidebar-->
 		</div><!--end .l-two-col-->
 	</div><!--End role=main-->
-<!-- Begin Footer -->
-<footer class="footer" role="contentinfo">
-	<div class="lc">
-		<p class="copyright">&copy; 2013 Company Name. All rights reserved.</p>
+<footer id="footer" class="bg-darken-4 white color-inherit" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+	<div class=" container container--footer">
+		<aside class="sidebar sidebar-footer sidebar-horizontal flex flex-wrap flex-justify pty3 py4@md" role="complementary" id="sidebar-footer" aria-label="Footer Sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+
+
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">Home</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">Categories</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">Categories</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">About</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+
+
+		</aside>
 	</div>
+	<p class="credit bg-darken-2 center py2">&#169; 2015 <a class="site-link" href="#" rel="home">Diocese of Charlotte</a></p>
+	<!-- .credit -->
 </footer>
-<!-- End Footer --></div>
+</div>
               <div class="sg-code" style="display: none">
                 <h3 class="sg-code-head">HTML</h3>
                 <pre class="sg-code-html">
                   <code>
                     &lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
-&lt;!-- Begin .header --&gt;
-&lt;header class=&quot;header cf&quot; role=&quot;banner&quot;&gt;
-&lt;a href=&quot;&#x2F;&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.png&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; &#x2F;&gt;&lt;&#x2F;a&gt;	&lt;a href=&quot;#&quot; class=&quot;nav-toggle nav-toggle-search icon-search&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
-	&lt;a href=&quot;#&quot; class=&quot;nav-toggle nav-toggle-menu icon-menu&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Menu&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
-&lt;nav id=&quot;nav&quot; class=&quot;nav&quot;&gt;
+&lt;header class=&quot;app-bar promote-layer hide@md&quot;&gt;
+	&lt;div class=&quot;app-bar-container&quot;&gt;
+		&lt;button class=&quot;menu&quot;&gt;
+&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;		&lt;&#x2F;button&gt;
+	&lt;&#x2F;div&gt;
+&lt;&#x2F;header&gt;
+
+&lt;nav class=&quot;navdrawer-container text-shadow flex@md flex-center promote-layer&quot;&gt;
+	&lt;h1 class=&quot;logo hide@sm mt1 mb1 ml3&quot;&gt;
+		&lt;a class=&quot;border0 white&quot; href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;
+			&lt;a href=&quot;&#x2F;&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+Diocese of Charlotte&lt;&#x2F;a&gt;
+	&lt;&#x2F;h1&gt;
+	&lt;h3 class=&quot;hide@md&quot;&gt;Diocese of Charlotte&lt;&#x2F;h3&gt;
 	&lt;ul&gt;
-		&lt;li&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-00-homepage&amp;#x2F;04-pages-00-homepage.html&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;Blog&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-	&lt;&#x2F;ul&gt;
-&lt;&#x2F;nav&gt;&lt;!--end .nav--&gt;
-&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;           
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;           
     &lt;fieldset&gt;
 	    &lt;legend class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;legend&gt;
 	    &lt;label for=&quot;search-field&quot; class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;label&gt;
@@ -175,8 +243,12 @@
 	    	&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;span&gt;
 	    &lt;&#x2F;button&gt;
     &lt;&#x2F;fieldset&gt;
-&lt;&#x2F;form&gt;&lt;&#x2F;header&gt;
-&lt;!-- End .header --&gt;
+&lt;&#x2F;form&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-00-homepage&amp;#x2F;04-pages-00-homepage.html&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;Home 2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a class=&quot;br&quot; href=&quot;#&quot;&gt;Home 3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+	&lt;&#x2F;ul&gt;
+&lt;&#x2F;nav&gt;
 	&lt;div role=&quot;main&quot;&gt;
 &lt;div class=&quot;alert alert-error&quot;&gt;
   Emergency! This is a variation of the core homepage template.
@@ -275,13 +347,71 @@
 &lt;&#x2F;section&gt;			&lt;&#x2F;div&gt;&lt;!--end .l-sidebar--&gt;
 		&lt;&#x2F;div&gt;&lt;!--end .l-two-col--&gt;
 	&lt;&#x2F;div&gt;&lt;!--End role=main--&gt;
-&lt;!-- Begin Footer --&gt;
-&lt;footer class=&quot;footer&quot; role=&quot;contentinfo&quot;&gt;
-	&lt;div class=&quot;lc&quot;&gt;
-		&lt;p class=&quot;copyright&quot;&gt;&amp;copy; 2013 Company Name. All rights reserved.&lt;&#x2F;p&gt;
+&lt;footer id=&quot;footer&quot; class=&quot;bg-darken-4 white color-inherit&quot; role=&quot;contentinfo&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http:&#x2F;&#x2F;schema.org&#x2F;WPFooter&quot;&gt;
+	&lt;div class=&quot; container container--footer&quot;&gt;
+		&lt;aside class=&quot;sidebar sidebar-footer sidebar-horizontal flex flex-wrap flex-justify pty3 py4@md&quot; role=&quot;complementary&quot; id=&quot;sidebar-footer&quot; aria-label=&quot;Footer Sidebar&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http:&#x2F;&#x2F;schema.org&#x2F;WPSideBar&quot;&gt;
+
+
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Home&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Categories&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Categories&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;About&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+
+
+		&lt;&#x2F;aside&gt;
 	&lt;&#x2F;div&gt;
+	&lt;p class=&quot;credit bg-darken-2 center py2&quot;&gt;&amp;#169; 2015 &lt;a class=&quot;site-link&quot; href=&quot;#&quot; rel=&quot;home&quot;&gt;Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+	&lt;!-- .credit --&gt;
 &lt;&#x2F;footer&gt;
-&lt;!-- End Footer --&gt;&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
                   </code>
                 </pre>
               </div>
@@ -291,19 +421,22 @@
             <h2 class="sg-pattern-head" ><a href="../../patterns/04-pages-00-homepage&#x2F;04-pages-00-homepage.html" class="patternLink" data-patternpartial="">homepage</a></h2>
             <div class="sg-pattern-body">
               <div class="page" id="page">
-<!-- Begin .header -->
-<header class="header cf" role="banner">
-<a href="/"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /></a>	<a href="#" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
-	<a href="#" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
-<nav id="nav" class="nav">
+<header class="app-bar promote-layer hide@md">
+	<div class="app-bar-container">
+		<button class="menu">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/></svg>		</button>
+	</div>
+</header>
+
+<nav class="navdrawer-container text-shadow flex@md flex-center promote-layer">
+	<h1 class="logo hide@sm mt1 mb1 ml3">
+		<a class="border0 white" href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">
+			<a href="/"><img src="../../images/logo.svg" class="logo" alt="Logo Alt Text" /></a>
+Diocese of Charlotte</a>
+	</h1>
+	<h3 class="hide@md">Diocese of Charlotte</h3>
 	<ul>
-		<li><a href="&#x2F;patterns&#x2F;04-pages-00-homepage&#x2F;04-pages-00-homepage.html">Home</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">Blog</a></li>
-		<li><a href="#">Contact</a></li>
-	</ul>
-</nav><!--end .nav-->
-<form action="#" method="post" class="inline-form search-form">           
+		<li class="u-1/1@sm"><form action="#" method="post" class="inline-form search-form">           
     <fieldset>
 	    <legend class="is-vishidden">Search</legend>
 	    <label for="search-field" class="is-vishidden">Search</label>
@@ -313,8 +446,12 @@
 	    	<span class="is-vishidden">Search</span>
 	    </button>
     </fieldset>
-</form></header>
-<!-- End .header -->
+</form></li>
+		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-00-homepage&#x2F;04-pages-00-homepage.html">Home</a></li>
+		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">Home 2</a></li>
+		<li class="u-1/1@sm"><a class="br" href="#">Home 3</a></li>
+	</ul>
+</nav>
 	<div role="main">
 <div class="block block-hero">
 	<a href="" class="inner">
@@ -411,31 +548,92 @@
 </section>			</div><!--end .l-sidebar-->
 		</div><!--end .l-two-col-->
 	</div><!--End role=main-->
-<!-- Begin Footer -->
-<footer class="footer" role="contentinfo">
-	<div class="lc">
-		<p class="copyright">&copy; 2013 Company Name. All rights reserved.</p>
+<footer id="footer" class="bg-darken-4 white color-inherit" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+	<div class=" container container--footer">
+		<aside class="sidebar sidebar-footer sidebar-horizontal flex flex-wrap flex-justify pty3 py4@md" role="complementary" id="sidebar-footer" aria-label="Footer Sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+
+
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">Home</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">Categories</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">Categories</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">About</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+
+
+		</aside>
 	</div>
+	<p class="credit bg-darken-2 center py2">&#169; 2015 <a class="site-link" href="#" rel="home">Diocese of Charlotte</a></p>
+	<!-- .credit -->
 </footer>
-<!-- End Footer --></div>
+</div>
               <div class="sg-code" style="display: none">
                 <h3 class="sg-code-head">HTML</h3>
                 <pre class="sg-code-html">
                   <code>
                     &lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
-&lt;!-- Begin .header --&gt;
-&lt;header class=&quot;header cf&quot; role=&quot;banner&quot;&gt;
-&lt;a href=&quot;&#x2F;&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.png&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; &#x2F;&gt;&lt;&#x2F;a&gt;	&lt;a href=&quot;#&quot; class=&quot;nav-toggle nav-toggle-search icon-search&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
-	&lt;a href=&quot;#&quot; class=&quot;nav-toggle nav-toggle-menu icon-menu&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Menu&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
-&lt;nav id=&quot;nav&quot; class=&quot;nav&quot;&gt;
+&lt;header class=&quot;app-bar promote-layer hide@md&quot;&gt;
+	&lt;div class=&quot;app-bar-container&quot;&gt;
+		&lt;button class=&quot;menu&quot;&gt;
+&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;		&lt;&#x2F;button&gt;
+	&lt;&#x2F;div&gt;
+&lt;&#x2F;header&gt;
+
+&lt;nav class=&quot;navdrawer-container text-shadow flex@md flex-center promote-layer&quot;&gt;
+	&lt;h1 class=&quot;logo hide@sm mt1 mb1 ml3&quot;&gt;
+		&lt;a class=&quot;border0 white&quot; href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;
+			&lt;a href=&quot;&#x2F;&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+Diocese of Charlotte&lt;&#x2F;a&gt;
+	&lt;&#x2F;h1&gt;
+	&lt;h3 class=&quot;hide@md&quot;&gt;Diocese of Charlotte&lt;&#x2F;h3&gt;
 	&lt;ul&gt;
-		&lt;li&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-00-homepage&amp;#x2F;04-pages-00-homepage.html&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;Blog&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-	&lt;&#x2F;ul&gt;
-&lt;&#x2F;nav&gt;&lt;!--end .nav--&gt;
-&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;           
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;           
     &lt;fieldset&gt;
 	    &lt;legend class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;legend&gt;
 	    &lt;label for=&quot;search-field&quot; class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;label&gt;
@@ -445,8 +643,12 @@
 	    	&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;span&gt;
 	    &lt;&#x2F;button&gt;
     &lt;&#x2F;fieldset&gt;
-&lt;&#x2F;form&gt;&lt;&#x2F;header&gt;
-&lt;!-- End .header --&gt;
+&lt;&#x2F;form&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-00-homepage&amp;#x2F;04-pages-00-homepage.html&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;Home 2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a class=&quot;br&quot; href=&quot;#&quot;&gt;Home 3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+	&lt;&#x2F;ul&gt;
+&lt;&#x2F;nav&gt;
 	&lt;div role=&quot;main&quot;&gt;
 &lt;div class=&quot;block block-hero&quot;&gt;
 	&lt;a href=&quot;&quot; class=&quot;inner&quot;&gt;
@@ -543,13 +745,71 @@
 &lt;&#x2F;section&gt;			&lt;&#x2F;div&gt;&lt;!--end .l-sidebar--&gt;
 		&lt;&#x2F;div&gt;&lt;!--end .l-two-col--&gt;
 	&lt;&#x2F;div&gt;&lt;!--End role=main--&gt;
-&lt;!-- Begin Footer --&gt;
-&lt;footer class=&quot;footer&quot; role=&quot;contentinfo&quot;&gt;
-	&lt;div class=&quot;lc&quot;&gt;
-		&lt;p class=&quot;copyright&quot;&gt;&amp;copy; 2013 Company Name. All rights reserved.&lt;&#x2F;p&gt;
+&lt;footer id=&quot;footer&quot; class=&quot;bg-darken-4 white color-inherit&quot; role=&quot;contentinfo&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http:&#x2F;&#x2F;schema.org&#x2F;WPFooter&quot;&gt;
+	&lt;div class=&quot; container container--footer&quot;&gt;
+		&lt;aside class=&quot;sidebar sidebar-footer sidebar-horizontal flex flex-wrap flex-justify pty3 py4@md&quot; role=&quot;complementary&quot; id=&quot;sidebar-footer&quot; aria-label=&quot;Footer Sidebar&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http:&#x2F;&#x2F;schema.org&#x2F;WPSideBar&quot;&gt;
+
+
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Home&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Categories&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Categories&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;About&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+
+
+		&lt;&#x2F;aside&gt;
 	&lt;&#x2F;div&gt;
+	&lt;p class=&quot;credit bg-darken-2 center py2&quot;&gt;&amp;#169; 2015 &lt;a class=&quot;site-link&quot; href=&quot;#&quot; rel=&quot;home&quot;&gt;Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+	&lt;!-- .credit --&gt;
 &lt;&#x2F;footer&gt;
-&lt;!-- End Footer --&gt;&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
                   </code>
                 </pre>
               </div>
@@ -559,19 +819,22 @@
             <h2 class="sg-pattern-head" ><a href="../../patterns/04-pages-01-blog&#x2F;04-pages-01-blog.html" class="patternLink" data-patternpartial="">blog</a></h2>
             <div class="sg-pattern-body">
               <div class="page" id="page">
-<!-- Begin .header -->
-<header class="header cf" role="banner">
-<a href="/"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /></a>	<a href="#" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
-	<a href="#" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
-<nav id="nav" class="nav">
+<header class="app-bar promote-layer hide@md">
+	<div class="app-bar-container">
+		<button class="menu">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/></svg>		</button>
+	</div>
+</header>
+
+<nav class="navdrawer-container text-shadow flex@md flex-center promote-layer">
+	<h1 class="logo hide@sm mt1 mb1 ml3">
+		<a class="border0 white" href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">
+			<a href="/"><img src="../../images/logo.svg" class="logo" alt="Logo Alt Text" /></a>
+Diocese of Charlotte</a>
+	</h1>
+	<h3 class="hide@md">Diocese of Charlotte</h3>
 	<ul>
-		<li><a href="&#x2F;patterns&#x2F;04-pages-00-homepage&#x2F;04-pages-00-homepage.html">Home</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">Blog</a></li>
-		<li><a href="#">Contact</a></li>
-	</ul>
-</nav><!--end .nav-->
-<form action="#" method="post" class="inline-form search-form">           
+		<li class="u-1/1@sm"><form action="#" method="post" class="inline-form search-form">           
     <fieldset>
 	    <legend class="is-vishidden">Search</legend>
 	    <label for="search-field" class="is-vishidden">Search</label>
@@ -581,8 +844,12 @@
 	    	<span class="is-vishidden">Search</span>
 	    </button>
     </fieldset>
-</form></header>
-<!-- End .header -->
+</form></li>
+		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-00-homepage&#x2F;04-pages-00-homepage.html">Home</a></li>
+		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">Home 2</a></li>
+		<li class="u-1/1@sm"><a class="br" href="#">Home 3</a></li>
+	</ul>
+</nav>
 	<div role="main">
 		<h1 class="section-title">Our Outdoor Blog</h1>
 		<div class="l-two-col">
@@ -668,31 +935,92 @@
 </section>			</div><!--end l-sidebar-->
 		</div><!--end two-col-->
 	</div><!--End role=main-->
-<!-- Begin Footer -->
-<footer class="footer" role="contentinfo">
-	<div class="lc">
-		<p class="copyright">&copy; 2013 Company Name. All rights reserved.</p>
+<footer id="footer" class="bg-darken-4 white color-inherit" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+	<div class=" container container--footer">
+		<aside class="sidebar sidebar-footer sidebar-horizontal flex flex-wrap flex-justify pty3 py4@md" role="complementary" id="sidebar-footer" aria-label="Footer Sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+
+
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">Home</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">Categories</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">Categories</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">About</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+
+
+		</aside>
 	</div>
+	<p class="credit bg-darken-2 center py2">&#169; 2015 <a class="site-link" href="#" rel="home">Diocese of Charlotte</a></p>
+	<!-- .credit -->
 </footer>
-<!-- End Footer --></div>
+</div>
               <div class="sg-code" style="display: none">
                 <h3 class="sg-code-head">HTML</h3>
                 <pre class="sg-code-html">
                   <code>
                     &lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
-&lt;!-- Begin .header --&gt;
-&lt;header class=&quot;header cf&quot; role=&quot;banner&quot;&gt;
-&lt;a href=&quot;&#x2F;&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.png&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; &#x2F;&gt;&lt;&#x2F;a&gt;	&lt;a href=&quot;#&quot; class=&quot;nav-toggle nav-toggle-search icon-search&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
-	&lt;a href=&quot;#&quot; class=&quot;nav-toggle nav-toggle-menu icon-menu&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Menu&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
-&lt;nav id=&quot;nav&quot; class=&quot;nav&quot;&gt;
+&lt;header class=&quot;app-bar promote-layer hide@md&quot;&gt;
+	&lt;div class=&quot;app-bar-container&quot;&gt;
+		&lt;button class=&quot;menu&quot;&gt;
+&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;		&lt;&#x2F;button&gt;
+	&lt;&#x2F;div&gt;
+&lt;&#x2F;header&gt;
+
+&lt;nav class=&quot;navdrawer-container text-shadow flex@md flex-center promote-layer&quot;&gt;
+	&lt;h1 class=&quot;logo hide@sm mt1 mb1 ml3&quot;&gt;
+		&lt;a class=&quot;border0 white&quot; href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;
+			&lt;a href=&quot;&#x2F;&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+Diocese of Charlotte&lt;&#x2F;a&gt;
+	&lt;&#x2F;h1&gt;
+	&lt;h3 class=&quot;hide@md&quot;&gt;Diocese of Charlotte&lt;&#x2F;h3&gt;
 	&lt;ul&gt;
-		&lt;li&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-00-homepage&amp;#x2F;04-pages-00-homepage.html&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;Blog&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-	&lt;&#x2F;ul&gt;
-&lt;&#x2F;nav&gt;&lt;!--end .nav--&gt;
-&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;           
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;           
     &lt;fieldset&gt;
 	    &lt;legend class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;legend&gt;
 	    &lt;label for=&quot;search-field&quot; class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;label&gt;
@@ -702,8 +1030,12 @@
 	    	&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;span&gt;
 	    &lt;&#x2F;button&gt;
     &lt;&#x2F;fieldset&gt;
-&lt;&#x2F;form&gt;&lt;&#x2F;header&gt;
-&lt;!-- End .header --&gt;
+&lt;&#x2F;form&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-00-homepage&amp;#x2F;04-pages-00-homepage.html&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;Home 2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a class=&quot;br&quot; href=&quot;#&quot;&gt;Home 3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+	&lt;&#x2F;ul&gt;
+&lt;&#x2F;nav&gt;
 	&lt;div role=&quot;main&quot;&gt;
 		&lt;h1 class=&quot;section-title&quot;&gt;Our Outdoor Blog&lt;&#x2F;h1&gt;
 		&lt;div class=&quot;l-two-col&quot;&gt;
@@ -789,13 +1121,71 @@
 &lt;&#x2F;section&gt;			&lt;&#x2F;div&gt;&lt;!--end l-sidebar--&gt;
 		&lt;&#x2F;div&gt;&lt;!--end two-col--&gt;
 	&lt;&#x2F;div&gt;&lt;!--End role=main--&gt;
-&lt;!-- Begin Footer --&gt;
-&lt;footer class=&quot;footer&quot; role=&quot;contentinfo&quot;&gt;
-	&lt;div class=&quot;lc&quot;&gt;
-		&lt;p class=&quot;copyright&quot;&gt;&amp;copy; 2013 Company Name. All rights reserved.&lt;&#x2F;p&gt;
+&lt;footer id=&quot;footer&quot; class=&quot;bg-darken-4 white color-inherit&quot; role=&quot;contentinfo&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http:&#x2F;&#x2F;schema.org&#x2F;WPFooter&quot;&gt;
+	&lt;div class=&quot; container container--footer&quot;&gt;
+		&lt;aside class=&quot;sidebar sidebar-footer sidebar-horizontal flex flex-wrap flex-justify pty3 py4@md&quot; role=&quot;complementary&quot; id=&quot;sidebar-footer&quot; aria-label=&quot;Footer Sidebar&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http:&#x2F;&#x2F;schema.org&#x2F;WPSideBar&quot;&gt;
+
+
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Home&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Categories&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Categories&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;About&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+
+
+		&lt;&#x2F;aside&gt;
 	&lt;&#x2F;div&gt;
+	&lt;p class=&quot;credit bg-darken-2 center py2&quot;&gt;&amp;#169; 2015 &lt;a class=&quot;site-link&quot; href=&quot;#&quot; rel=&quot;home&quot;&gt;Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+	&lt;!-- .credit --&gt;
 &lt;&#x2F;footer&gt;
-&lt;!-- End Footer --&gt;&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
                   </code>
                 </pre>
               </div>
@@ -805,19 +1195,22 @@
             <h2 class="sg-pattern-head" ><a href="../../patterns/04-pages-02-article&#x2F;04-pages-02-article.html" class="patternLink" data-patternpartial="">article</a></h2>
             <div class="sg-pattern-body">
               <div class="page" id="page">
-<!-- Begin .header -->
-<header class="header cf" role="banner">
-<a href="/"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /></a>	<a href="#" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
-	<a href="#" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
-<nav id="nav" class="nav">
+<header class="app-bar promote-layer hide@md">
+	<div class="app-bar-container">
+		<button class="menu">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/></svg>		</button>
+	</div>
+</header>
+
+<nav class="navdrawer-container text-shadow flex@md flex-center promote-layer">
+	<h1 class="logo hide@sm mt1 mb1 ml3">
+		<a class="border0 white" href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">
+			<a href="/"><img src="../../images/logo.svg" class="logo" alt="Logo Alt Text" /></a>
+Diocese of Charlotte</a>
+	</h1>
+	<h3 class="hide@md">Diocese of Charlotte</h3>
 	<ul>
-		<li><a href="&#x2F;patterns&#x2F;04-pages-00-homepage&#x2F;04-pages-00-homepage.html">Home</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">Blog</a></li>
-		<li><a href="#">Contact</a></li>
-	</ul>
-</nav><!--end .nav-->
-<form action="#" method="post" class="inline-form search-form">           
+		<li class="u-1/1@sm"><form action="#" method="post" class="inline-form search-form">           
     <fieldset>
 	    <legend class="is-vishidden">Search</legend>
 	    <label for="search-field" class="is-vishidden">Search</label>
@@ -827,8 +1220,12 @@
 	    	<span class="is-vishidden">Search</span>
 	    </button>
     </fieldset>
-</form></header>
-<!-- End .header -->
+</form></li>
+		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-00-homepage&#x2F;04-pages-00-homepage.html">Home</a></li>
+		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">Home 2</a></li>
+		<li class="u-1/1@sm"><a class="br" href="#">Home 3</a></li>
+	</ul>
+</nav>
 	<div role="main">
 		<div class="l-two-col">
 			<div class="l-main">
@@ -954,31 +1351,92 @@
 </section>			</div><!--end l-sidebar-->
 		</div><!--end l-two-col-->	
 	</div><!--End role=main-->
-<!-- Begin Footer -->
-<footer class="footer" role="contentinfo">
-	<div class="lc">
-		<p class="copyright">&copy; 2013 Company Name. All rights reserved.</p>
+<footer id="footer" class="bg-darken-4 white color-inherit" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+	<div class=" container container--footer">
+		<aside class="sidebar sidebar-footer sidebar-horizontal flex flex-wrap flex-justify pty3 py4@md" role="complementary" id="sidebar-footer" aria-label="Footer Sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+
+
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">Home</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">Categories</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">Categories</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">About</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+
+
+		</aside>
 	</div>
+	<p class="credit bg-darken-2 center py2">&#169; 2015 <a class="site-link" href="#" rel="home">Diocese of Charlotte</a></p>
+	<!-- .credit -->
 </footer>
-<!-- End Footer --></div>
+</div>
               <div class="sg-code" style="display: none">
                 <h3 class="sg-code-head">HTML</h3>
                 <pre class="sg-code-html">
                   <code>
                     &lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
-&lt;!-- Begin .header --&gt;
-&lt;header class=&quot;header cf&quot; role=&quot;banner&quot;&gt;
-&lt;a href=&quot;&#x2F;&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.png&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; &#x2F;&gt;&lt;&#x2F;a&gt;	&lt;a href=&quot;#&quot; class=&quot;nav-toggle nav-toggle-search icon-search&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
-	&lt;a href=&quot;#&quot; class=&quot;nav-toggle nav-toggle-menu icon-menu&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Menu&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;
-&lt;nav id=&quot;nav&quot; class=&quot;nav&quot;&gt;
+&lt;header class=&quot;app-bar promote-layer hide@md&quot;&gt;
+	&lt;div class=&quot;app-bar-container&quot;&gt;
+		&lt;button class=&quot;menu&quot;&gt;
+&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;		&lt;&#x2F;button&gt;
+	&lt;&#x2F;div&gt;
+&lt;&#x2F;header&gt;
+
+&lt;nav class=&quot;navdrawer-container text-shadow flex@md flex-center promote-layer&quot;&gt;
+	&lt;h1 class=&quot;logo hide@sm mt1 mb1 ml3&quot;&gt;
+		&lt;a class=&quot;border0 white&quot; href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;
+			&lt;a href=&quot;&#x2F;&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+Diocese of Charlotte&lt;&#x2F;a&gt;
+	&lt;&#x2F;h1&gt;
+	&lt;h3 class=&quot;hide@md&quot;&gt;Diocese of Charlotte&lt;&#x2F;h3&gt;
 	&lt;ul&gt;
-		&lt;li&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-00-homepage&amp;#x2F;04-pages-00-homepage.html&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;Blog&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-	&lt;&#x2F;ul&gt;
-&lt;&#x2F;nav&gt;&lt;!--end .nav--&gt;
-&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;           
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;           
     &lt;fieldset&gt;
 	    &lt;legend class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;legend&gt;
 	    &lt;label for=&quot;search-field&quot; class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;label&gt;
@@ -988,8 +1446,12 @@
 	    	&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;span&gt;
 	    &lt;&#x2F;button&gt;
     &lt;&#x2F;fieldset&gt;
-&lt;&#x2F;form&gt;&lt;&#x2F;header&gt;
-&lt;!-- End .header --&gt;
+&lt;&#x2F;form&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-00-homepage&amp;#x2F;04-pages-00-homepage.html&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;Home 2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a class=&quot;br&quot; href=&quot;#&quot;&gt;Home 3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+	&lt;&#x2F;ul&gt;
+&lt;&#x2F;nav&gt;
 	&lt;div role=&quot;main&quot;&gt;
 		&lt;div class=&quot;l-two-col&quot;&gt;
 			&lt;div class=&quot;l-main&quot;&gt;
@@ -1115,13 +1577,71 @@
 &lt;&#x2F;section&gt;			&lt;&#x2F;div&gt;&lt;!--end l-sidebar--&gt;
 		&lt;&#x2F;div&gt;&lt;!--end l-two-col--&gt;	
 	&lt;&#x2F;div&gt;&lt;!--End role=main--&gt;
-&lt;!-- Begin Footer --&gt;
-&lt;footer class=&quot;footer&quot; role=&quot;contentinfo&quot;&gt;
-	&lt;div class=&quot;lc&quot;&gt;
-		&lt;p class=&quot;copyright&quot;&gt;&amp;copy; 2013 Company Name. All rights reserved.&lt;&#x2F;p&gt;
+&lt;footer id=&quot;footer&quot; class=&quot;bg-darken-4 white color-inherit&quot; role=&quot;contentinfo&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http:&#x2F;&#x2F;schema.org&#x2F;WPFooter&quot;&gt;
+	&lt;div class=&quot; container container--footer&quot;&gt;
+		&lt;aside class=&quot;sidebar sidebar-footer sidebar-horizontal flex flex-wrap flex-justify pty3 py4@md&quot; role=&quot;complementary&quot; id=&quot;sidebar-footer&quot; aria-label=&quot;Footer Sidebar&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http:&#x2F;&#x2F;schema.org&#x2F;WPSideBar&quot;&gt;
+
+
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Home&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Categories&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Categories&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
+				&lt;ul class=&quot;list-reset&quot;&gt;
+					&lt;li&gt;
+						&lt;h3 class=&quot;h4 m0&quot;&gt;
+							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;About&lt;&#x2F;a&gt;
+						&lt;&#x2F;h3&gt;
+					&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+				&lt;&#x2F;ul&gt;
+			&lt;&#x2F;div&gt;
+
+
+		&lt;&#x2F;aside&gt;
 	&lt;&#x2F;div&gt;
+	&lt;p class=&quot;credit bg-darken-2 center py2&quot;&gt;&amp;#169; 2015 &lt;a class=&quot;site-link&quot; href=&quot;#&quot; rel=&quot;home&quot;&gt;Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+	&lt;!-- .credit --&gt;
 &lt;&#x2F;footer&gt;
-&lt;!-- End Footer --&gt;&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
                   </code>
                 </pre>
               </div>

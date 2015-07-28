@@ -33,19 +33,22 @@
 </head>
 <body class="sg-single-pattern">	
 	<!-- Start of Pattern --><div class="page" id="page">
-<!-- Begin .header -->
-<header class="header cf" role="banner">
-<a href="/"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /></a>	<a href="#" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
-	<a href="#" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
-<nav id="nav" class="nav">
+<header class="app-bar promote-layer hide@md">
+	<div class="app-bar-container">
+		<button class="menu">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/></svg>		</button>
+	</div>
+</header>
+
+<nav class="navdrawer-container text-shadow flex@md flex-center promote-layer">
+	<h1 class="logo hide@sm mt1 mb1 ml3">
+		<a class="border0 white" href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">
+			<a href="/"><img src="../../images/logo.svg" class="logo" alt="Logo Alt Text" /></a>
+Diocese of Charlotte</a>
+	</h1>
+	<h3 class="hide@md">Diocese of Charlotte</h3>
 	<ul>
-		<li><a href="&#x2F;patterns&#x2F;04-pages-00-homepage&#x2F;04-pages-00-homepage.html">Home</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">Blog</a></li>
-		<li><a href="#">Contact</a></li>
-	</ul>
-</nav><!--end .nav-->
-<form action="#" method="post" class="inline-form search-form">           
+		<li class="u-1/1@sm"><form action="#" method="post" class="inline-form search-form">           
     <fieldset>
 	    <legend class="is-vishidden">Search</legend>
 	    <label for="search-field" class="is-vishidden">Search</label>
@@ -55,8 +58,12 @@
 	    	<span class="is-vishidden">Search</span>
 	    </button>
     </fieldset>
-</form></header>
-<!-- End .header -->
+</form></li>
+		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-00-homepage&#x2F;04-pages-00-homepage.html">Home</a></li>
+		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">Home 2</a></li>
+		<li class="u-1/1@sm"><a class="br" href="#">Home 3</a></li>
+	</ul>
+</nav>
 	<div role="main">
 <div class="block block-hero">
 	<a href="#" class="inner">
@@ -153,13 +160,71 @@
 </section>			</div><!--end .l-sidebar-->
 		</div><!--end .l-two-col-->
 	</div><!--End role=main-->
-<!-- Begin Footer -->
-<footer class="footer" role="contentinfo">
-	<div class="lc">
-		<p class="copyright">&copy; 2013 Company Name. All rights reserved.</p>
+<footer id="footer" class="bg-darken-4 white color-inherit" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+	<div class=" container container--footer">
+		<aside class="sidebar sidebar-footer sidebar-horizontal flex flex-wrap flex-justify pty3 py4@md" role="complementary" id="sidebar-footer" aria-label="Footer Sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+
+
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">Home</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">Categories</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">Categories</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+			<div class="col u-1/2 u-1/4@md">
+				<ul class="list-reset">
+					<li>
+						<h3 class="h4 m0">
+							<a href="#" class="btn block">About</a>
+						</h3>
+					</li>
+					<li><a href="#" class="h5 btn block">Bacon</a></li>
+					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
+					<li><a href="#" class="h5 btn block">Andouille</a></li>
+					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
+				</ul>
+			</div>
+
+
+		</aside>
 	</div>
+	<p class="credit bg-darken-2 center py2">&#169; 2015 <a class="site-link" href="#" rel="home">Diocese of Charlotte</a></p>
+	<!-- .credit -->
 </footer>
-<!-- End Footer --></div>	<!-- End of Pattern -->
+</div>	<!-- End of Pattern -->
 	
 	<!--
 		Remember that patterns are displayed from two-levels deep (e.g. patterns/patterntype-patternsubtype-patternname/patterntype-patternsubtype-patternname.html)

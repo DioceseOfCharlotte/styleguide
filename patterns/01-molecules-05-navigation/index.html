@@ -18,27 +18,59 @@
           <div class="sg-pattern">
             <h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-05-navigation-00-primary-nav&#x2F;01-molecules-05-navigation-00-primary-nav.html" class="patternLink" data-patternpartial="">primary-nav</a></h2>
             <div class="sg-pattern-body">
-              <nav id="nav" class="nav">
+              <nav class="navdrawer-container text-shadow flex@md flex-center promote-layer">
+	<h1 class="logo hide@sm mt1 mb1 ml3">
+		<a class="border0 white" href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">
+			<a href="/"><img src="../../images/logo.svg" class="logo" alt="Logo Alt Text" /></a>
+Diocese of Charlotte</a>
+	</h1>
+	<h3 class="hide@md">Diocese of Charlotte</h3>
 	<ul>
-		<li><a href="&#x2F;patterns&#x2F;04-pages-00-homepage&#x2F;04-pages-00-homepage.html">Home</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">Blog</a></li>
-		<li><a href="#">Contact</a></li>
+		<li class="u-1/1@sm"><form action="#" method="post" class="inline-form search-form">           
+    <fieldset>
+	    <legend class="is-vishidden">Search</legend>
+	    <label for="search-field" class="is-vishidden">Search</label>
+	    <input type="search" placeholder="Search" id="search-field" class="search-field" />
+	    <button class="search-submit">
+	    	<span class="icon-search" aria-hidden="true"></span>
+	    	<span class="is-vishidden">Search</span>
+	    </button>
+    </fieldset>
+</form></li>
+		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-00-homepage&#x2F;04-pages-00-homepage.html">Home</a></li>
+		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">Home 2</a></li>
+		<li class="u-1/1@sm"><a class="br" href="#">Home 3</a></li>
 	</ul>
-</nav><!--end .nav-->
+</nav>
 
               <div class="sg-code" style="display: none">
                 <h3 class="sg-code-head">HTML</h3>
                 <pre class="sg-code-html">
                   <code>
-                    &lt;nav id=&quot;nav&quot; class=&quot;nav&quot;&gt;
+                    &lt;nav class=&quot;navdrawer-container text-shadow flex@md flex-center promote-layer&quot;&gt;
+	&lt;h1 class=&quot;logo hide@sm mt1 mb1 ml3&quot;&gt;
+		&lt;a class=&quot;border0 white&quot; href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;
+			&lt;a href=&quot;&#x2F;&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+Diocese of Charlotte&lt;&#x2F;a&gt;
+	&lt;&#x2F;h1&gt;
+	&lt;h3 class=&quot;hide@md&quot;&gt;Diocese of Charlotte&lt;&#x2F;h3&gt;
 	&lt;ul&gt;
-		&lt;li&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-00-homepage&amp;#x2F;04-pages-00-homepage.html&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;Blog&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;           
+    &lt;fieldset&gt;
+	    &lt;legend class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;legend&gt;
+	    &lt;label for=&quot;search-field&quot; class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;label&gt;
+	    &lt;input type=&quot;search&quot; placeholder=&quot;Search&quot; id=&quot;search-field&quot; class=&quot;search-field&quot; &#x2F;&gt;
+	    &lt;button class=&quot;search-submit&quot;&gt;
+	    	&lt;span class=&quot;icon-search&quot; aria-hidden=&quot;true&quot;&gt;&lt;&#x2F;span&gt;
+	    	&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;span&gt;
+	    &lt;&#x2F;button&gt;
+    &lt;&#x2F;fieldset&gt;
+&lt;&#x2F;form&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-00-homepage&amp;#x2F;04-pages-00-homepage.html&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;Home 2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a class=&quot;br&quot; href=&quot;#&quot;&gt;Home 3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 	&lt;&#x2F;ul&gt;
-&lt;&#x2F;nav&gt;&lt;!--end .nav--&gt;
+&lt;&#x2F;nav&gt;
 
                   </code>
                 </pre>

@@ -31,9 +31,6 @@ P"Ybmmd"  `Mbmo`Ybmd9'  MMbmmd'      .JMML.   .JMML.YMMMMMb .JMML  JMML.`Mbmo   
 body {
   color: #4d4d4d;
   background-color: #fff;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.03125;
 }
 
 * {
@@ -315,9 +312,9 @@ td {
 /* #TYPOGRAPHY
 \*------------------------------------*/
 body {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 100%;
 }
 
 h1,
@@ -326,7 +323,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 500;
   line-height: 1.25;
   margin-top: 1em;
@@ -386,7 +383,7 @@ h6 {
 a {
   color: #0074d9;
   text-decoration: none;
-  transition-duration: .28s;
+  transition-duration: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: opacity;
 }
@@ -399,6 +396,7 @@ a:hover {
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
   border-bottom: 1px solid transparent;
   transition-property: all;
+  color: inherit;
 }
 h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
   text-decoration: none;
@@ -429,7 +427,7 @@ button {
   letter-spacing: 0;
   overflow: hidden;
   will-change: box-shadow, transform;
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
   cursor: pointer;
   text-align: center;
@@ -645,6 +643,58 @@ button.button--colored:focus:not(:active) {
     width: 80%;
   }
 }
+/* #SHAPES
+\*------------------------------------*/
+.u-tile {
+  min-width: 300px;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0.8;
+  vertical-align: middle;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+.u-tile.active {
+  opacity: 1;
+}
+
+.u-tile-sm {
+  max-width: 150px;
+  height: 150px;
+}
+
+@media screen and (min-width: 52em) {
+  .u-tile\@md {
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .u-tile-sm\@md {
+    max-width: 150px;
+    height: 150px;
+  }
+
+  .u-tile-lg\@md {
+    max-width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .u-tile\@lg {
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .u-tile-sm\@lg {
+    max-width: 150px;
+    height: 150px;
+  }
+
+  .u-tile-lg\@lg {
+    max-width: 250px;
+    height: 250px;
+  }
+}
 /* #BUTTONS
 \*------------------------------------*/
 input[type="button"],
@@ -711,6 +761,15 @@ input[type="submit"] {
 
 .trail-end span {
   display: none;
+}
+
+/* #ICONS
+\*------------------------------------*/
+.toggle-icon {
+  width: 100%;
+  height: 100%;
+  max-width: 90px;
+  max-height: 90px;
 }
 
 /* #TYPOGRAPHY UTILITY
@@ -1696,10 +1755,6 @@ input[type="submit"] {
   flex: none;
 }
 
-.flexed1 {
-  flex: 1;
-}
-
 .flexed-center {
   align-self: center;
 }
@@ -1739,6 +1794,40 @@ input[type="submit"] {
     flex-direction: row;
   }
 }
+/* #RESETS
+\*------------------------------------*/
+.list-bare, .list-bare ul, .list-bare li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link-bare, .link-bare a {
+  text-decoration: none;
+  border: 0;
+  color: inherit;
+}
+.link-bare:hover, .link-bare a:hover {
+  text-decoration: none;
+  border: 0;
+}
+
+.transition {
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
+}
+
+.hover-fade {
+  opacity: 1;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: all;
+}
+.hover-fade:hover {
+  opacity: 0.8;
+}
+
 /* #HELPERS
 \*------------------------------------*/
 .screen-reader-text {

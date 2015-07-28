@@ -1,8 +1,13 @@
-<nav id="nav" class="nav">
+<nav class="navdrawer-container text-shadow flex@md flex-center promote-layer">
+	<h1 class="logo hide@sm mt1 mb1 ml3">
+		<a class="border0 white" href="{{ link.pages-blog }}">
+			{{> atoms-logo }}Diocese of Charlotte</a>
+	</h1>
+	<h3 class="hide@md">Diocese of Charlotte</h3>
 	<ul>
-		<li><a href="{{ link.pages-homepage }}">Home</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="{{ link.pages-blog }}">Blog</a></li>
-		<li><a href="#">Contact</a></li>
+		<li class="u-1/1@sm">{{> molecules-search }}</li>
+		<li class="u-1/1@sm"><a href="{{ link.pages-homepage }}">Home</a></li>
+		<li class="u-1/1@sm"><a href="{{ link.pages-blog }}">Home 2</a></li>
+		<li class="u-1/1@sm"><a class="br" href="#">Home 3</a></li>
 	</ul>
-</nav><!--end .nav-->
+</nav>

@@ -15,7 +15,7 @@ $color-2--light : lighten($color-2, 10);
 $color-3--light : lighten($color-3, 10);
 $color-1--dark : darken($color-1, 10);
 $color-2--dark : darken($color-2, 10);
-$color-3--dark : darken($color-3, 10); 
+$color-3--dark : darken($color-3, 10);
 
 $color-text: $grey-700;
 
@@ -23,7 +23,7 @@ $base-font-size: 16px;
 $base-line-height: 1.5;
 
 // Base Styles
-$font-family: 'Helvetica Neue', Helvetica, sans-serif;
+$font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 $line-height: 1.5;
 $heading-font-family: $font-family;
 $heading-font-weight: 500;
@@ -97,3 +97,9 @@ $pre-border-radius: $border-radius;
 $rule-border-style: solid;
 $rule-border-width: $border-width;
 $rule-border-color: $border-color;
+
+
+$transition-timing: cubic-bezier(0.4, 0, 0.2, 1) !default;
+$transition-duration: .25s !default;
+
+$transition: all $transition-duration $transition-timing !default;

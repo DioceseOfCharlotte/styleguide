@@ -1,17 +1,255 @@
 <div class="page" id="page">
 	{{> organisms-header }}
-	<div role="main">
-		<h1 class="section-title">Our Outdoor Blog</h1>
-		<div class="l-two-col">
-			<div class="l-main">
-				{{> organisms-latest-posts }}
-				{{> molecules-pagination }}
-			</div><!--end l-main-->
 
-			<div class="l-sidebar">
-				{{> organisms-recent-tweets }}
-			</div><!--end l-sidebar-->
-		</div><!--end two-col-->
-	</div><!--End role=main-->
+	<div class="container container--content container--wide mt0 mt2 mt3@md">
+        <div class="row row--layout grid">
+            <main id="content" class="grid__item" role="main" itemprop="mainContentOfPage">
+                <article id="post-12" class="entry page publish author-admin post-12 " itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+                    <section class="hero text-shadow section-first flex flex-column flex-center bg-cover bg-center bg-fixed bg-no-repeat" style="background-image: url({{ img.landscape-16x9.src }})">
+                        <div class="center container hero-text">
+                        </div>
+
+                        <section class="white row py3 py4@md">
+                            <div class="card-row">
+
+
+                                <div class="u-1/1 white grid__item link-bare flex flex-wrap flex-justify-around center">
+
+                                        <a class="collapse-toggle u-tile u-tile--wide bg-1--glass shadow1 shadow-hover inline-block" data-collapse="#parish" data-group="accordion" href="#">
+                                            {{> atoms-parish }}
+                                            <h3 class="toggle-title">Parishes</h3>
+                                        </a>
+
+                                        <a class="collapse-toggle u-tile bg-2--glass shadow1 shadow-hover inline-block" data-collapse="#schools" data-group="accordion" href="#">
+                                            {{> atoms-school }}
+                                            <h3 class="toggle-title">Schools</h3>
+                                        </a>
+
+                                        <a class="collapse-toggle u-tile shadow1 shadow-hover bg-3--glass inline-block" data-collapse="#diocese" data-group="accordion" href="#">
+                                            {{> atoms-dpc }}
+                                            <h3 class="toggle-title">Pastoral Center</h3>
+                                        </a>
+
+
+
+                                        <a class="collapse-toggle u-tile bg-2--glass shadow1 shadow-hover inline-block" data-collapse="#ministries" data-group="accordion" href="#">
+                                            {{> atoms-bible }}
+                                            <h3 class="toggle-title">Ministries</h3>
+                                        </a>
+
+                                        <a class="collapse-toggle u-tile bg-3--glass shadow1 shadow-hover inline-block" data-collapse="#education" data-group="accordion" href="#">
+                                            {{> atoms-edu }}
+                                            <h3 class="toggle-title">Education</h3>
+                                        </a>
+
+                                        <a class="collapse-toggle u-tile bg-1--glass shadow1 shadow-hover inline-block" data-collapse="#vocations" data-group="accordion" href="#">
+                                            {{> atoms-bible }}
+                                            <h3 class="toggle-title">Vocations</h3>
+                                        </a>
+
+
+
+                                        <a class="collapse-toggle u-tile bg-1--glass shadow1 shadow-hover inline-block" data-collapse="#events" data-group="accordion" href="#">
+                                            {{> atoms-events }}
+                                            <h3 class="toggle-title">Events</h3>
+                                        </a>
+
+                                        <a class="collapse-toggle u-tile bg-1--glass shadow1 shadow-hover inline-block" data-collapse="#give" data-group="accordion" href="#">
+                                            {{> atoms-give }}
+                                            <h3 class="toggle-title">Ways to Give</h3>
+                                        </a>
+
+                                        <a class="collapse-toggle u-tile u-tile--wide bg-2--glass shadow1 shadow-hover inline-block" data-collapse="#news" data-group="accordion" href="#">
+                                            {{> atoms-news }}
+                                            <h3 class="toggle-title">News</h3>
+                                        </a>
+
+
+                                </div>
+                            </div>
+                            <i class="material-icons center u-1/1 white h1 absolute bottom-0">keyboard_arrow_down</i>
+                        </section>
+
+
+                    </section>
+
+
+
+                    <section class="bg-white color-text row pt3 pt4@md pb4@md pages-highlight">
+                        <div class="h1 center mb3 animated fadeInDown">Bishop Peter J. Jugis, JCD</div>
+                        <div class="card-row container fadeInUp animated">
+                            <div class="u-1/1@md grid__item px2 mb3">
+                                <div class="card overflow-hidden flex flex-wrap br">
+                                    <div class="card__figure u-1/3@md">
+                                        <a href="#/page-one/">
+                                            <img src="images/bishop-bio.png" alt="Page One" class="landscape thumbnail bempress-sm" itemprop="image" />
+                                        </a>
+                                    </div>
+
+                                    <div class="card-section px2 pb2 u-2/3@md self-center">
+                                        <p>Bishop Peter Joseph Jugis is a native of Charlotte, N.C., and is the fourth Bishop of the Diocese of Charlotte.</p>
+                                        <p>Bishop Jugis was baptized at St. Ann Catholic Church in Charlotte in 1957 by Monsignor Michael J. Begley, who would later become the first bishop of the newly formed Diocese of Charlotte in 1972.</p>
+                                        <p>Bishop Jugis was educated in Catholic and public schools in his hometown of Charlotte, earning a degree in business administration from the University of North Carolina at Charlotte in 1979. After graduation he
+                                            entered the seminary at the Pontifical North American College in Rome and studied at the Pontifical Gregorian University in Rome.</p>
+                                        <a class="absolute btn-readmore z1 right-0 bottom-0" href="#/page-one/"><i class="material-icons">more_horiz</i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="material-icons center u-1/1 white h1 absolute bottom-0">keyboard_arrow_down</i>
+                    </section>
+
+                    <section class="bg-2 black row pt3 pt4@md pb4@md pages-highlight">
+                        <div class="h1 center mb3 animated fadeInDown">This is the Main WYSIWYG</div>
+                        <div class="card-row container fadeInUp animated">
+                            <div class="u-1/3@md grid__item px2 mb3">
+                                <div class="bg-white card shadow2 overflow-hidden br">
+                                    <div class="card__figure">
+                                        <a href="#/page-one/">
+                                            <img src="https://placeimg.com/640/480/any" alt="Page One" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
+                                        </a>
+                                    </div>
+                                    <div class="card-divider p2 color-inherit"><a class="h3 card__title--link" href="#/page-one/" rel="bookmark">Page One</a></div>
+                                    <div class="card-section px2 pb2">
+                                        <p>Cubilia veritatis! Pellentesque. Voluptatum? Litora porta illo exercitation, ipsum proident mollit id? Numquam, fermentum! Integer viverra saepe, congue, natoque officia mi consequuntur, qui, leo vivamus saepe occaecati.
+                                            Fugit? Phasellus quam repellendus ipsum bibendum risus nibh temporibus, temporibus praesent. Litora enim<a class="absolute btn-readmore z1 right-0 bottom-0" href="#/page-one/"><i class="material-icons">more_horiz</i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="u-1/3@md grid__item px2 mb3">
+                                <div class="bg-white card shadow2 overflow-hidden br">
+                                    <div class="card__figure">
+                                        <a href="#/page-one/">
+                                            <img src="https://placeimg.com/640/480/any" alt="Page One" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
+                                        </a>
+                                    </div>
+                                    <div class="card-divider p2 color-inherit"><a class="h3 card__title--link" href="#/page-one/" rel="bookmark">Page One</a></div>
+                                    <div class="card-section px2 pb2">
+                                        <p>Cubilia veritatis! Pellentesque. Voluptatum? Litora porta illo exercitation, ipsum proident mollit id? Numquam, fermentum! Integer viverra saepe, congue, natoque officia mi consequuntur, qui, leo vivamus saepe occaecati.
+                                            Fugit? Phasellus quam repellendus ipsum bibendum risus nibh temporibus, temporibus praesent. Litora enim<a class="absolute btn-readmore z1 right-0 bottom-0" href="#/page-one/"><i class="material-icons">more_horiz</i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="u-1/3@md grid__item px2 mb3">
+                                <div class="bg-white card shadow2 overflow-hidden br">
+                                    <div class="card__figure">
+                                        <a href="#/page-two/">
+                                            <img src="https://placeimg.com/640/480/any" alt="Page Two" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
+                                        </a>
+                                    </div>
+                                    <div class="card-divider p2 color-inherit"><a class="h3 card__title--link" href="#/page-two/" rel="bookmark">Page Two</a></div>
+                                    <div class="card-section px2 pb2">
+                                        <p>Cubilia veritatis! Pellentesque. Voluptatum? Litora porta illo exercitation, ipsum proident mollit id? Numquam, fermentum! Integer viverra saepe, congue, natoque officia mi consequuntur, qui, leo vivamus saepe occaecati.
+                                            Fugit? Phasellus quam repellendus ipsum bibendum risus nibh temporibus, temporibus praesent. Litora enim<a class="absolute btn-readmore z1 right-0 bottom-0" href="#/page-two/"><i class="material-icons">more_horiz</i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="material-icons center u-1/1 white h1 absolute bottom-0">keyboard_arrow_down</i>
+                    </section>
+                    <section class="bg-1 white row pt3 pt4@md pb4@md pages-highlight">
+                        <div class="card-row container">
+                            <div class="h1 center mb3">This Is a Two Card Row!</div>
+                            <div class="u-1/2@md grid__item px2 mb3">
+                                <div class="bg-2--light black card shadow2 overflow-hidden br">
+                                    <div class="card__figure">
+                                        <a href="#/page-one/">
+                                            <img src="https://placeimg.com/640/480/any" alt="Page One" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
+                                        </a>
+                                    </div>
+                                    <div class="card-divider p2 color-inherit"><a class="h3 card__title--link" href="#/page-one/" rel="bookmark">Page One</a></div>
+                                    <div class="card-section px2 pb2">
+                                        <p>Cubilia veritatis! Pellentesque. Voluptatum? Litora porta illo exercitation, ipsum proident mollit id? Numquam, fermentum! Integer viverra saepe, congue, natoque officia mi consequuntur, qui, leo vivamus saepe occaecati.
+                                            Fugit? Phasellus quam repellendus ipsum bibendum risus nibh temporibus, temporibus praesent. Litora enim<a class="absolute btn-readmore z1 right-0 bottom-0" href="#/page-one/"><i class="material-icons">more_horiz</i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-1/2@md grid__item px2 mb3">
+                                <div class="bg-2--light black card shadow2 overflow-hidden br">
+                                    <div class="card__figure">
+                                        <a href="#/page-two/">
+                                            <img src="https://placeimg.com/640/480/any" alt="Page Two" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
+                                        </a>
+                                    </div>
+                                    <div class="card-divider p2 color-inherit"><a class="h3 card__title--link" href="#/page-two/" rel="bookmark">Page Two</a></div>
+                                    <div class="card-section px2 pb2">
+                                        <p>Cubilia veritatis! Pellentesque. Voluptatum? Litora porta illo exercitation, ipsum proident mollit id? Numquam, fermentum! Integer viverra saepe, congue, natoque officia mi consequuntur, qui, leo vivamus saepe occaecati.
+                                            Fugit? Phasellus quam repellendus ipsum bibendum risus nibh temporibus, temporibus praesent. Litora enim<a class="absolute btn-readmore z1 right-0 bottom-0" href="#/page-two/"><i class="material-icons">more_horiz</i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="material-icons center u-1/1 white h1 absolute bottom-0">keyboard_arrow_down</i>
+                    </section>
+                    <section class="bg-silver black row pt3 pt4@md pb4@md pages-highlight">
+                        <div class="card-row container">
+                            <div class="h1 center mb3">This One Has Four!</div>
+
+                            <div class="u-1/4@md grid__item px2 mb3">
+                                <div class="black card overflow-hidden br">
+                                    <div class="card__figure">
+                                        <a href="#/page-two/">
+                                            <img src="https://placeimg.com/640/480/any" alt="Page Two" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
+                                        </a>
+                                    </div>
+                                    <div class="card-divider p2 color-inherit"><a class="h3 card__title--link" href="#/page-two/" rel="bookmark">Page Two</a></div>
+                                    <div class="card-section px2 pb2">
+                                        <p>Cubilia veritatis! Pellentesque. Voluptatum? Litora porta illo exercitation, ipsum proident mollit id? Numquam, fermentum!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-1/4@md grid__item px2 mb3">
+                                <div class="black card overflow-hidden br">
+                                    <div class="card__figure">
+                                        <a href="#/page-one/">
+                                            <img src="https://placeimg.com/640/480/any" alt="Page One" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
+                                        </a>
+                                    </div>
+                                    <div class="card-divider p2 color-inherit"><a class="h3 card__title--link" href="#/page-one/" rel="bookmark">Page One</a></div>
+                                    <div class="card-section px2 pb2">
+                                        <p>Cubilia veritatis! Pellentesque. Voluptatum? Litora porta illo exercitation, ipsum proident mollit id?</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="u-1/4@md grid__item px2 mb3">
+                                <div class="black card overflow-hidden br">
+                                    <div class="card__figure">
+                                        <a href="#/page-two/">
+                                            <img src="https://placeimg.com/640/480/any" alt="Page Two" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
+                                        </a>
+                                    </div>
+                                    <div class="card-divider p2 color-inherit"><a class="h3 card__title--link" href="#/page-two/" rel="bookmark">Page Two</a></div>
+                                    <div class="card-section px2 pb2">
+                                        <p>Cubilia veritatis! Pellentesque. Voluptatum? Litora porta illo exercitation, ipsum proident mollit id? Numquam, fermentum! Integer viverra saepe, congue,</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-1/4@md grid__item px2 mb3">
+                                <div class="black cardoverflow-hidden br">
+                                    <div class="card__figure">
+                                        <a href="#/page-one/">
+                                            <img src="https://placeimg.com/640/480/any" alt="Page One" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
+                                        </a>
+                                    </div>
+                                    <div class="card-divider p2 color-inherit"><a class="h3 card__title--link" href="#/page-one/" rel="bookmark">Page One</a></div>
+                                    <div class="card-section px2 pb2">
+                                        <p>Cubilia veritatis! Pellentesque. Voluptatum?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </main>
+            <!-- /.main -->
+            <aside class="sidebar sidebar-primary flex flex-wrap flex-justify grid__item" role="complementary" id="sidebar-primary" aria-label="Primary Sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+
+            </aside>
+        </div>
+        <!-- /.row -->
+    </div>
 	{{> organisms-footer }}
 </div>

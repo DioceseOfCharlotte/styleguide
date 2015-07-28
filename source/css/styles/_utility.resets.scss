@@ -1,0 +1,18 @@
+/* #RESETS
+\*------------------------------------*/
+
+.list-bare, .list-bare ul, .list-bare li {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+}
+
+.link-bare, .link-bare a {
+    text-decoration: none;
+    border: 0;
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+        border: 0;
+    }
+}

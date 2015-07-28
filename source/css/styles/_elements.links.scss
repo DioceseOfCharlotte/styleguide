@@ -3,8 +3,8 @@
 a {
     color: $link-color;
     text-decoration: $link-text-decoration;
-    transition-duration: .28s;
-    transition-timing-function: $animation-curve-default;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing;
     transition-property: opacity;
 }
 
@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
  > a {
     border-bottom: 1px solid transparent;
     transition-property: all;
+    color: inherit;
 
  &:hover {
     text-decoration: none;

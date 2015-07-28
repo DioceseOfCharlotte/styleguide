@@ -1,5 +1,5 @@
 {
-	"title" : "Pattern Lab",
+	"title" : "Diocese",
 	"htmlClass": "pl",
 	"bodyClass": "body",
 	"img": {
@@ -26,6 +26,10 @@
 	},
 	"headline" : {
 		"short" : "Lorem ipsum dolor sit (37 characters)",
+		"medium" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)"
+	},
+	"toggle" : {
+		"title" : "Toggle me",
 		"medium" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)"
 	},
 	"excerpt" : {

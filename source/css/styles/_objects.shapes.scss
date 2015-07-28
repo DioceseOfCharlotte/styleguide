@@ -1,0 +1,70 @@
+/* #SHAPES
+\*------------------------------------*/
+
+.u-tile {
+    min-width: 300px;
+    //width: 100%;
+    //height: 200px;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),opacity .2s cubic-bezier(.4,0,.2,1);
+    opacity: $opacity;
+    vertical-align: middle;
+    //border: 10px solid #404040!;
+    border-radius: 2px;
+    margin-bottom: $space-2;
+    padding: $space-3;
+
+    &.active {
+        opacity: 1;
+    }
+}
+
+.u-tile-sm {
+    max-width: 150px;
+    height: 150px;
+}
+
+.u-tile-lg {
+    //max-width: 250px;
+    //height: 250px;
+}
+
+@include md {
+
+    .u-tile\@md {
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .u-tile-sm\@md {
+        max-width: 150px;
+        height: 150px;
+    }
+
+    .u-tile-lg\@md {
+        max-width: 250px;
+        height: 250px;
+    }
+}
+
+@include lg {
+
+    .u-tile\@lg {
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .u-tile-sm\@lg {
+        max-width: 150px;
+        height: 150px;
+    }
+
+    .u-tile-lg\@lg {
+        max-width: 250px;
+        height: 250px;
+    }
+}
+
+
+.u-tile--wide {
+    //max-width: 400px;
+}

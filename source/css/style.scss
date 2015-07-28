@@ -30,9 +30,11 @@ P"Ybmmd"  `Mbmo`Ybmd9'  MMbmmd'      .JMML.   .JMML.YMMMMMb .JMML  JMML.`Mbmo   
  @import 'styles/objects.button';
  @import 'styles/objects.grid';
  @import 'styles/objects.widths';
+ @import 'styles/objects.shapes';
 
  @import 'styles/components.button';
  @import "styles/components.breadcrumbs";
+ @import "styles/components.icons";
 
  @import 'styles/utility.typography';
  @import 'styles/utility.spacing';
@@ -42,6 +44,8 @@ P"Ybmmd"  `Mbmo`Ybmd9'  MMbmmd'      .JMML.   .JMML.YMMMMMb .JMML  JMML.`Mbmo   
  @import 'styles/utility.tables';
  @import 'styles/utility.layout-states';
  @import 'styles/utility.flex';
+ @import 'styles/utility.resets';
+ @import 'styles/utility.transition';
 
  @import "styles/trumps.helpers";
  @import "styles/trumps.plugins";

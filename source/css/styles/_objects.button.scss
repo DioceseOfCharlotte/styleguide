@@ -15,9 +15,9 @@ button {
   @include typo-button();
   overflow: hidden;
   will-change: box-shadow, transform;
-  transition: box-shadow 0.2s $animation-curve-fast-out-linear-in,
-              background-color 0.2s $animation-curve-default,
-              color 0.2s $animation-curve-default;
+  transition: box-shadow 0.2s $transition-timing,
+              background-color 0.2s $transition-timing,
+              color 0.2s $transition-timing;
   outline: none;
   cursor: pointer;
   text-align: center;

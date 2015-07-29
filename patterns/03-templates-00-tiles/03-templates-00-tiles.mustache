@@ -1,13 +1,12 @@
-&lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
-  {{&gt; organisms-header }}
+&lt;div class=&quot;row row--layout grid mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button&quot;&gt;
 
-  &lt;div class=&quot;container container--content container--wide mt0 mt2 mt3@md&quot;&gt;
-        &lt;div class=&quot;row row--layout grid&quot;&gt;
-            &lt;main id=&quot;content&quot; class=&quot;grid__item&quot; role=&quot;main&quot; itemprop=&quot;mainContentOfPage&quot;&gt;
+    {{&gt; organisms-header }}
+
+    {{&gt; molecules-nav-drawer }}
+
+  &lt;main class=&quot;mdl-layout__content&quot; role=&quot;main&quot; itemprop=&quot;mainContentOfPage&quot;&gt;
                 &lt;article id=&quot;post-12&quot; class=&quot;entry page publish author-admin post-12 &quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http://schema.org/CreativeWork&quot;&gt;
                     &lt;section class=&quot;hero text-shadow section-first flex flex-column flex-center bg-cover bg-center bg-fixed bg-no-repeat&quot; style=&quot;background-image: url({{ img.entrance.src }})&quot;&gt;
-                        &lt;div class=&quot;center container hero-text&quot;&gt;
-                        &lt;/div&gt;
 
                         &lt;section class=&quot;white row py3 py4@md&quot;&gt;
                             &lt;div class=&quot;card-row&quot;&gt;
@@ -258,13 +257,8 @@
                         &lt;/div&gt;
                     &lt;/section&gt;
                 &lt;/article&gt;
-            &lt;/main&gt;
-            &lt;!-- /.main --&gt;
-            &lt;aside class=&quot;sidebar sidebar-primary flex flex-wrap flex-justify grid__item&quot; role=&quot;complementary&quot; id=&quot;sidebar-primary&quot; aria-label=&quot;Primary Sidebar&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http://schema.org/WPSideBar&quot;&gt;
 
-            &lt;/aside&gt;
+  {{&gt; organisms-footer }}
+            &lt;/main&gt;
         &lt;/div&gt;
         &lt;!-- /.row --&gt;
-    &lt;/div&gt;
-  {{&gt; organisms-footer }}
-&lt;/div&gt;

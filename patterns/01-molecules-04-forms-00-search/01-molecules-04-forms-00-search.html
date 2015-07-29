@@ -34,18 +34,17 @@
 	
 </head>
 <body class="sg-single-pattern">	
-	<!-- Start of Pattern --><!-- Expandable Textfield -->
-<form action="#">
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable textfield-demo">
-    <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
-      <i class="material-icons">search</i>
-    </label>
-    <div class="mdl-textfield__expandable-holder">
-      <input class="mdl-textfield__input" type="search" id="sample6" />
-      <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
-    </div>
-  </div>
-</form>	<!-- End of Pattern -->
+	<!-- Start of Pattern -->      <div class="ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="waterfall-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="bg-lighten-2 mdl-textfield__input" type="search" name="sample"
+                 id="waterfall-exp" />
+        </div>
+      </div>	<!-- End of Pattern -->
 	
 	<!--
 		Remember that patterns are displayed from two-levels deep (e.g. patterns/patterntype-patternsubtype-patternname/patterntype-patternsubtype-patternname.html)
@@ -57,7 +56,7 @@
 		// handle injection of items from PHP
 		var patternPartial = "molecules-search";
 		var lineage = [];
-		var lineageR = [{"lineagePattern":"molecules-primary-nav","lineagePath":"../../patterns/01-molecules-05-navigation-00-primary-nav/01-molecules-05-navigation-00-primary-nav.html"}];
+		var lineageR = [{"lineagePattern":"organisms-header","lineagePath":"../../patterns/02-organisms-00-global-00-header/02-organisms-00-global-00-header.html"},{"lineagePattern":"organisms-header-transparent","lineagePath":"../../patterns/02-organisms-00-global-02-header-transparent/02-organisms-00-global-02-header-transparent.html"}];
 		var patternState = ""
 		var cssEnabled = false; //TODO
 	</script>

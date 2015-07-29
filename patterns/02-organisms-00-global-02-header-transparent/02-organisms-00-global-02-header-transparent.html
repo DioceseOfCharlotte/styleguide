@@ -34,15 +34,33 @@
 	
 </head>
 <body class="sg-single-pattern">	
-	<!-- Start of Pattern --><div class="block block-thumb">
-	<a href="#" class="b-inner">
-		<div class="b-thumb">
-<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />		</div>
-		<div class="b-text">
-			<h2 class="headline">Diocese of Charlotte</h2>
-		</div>
-	</a>
-</div>	<!-- End of Pattern -->
+	<!-- Start of Pattern -->  <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--scroll white">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title link-bare"><a class="border0 white" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> Diocese of Charlotte</a></span>
+      <div class="mdl-layout-spacer"></div>
+      <div class="ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="waterfall-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="bg-lighten-2 mdl-textfield__input" type="search" name="sample"
+                 id="waterfall-exp" />
+        </div>
+      </div>    </div>
+    <!-- Bottom row, not visible on scroll -->
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
+  <!-- Navigation -->
+      <nav class="waterfall-demo-header-nav mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>    </div>
+  </header>	<!-- End of Pattern -->
 	
 	<!--
 		Remember that patterns are displayed from two-levels deep (e.g. patterns/patterntype-patternsubtype-patternname/patterntype-patternsubtype-patternname.html)
@@ -52,9 +70,9 @@
 	<!-- DO NOT MODIFY -->
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-block-thumb-headline";
-		var lineage = [{"lineagePattern":"atoms-square","lineagePath":"../../patterns/00-atoms-03-images-03-square/00-atoms-03-images-03-square.html"}];
-		var lineageR = [];
+		var patternPartial = "organisms-header-transparent";
+		var lineage = [{"lineagePattern":"atoms-logo","lineagePath":"../../patterns/00-atoms-03-images-00-logo/00-atoms-03-images-00-logo.html"},{"lineagePattern":"molecules-search","lineagePath":"../../patterns/01-molecules-04-forms-00-search/01-molecules-04-forms-00-search.html"},{"lineagePattern":"molecules-primary-nav","lineagePath":"../../patterns/01-molecules-05-navigation-00-primary-nav/01-molecules-05-navigation-00-primary-nav.html"}];
+		var lineageR = [{"lineagePattern":"templates-cards","lineagePath":"../../patterns/03-templates-01-cards/03-templates-01-cards.html"}];
 		var patternState = ""
 		var cssEnabled = false; //TODO
 	</script>

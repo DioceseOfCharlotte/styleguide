@@ -47,39 +47,33 @@
             <h2 class="sg-pattern-head" ><a href="../../patterns/04-pages-01-blog&#x2F;04-pages-01-blog.html" class="patternLink" data-patternpartial="">blog</a></h2>
             <div class="sg-pattern-body">
               <div class="page" id="page">
-<header class="app-bar promote-layer hide@md">
-	<div class="app-bar-container">
-		<button class="menu">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/></svg>		</button>
-	</div>
-</header>
-
-<nav class="navdrawer-container text-shadow flex@md flex-center promote-layer">
-	<h1 class="logo hide@sm mt1 mb1 ml3">
-		<a class="border0 white" href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">
-			<a href="/"><img src="../../images/logo.svg" class="logo" alt="Logo Alt Text" /></a>
-Diocese of Charlotte</a>
-	</h1>
-	<h3 class="hide@md">Diocese of Charlotte</h3>
-	<ul>
-		<li class="u-1/1@sm"><!-- Expandable Textfield -->
-<form action="#">
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable textfield-demo">
-    <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
-      <i class="material-icons">search</i>
-    </label>
-    <div class="mdl-textfield__expandable-holder">
-      <input class="mdl-textfield__input" type="search" id="sample6" />
-      <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
-    </div>
-  </div>
-</form></li>
-		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-00-homepage&#x2F;04-pages-00-homepage.html">Home</a></li>
-		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">Home 2</a></li>
-		<li class="u-1/1@sm"><a class="br" href="#">Home 3</a></li>
-	</ul>
-</nav>
-
+ <header class="mdl-layout__header mdl-layout__header--waterfall white">
+    <!-- Top row, always visible -->
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> </a></span>
+      <div class="ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="waterfall-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="bg-lighten-2 mdl-textfield__input" type="search" name="sample"
+                 id="waterfall-exp" />
+        </div>
+      </div>    </div>
+    <!-- Bottom row, not visible on scroll -->
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
+  <!-- Navigation -->
+      <nav class="waterfall-demo-header-nav mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>    </div>
+  </header>
   <div class="container container--content container--wide mt0 mt2 mt3@md">
         <div class="row row--layout grid">
             <main id="content" class="grid__item" role="main" itemprop="mainContentOfPage">
@@ -334,69 +328,60 @@ Diocese of Charlotte</a>
         </div>
         <!-- /.row -->
     </div>
-<footer id="footer" class="bg-darken-4 white color-inherit" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
-	<div class=" container container--footer">
-		<aside class="sidebar sidebar-footer sidebar-horizontal flex flex-wrap flex-justify pty3 py4@md" role="complementary" id="sidebar-footer" aria-label="Footer Sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+<footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer__middle-section">
 
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Features</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Updates</a></li>
+      </ul>
+    </div>
 
-			<div class="col u-1/2 u-1/4@md">
-				<ul class="list-reset">
-					<li>
-						<h3 class="h4 m0">
-							<a href="#" class="btn block">Home</a>
-						</h3>
-					</li>
-					<li><a href="#" class="h5 btn block">Bacon</a></li>
-					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
-					<li><a href="#" class="h5 btn block">Andouille</a></li>
-					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
-				</ul>
-			</div>
-			<div class="col u-1/2 u-1/4@md">
-				<ul class="list-reset">
-					<li>
-						<h3 class="h4 m0">
-							<a href="#" class="btn block">Categories</a>
-						</h3>
-					</li>
-					<li><a href="#" class="h5 btn block">Bacon</a></li>
-					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
-					<li><a href="#" class="h5 btn block">Andouille</a></li>
-					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
-				</ul>
-			</div>
-			<div class="col u-1/2 u-1/4@md">
-				<ul class="list-reset">
-					<li>
-						<h3 class="h4 m0">
-							<a href="#" class="btn block">Categories</a>
-						</h3>
-					</li>
-					<li><a href="#" class="h5 btn block">Bacon</a></li>
-					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
-					<li><a href="#" class="h5 btn block">Andouille</a></li>
-					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
-				</ul>
-			</div>
-			<div class="col u-1/2 u-1/4@md">
-				<ul class="list-reset">
-					<li>
-						<h3 class="h4 m0">
-							<a href="#" class="btn block">About</a>
-						</h3>
-					</li>
-					<li><a href="#" class="h5 btn block">Bacon</a></li>
-					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
-					<li><a href="#" class="h5 btn block">Andouille</a></li>
-					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
-				</ul>
-			</div>
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Details</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">Specs</a></li>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
 
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Technology</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Patterns</a></li>
+        <li><a href="#">Usage</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contracts</a></li>
+      </ul>
+    </div>
 
-		</aside>
-	</div>
-	<p class="credit bg-darken-2 center py2">&#169; 2015 <a class="site-link" href="#" rel="home">Diocese of Charlotte</a></p>
-	<!-- .credit -->
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">FAQ</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">Questions</a></li>
+        <li><a href="#">Answers</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="mdl-mega-footer__bottom-section">
+    <ul class="mdl-mega-footer__link-list">
+      <li><a href="#">Doicese of Charlotte</a></li>
+    </ul>
+  </div>
+
 </footer>
 </div>
 
@@ -405,39 +390,33 @@ Diocese of Charlotte</a>
                 <pre class="sg-code-html">
                   <code>
                     &lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
-&lt;header class=&quot;app-bar promote-layer hide@md&quot;&gt;
-	&lt;div class=&quot;app-bar-container&quot;&gt;
-		&lt;button class=&quot;menu&quot;&gt;
-&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;		&lt;&#x2F;button&gt;
-	&lt;&#x2F;div&gt;
-&lt;&#x2F;header&gt;
-
-&lt;nav class=&quot;navdrawer-container text-shadow flex@md flex-center promote-layer&quot;&gt;
-	&lt;h1 class=&quot;logo hide@sm mt1 mb1 ml3&quot;&gt;
-		&lt;a class=&quot;border0 white&quot; href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;
-			&lt;a href=&quot;&#x2F;&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
-Diocese of Charlotte&lt;&#x2F;a&gt;
-	&lt;&#x2F;h1&gt;
-	&lt;h3 class=&quot;hide@md&quot;&gt;Diocese of Charlotte&lt;&#x2F;h3&gt;
-	&lt;ul&gt;
-		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;!-- Expandable Textfield --&gt;
-&lt;form action=&quot;#&quot;&gt;
-  &lt;div class=&quot;mdl-textfield mdl-js-textfield mdl-textfield--expandable textfield-demo&quot;&gt;
-    &lt;label class=&quot;mdl-button mdl-js-button mdl-button--icon&quot; for=&quot;sample6&quot;&gt;
-      &lt;i class=&quot;material-icons&quot;&gt;search&lt;&#x2F;i&gt;
-    &lt;&#x2F;label&gt;
-    &lt;div class=&quot;mdl-textfield__expandable-holder&quot;&gt;
-      &lt;input class=&quot;mdl-textfield__input&quot; type=&quot;search&quot; id=&quot;sample6&quot; &#x2F;&gt;
-      &lt;label class=&quot;mdl-textfield__label&quot; for=&quot;sample-expandable&quot;&gt;Expandable Input&lt;&#x2F;label&gt;
-    &lt;&#x2F;div&gt;
-  &lt;&#x2F;div&gt;
-&lt;&#x2F;form&gt;&lt;&#x2F;li&gt;
-		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-00-homepage&amp;#x2F;04-pages-00-homepage.html&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;Home 2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a class=&quot;br&quot; href=&quot;#&quot;&gt;Home 3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-	&lt;&#x2F;ul&gt;
-&lt;&#x2F;nav&gt;
-
+ &lt;header class=&quot;mdl-layout__header mdl-layout__header--waterfall white&quot;&gt;
+    &lt;!-- Top row, always visible --&gt;
+    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
+      &lt;!-- Title --&gt;
+      &lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; &lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+      &lt;div class=&quot;ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right&quot;&gt;
+        &lt;label class=&quot;mdl-button mdl-js-button mdl-button--icon&quot;
+               for=&quot;waterfall-exp&quot;&gt;
+          &lt;i class=&quot;material-icons&quot;&gt;search&lt;&#x2F;i&gt;
+        &lt;&#x2F;label&gt;
+        &lt;div class=&quot;mdl-textfield__expandable-holder&quot;&gt;
+          &lt;input class=&quot;bg-lighten-2 mdl-textfield__input&quot; type=&quot;search&quot; name=&quot;sample&quot;
+                 id=&quot;waterfall-exp&quot; &#x2F;&gt;
+        &lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;    &lt;&#x2F;div&gt;
+    &lt;!-- Bottom row, not visible on scroll --&gt;
+    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
+      &lt;div class=&quot;mdl-layout-spacer&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;!-- Navigation --&gt;
+      &lt;nav class=&quot;waterfall-demo-header-nav mdl-navigation&quot;&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+      &lt;&#x2F;nav&gt;    &lt;&#x2F;div&gt;
+  &lt;&#x2F;header&gt;
   &lt;div class=&quot;container container--content container--wide mt0 mt2 mt3@md&quot;&gt;
         &lt;div class=&quot;row row--layout grid&quot;&gt;
             &lt;main id=&quot;content&quot; class=&quot;grid__item&quot; role=&quot;main&quot; itemprop=&quot;mainContentOfPage&quot;&gt;
@@ -692,69 +671,60 @@ Diocese of Charlotte&lt;&#x2F;a&gt;
         &lt;&#x2F;div&gt;
         &lt;!-- &#x2F;.row --&gt;
     &lt;&#x2F;div&gt;
-&lt;footer id=&quot;footer&quot; class=&quot;bg-darken-4 white color-inherit&quot; role=&quot;contentinfo&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http:&#x2F;&#x2F;schema.org&#x2F;WPFooter&quot;&gt;
-	&lt;div class=&quot; container container--footer&quot;&gt;
-		&lt;aside class=&quot;sidebar sidebar-footer sidebar-horizontal flex flex-wrap flex-justify pty3 py4@md&quot; role=&quot;complementary&quot; id=&quot;sidebar-footer&quot; aria-label=&quot;Footer Sidebar&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http:&#x2F;&#x2F;schema.org&#x2F;WPSideBar&quot;&gt;
+&lt;footer class=&quot;mdl-mega-footer&quot;&gt;
+  &lt;div class=&quot;mdl-mega-footer__middle-section&quot;&gt;
 
+    &lt;div class=&quot;mdl-mega-footer__drop-down-section&quot;&gt;
+      &lt;input class=&quot;mdl-mega-footer__heading-checkbox&quot; type=&quot;checkbox&quot; checked&gt;
+      &lt;h1 class=&quot;mdl-mega-footer__heading&quot;&gt;Features&lt;&#x2F;h1&gt;
+      &lt;ul class=&quot;mdl-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Terms&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Partners&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Updates&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;div&gt;
 
-			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
-				&lt;ul class=&quot;list-reset&quot;&gt;
-					&lt;li&gt;
-						&lt;h3 class=&quot;h4 m0&quot;&gt;
-							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Home&lt;&#x2F;a&gt;
-						&lt;&#x2F;h3&gt;
-					&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-				&lt;&#x2F;ul&gt;
-			&lt;&#x2F;div&gt;
-			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
-				&lt;ul class=&quot;list-reset&quot;&gt;
-					&lt;li&gt;
-						&lt;h3 class=&quot;h4 m0&quot;&gt;
-							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Categories&lt;&#x2F;a&gt;
-						&lt;&#x2F;h3&gt;
-					&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-				&lt;&#x2F;ul&gt;
-			&lt;&#x2F;div&gt;
-			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
-				&lt;ul class=&quot;list-reset&quot;&gt;
-					&lt;li&gt;
-						&lt;h3 class=&quot;h4 m0&quot;&gt;
-							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Categories&lt;&#x2F;a&gt;
-						&lt;&#x2F;h3&gt;
-					&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-				&lt;&#x2F;ul&gt;
-			&lt;&#x2F;div&gt;
-			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
-				&lt;ul class=&quot;list-reset&quot;&gt;
-					&lt;li&gt;
-						&lt;h3 class=&quot;h4 m0&quot;&gt;
-							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;About&lt;&#x2F;a&gt;
-						&lt;&#x2F;h3&gt;
-					&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-				&lt;&#x2F;ul&gt;
-			&lt;&#x2F;div&gt;
+    &lt;div class=&quot;mdl-mega-footer__drop-down-section&quot;&gt;
+      &lt;input class=&quot;mdl-mega-footer__heading-checkbox&quot; type=&quot;checkbox&quot; checked&gt;
+      &lt;h1 class=&quot;mdl-mega-footer__heading&quot;&gt;Details&lt;&#x2F;h1&gt;
+      &lt;ul class=&quot;mdl-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Specs&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tools&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Resources&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;div&gt;
 
+    &lt;div class=&quot;mdl-mega-footer__drop-down-section&quot;&gt;
+      &lt;input class=&quot;mdl-mega-footer__heading-checkbox&quot; type=&quot;checkbox&quot; checked&gt;
+      &lt;h1 class=&quot;mdl-mega-footer__heading&quot;&gt;Technology&lt;&#x2F;h1&gt;
+      &lt;ul class=&quot;mdl-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;How it works&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Patterns&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Usage&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contracts&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;div&gt;
 
-		&lt;&#x2F;aside&gt;
-	&lt;&#x2F;div&gt;
-	&lt;p class=&quot;credit bg-darken-2 center py2&quot;&gt;&amp;#169; 2015 &lt;a class=&quot;site-link&quot; href=&quot;#&quot; rel=&quot;home&quot;&gt;Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-	&lt;!-- .credit --&gt;
+    &lt;div class=&quot;mdl-mega-footer__drop-down-section&quot;&gt;
+      &lt;input class=&quot;mdl-mega-footer__heading-checkbox&quot; type=&quot;checkbox&quot; checked&gt;
+      &lt;h1 class=&quot;mdl-mega-footer__heading&quot;&gt;FAQ&lt;&#x2F;h1&gt;
+      &lt;ul class=&quot;mdl-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Questions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Answers&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact us&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;div&gt;
+
+  &lt;&#x2F;div&gt;
+
+  &lt;div class=&quot;mdl-mega-footer__bottom-section&quot;&gt;
+    &lt;ul class=&quot;mdl-mega-footer__link-list&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Doicese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;div&gt;
+
 &lt;&#x2F;footer&gt;
 &lt;&#x2F;div&gt;
 
@@ -767,39 +737,33 @@ Diocese of Charlotte&lt;&#x2F;a&gt;
             <h2 class="sg-pattern-head" ><a href="../../patterns/04-pages-02-article&#x2F;04-pages-02-article.html" class="patternLink" data-patternpartial="">article</a></h2>
             <div class="sg-pattern-body">
               <div class="page" id="page">
-<header class="app-bar promote-layer hide@md">
-	<div class="app-bar-container">
-		<button class="menu">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/></svg>		</button>
-	</div>
-</header>
-
-<nav class="navdrawer-container text-shadow flex@md flex-center promote-layer">
-	<h1 class="logo hide@sm mt1 mb1 ml3">
-		<a class="border0 white" href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">
-			<a href="/"><img src="../../images/logo.svg" class="logo" alt="Logo Alt Text" /></a>
-Diocese of Charlotte</a>
-	</h1>
-	<h3 class="hide@md">Diocese of Charlotte</h3>
-	<ul>
-		<li class="u-1/1@sm"><!-- Expandable Textfield -->
-<form action="#">
-  <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable textfield-demo">
-    <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
-      <i class="material-icons">search</i>
-    </label>
-    <div class="mdl-textfield__expandable-holder">
-      <input class="mdl-textfield__input" type="search" id="sample6" />
-      <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
-    </div>
-  </div>
-</form></li>
-		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-00-homepage&#x2F;04-pages-00-homepage.html">Home</a></li>
-		<li class="u-1/1@sm"><a href="&#x2F;patterns&#x2F;04-pages-01-blog&#x2F;04-pages-01-blog.html">Home 2</a></li>
-		<li class="u-1/1@sm"><a class="br" href="#">Home 3</a></li>
-	</ul>
-</nav>
-	<div role="main">
+ <header class="mdl-layout__header mdl-layout__header--waterfall white">
+    <!-- Top row, always visible -->
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> </a></span>
+      <div class="ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="waterfall-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="bg-lighten-2 mdl-textfield__input" type="search" name="sample"
+                 id="waterfall-exp" />
+        </div>
+      </div>    </div>
+    <!-- Bottom row, not visible on scroll -->
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
+  <!-- Navigation -->
+      <nav class="waterfall-demo-header-nav mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>    </div>
+  </header>	<div role="main">
 		<div class="l-two-col">
 			<div class="l-main">
 				<article class="article">
@@ -924,69 +888,60 @@ Diocese of Charlotte</a>
 </section>			</div><!--end l-sidebar-->
 		</div><!--end l-two-col-->	
 	</div><!--End role=main-->
-<footer id="footer" class="bg-darken-4 white color-inherit" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
-	<div class=" container container--footer">
-		<aside class="sidebar sidebar-footer sidebar-horizontal flex flex-wrap flex-justify pty3 py4@md" role="complementary" id="sidebar-footer" aria-label="Footer Sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+<footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer__middle-section">
 
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Features</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Updates</a></li>
+      </ul>
+    </div>
 
-			<div class="col u-1/2 u-1/4@md">
-				<ul class="list-reset">
-					<li>
-						<h3 class="h4 m0">
-							<a href="#" class="btn block">Home</a>
-						</h3>
-					</li>
-					<li><a href="#" class="h5 btn block">Bacon</a></li>
-					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
-					<li><a href="#" class="h5 btn block">Andouille</a></li>
-					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
-				</ul>
-			</div>
-			<div class="col u-1/2 u-1/4@md">
-				<ul class="list-reset">
-					<li>
-						<h3 class="h4 m0">
-							<a href="#" class="btn block">Categories</a>
-						</h3>
-					</li>
-					<li><a href="#" class="h5 btn block">Bacon</a></li>
-					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
-					<li><a href="#" class="h5 btn block">Andouille</a></li>
-					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
-				</ul>
-			</div>
-			<div class="col u-1/2 u-1/4@md">
-				<ul class="list-reset">
-					<li>
-						<h3 class="h4 m0">
-							<a href="#" class="btn block">Categories</a>
-						</h3>
-					</li>
-					<li><a href="#" class="h5 btn block">Bacon</a></li>
-					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
-					<li><a href="#" class="h5 btn block">Andouille</a></li>
-					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
-				</ul>
-			</div>
-			<div class="col u-1/2 u-1/4@md">
-				<ul class="list-reset">
-					<li>
-						<h3 class="h4 m0">
-							<a href="#" class="btn block">About</a>
-						</h3>
-					</li>
-					<li><a href="#" class="h5 btn block">Bacon</a></li>
-					<li><a href="#" class="h5 btn block">Bratwurst</a></li>
-					<li><a href="#" class="h5 btn block">Andouille</a></li>
-					<li><a href="#" class="h5 btn block">Pork Loin</a></li>
-				</ul>
-			</div>
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Details</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">Specs</a></li>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
 
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Technology</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Patterns</a></li>
+        <li><a href="#">Usage</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contracts</a></li>
+      </ul>
+    </div>
 
-		</aside>
-	</div>
-	<p class="credit bg-darken-2 center py2">&#169; 2015 <a class="site-link" href="#" rel="home">Diocese of Charlotte</a></p>
-	<!-- .credit -->
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">FAQ</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">Questions</a></li>
+        <li><a href="#">Answers</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="mdl-mega-footer__bottom-section">
+    <ul class="mdl-mega-footer__link-list">
+      <li><a href="#">Doicese of Charlotte</a></li>
+    </ul>
+  </div>
+
 </footer>
 </div>
               <div class="sg-code" style="display: none">
@@ -994,39 +949,33 @@ Diocese of Charlotte</a>
                 <pre class="sg-code-html">
                   <code>
                     &lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
-&lt;header class=&quot;app-bar promote-layer hide@md&quot;&gt;
-	&lt;div class=&quot;app-bar-container&quot;&gt;
-		&lt;button class=&quot;menu&quot;&gt;
-&lt;svg xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;		&lt;&#x2F;button&gt;
-	&lt;&#x2F;div&gt;
-&lt;&#x2F;header&gt;
-
-&lt;nav class=&quot;navdrawer-container text-shadow flex@md flex-center promote-layer&quot;&gt;
-	&lt;h1 class=&quot;logo hide@sm mt1 mb1 ml3&quot;&gt;
-		&lt;a class=&quot;border0 white&quot; href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;
-			&lt;a href=&quot;&#x2F;&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
-Diocese of Charlotte&lt;&#x2F;a&gt;
-	&lt;&#x2F;h1&gt;
-	&lt;h3 class=&quot;hide@md&quot;&gt;Diocese of Charlotte&lt;&#x2F;h3&gt;
-	&lt;ul&gt;
-		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;!-- Expandable Textfield --&gt;
-&lt;form action=&quot;#&quot;&gt;
-  &lt;div class=&quot;mdl-textfield mdl-js-textfield mdl-textfield--expandable textfield-demo&quot;&gt;
-    &lt;label class=&quot;mdl-button mdl-js-button mdl-button--icon&quot; for=&quot;sample6&quot;&gt;
-      &lt;i class=&quot;material-icons&quot;&gt;search&lt;&#x2F;i&gt;
-    &lt;&#x2F;label&gt;
-    &lt;div class=&quot;mdl-textfield__expandable-holder&quot;&gt;
-      &lt;input class=&quot;mdl-textfield__input&quot; type=&quot;search&quot; id=&quot;sample6&quot; &#x2F;&gt;
-      &lt;label class=&quot;mdl-textfield__label&quot; for=&quot;sample-expandable&quot;&gt;Expandable Input&lt;&#x2F;label&gt;
-    &lt;&#x2F;div&gt;
-  &lt;&#x2F;div&gt;
-&lt;&#x2F;form&gt;&lt;&#x2F;li&gt;
-		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-00-homepage&amp;#x2F;04-pages-00-homepage.html&quot;&gt;Home&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a href=&quot;&amp;#x2F;patterns&amp;#x2F;04-pages-01-blog&amp;#x2F;04-pages-01-blog.html&quot;&gt;Home 2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-		&lt;li class=&quot;u-1&#x2F;1@sm&quot;&gt;&lt;a class=&quot;br&quot; href=&quot;#&quot;&gt;Home 3&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-	&lt;&#x2F;ul&gt;
-&lt;&#x2F;nav&gt;
-	&lt;div role=&quot;main&quot;&gt;
+ &lt;header class=&quot;mdl-layout__header mdl-layout__header--waterfall white&quot;&gt;
+    &lt;!-- Top row, always visible --&gt;
+    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
+      &lt;!-- Title --&gt;
+      &lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; &lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+      &lt;div class=&quot;ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right&quot;&gt;
+        &lt;label class=&quot;mdl-button mdl-js-button mdl-button--icon&quot;
+               for=&quot;waterfall-exp&quot;&gt;
+          &lt;i class=&quot;material-icons&quot;&gt;search&lt;&#x2F;i&gt;
+        &lt;&#x2F;label&gt;
+        &lt;div class=&quot;mdl-textfield__expandable-holder&quot;&gt;
+          &lt;input class=&quot;bg-lighten-2 mdl-textfield__input&quot; type=&quot;search&quot; name=&quot;sample&quot;
+                 id=&quot;waterfall-exp&quot; &#x2F;&gt;
+        &lt;&#x2F;div&gt;
+      &lt;&#x2F;div&gt;    &lt;&#x2F;div&gt;
+    &lt;!-- Bottom row, not visible on scroll --&gt;
+    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
+      &lt;div class=&quot;mdl-layout-spacer&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;!-- Navigation --&gt;
+      &lt;nav class=&quot;waterfall-demo-header-nav mdl-navigation&quot;&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+      &lt;&#x2F;nav&gt;    &lt;&#x2F;div&gt;
+  &lt;&#x2F;header&gt;	&lt;div role=&quot;main&quot;&gt;
 		&lt;div class=&quot;l-two-col&quot;&gt;
 			&lt;div class=&quot;l-main&quot;&gt;
 				&lt;article class=&quot;article&quot;&gt;
@@ -1151,69 +1100,60 @@ Diocese of Charlotte&lt;&#x2F;a&gt;
 &lt;&#x2F;section&gt;			&lt;&#x2F;div&gt;&lt;!--end l-sidebar--&gt;
 		&lt;&#x2F;div&gt;&lt;!--end l-two-col--&gt;	
 	&lt;&#x2F;div&gt;&lt;!--End role=main--&gt;
-&lt;footer id=&quot;footer&quot; class=&quot;bg-darken-4 white color-inherit&quot; role=&quot;contentinfo&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http:&#x2F;&#x2F;schema.org&#x2F;WPFooter&quot;&gt;
-	&lt;div class=&quot; container container--footer&quot;&gt;
-		&lt;aside class=&quot;sidebar sidebar-footer sidebar-horizontal flex flex-wrap flex-justify pty3 py4@md&quot; role=&quot;complementary&quot; id=&quot;sidebar-footer&quot; aria-label=&quot;Footer Sidebar&quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http:&#x2F;&#x2F;schema.org&#x2F;WPSideBar&quot;&gt;
+&lt;footer class=&quot;mdl-mega-footer&quot;&gt;
+  &lt;div class=&quot;mdl-mega-footer__middle-section&quot;&gt;
 
+    &lt;div class=&quot;mdl-mega-footer__drop-down-section&quot;&gt;
+      &lt;input class=&quot;mdl-mega-footer__heading-checkbox&quot; type=&quot;checkbox&quot; checked&gt;
+      &lt;h1 class=&quot;mdl-mega-footer__heading&quot;&gt;Features&lt;&#x2F;h1&gt;
+      &lt;ul class=&quot;mdl-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Terms&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Partners&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Updates&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;div&gt;
 
-			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
-				&lt;ul class=&quot;list-reset&quot;&gt;
-					&lt;li&gt;
-						&lt;h3 class=&quot;h4 m0&quot;&gt;
-							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Home&lt;&#x2F;a&gt;
-						&lt;&#x2F;h3&gt;
-					&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-				&lt;&#x2F;ul&gt;
-			&lt;&#x2F;div&gt;
-			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
-				&lt;ul class=&quot;list-reset&quot;&gt;
-					&lt;li&gt;
-						&lt;h3 class=&quot;h4 m0&quot;&gt;
-							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Categories&lt;&#x2F;a&gt;
-						&lt;&#x2F;h3&gt;
-					&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-				&lt;&#x2F;ul&gt;
-			&lt;&#x2F;div&gt;
-			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
-				&lt;ul class=&quot;list-reset&quot;&gt;
-					&lt;li&gt;
-						&lt;h3 class=&quot;h4 m0&quot;&gt;
-							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;Categories&lt;&#x2F;a&gt;
-						&lt;&#x2F;h3&gt;
-					&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-				&lt;&#x2F;ul&gt;
-			&lt;&#x2F;div&gt;
-			&lt;div class=&quot;col u-1&#x2F;2 u-1&#x2F;4@md&quot;&gt;
-				&lt;ul class=&quot;list-reset&quot;&gt;
-					&lt;li&gt;
-						&lt;h3 class=&quot;h4 m0&quot;&gt;
-							&lt;a href=&quot;#&quot; class=&quot;btn block&quot;&gt;About&lt;&#x2F;a&gt;
-						&lt;&#x2F;h3&gt;
-					&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bacon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Bratwurst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Andouille&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;h5 btn block&quot;&gt;Pork Loin&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-				&lt;&#x2F;ul&gt;
-			&lt;&#x2F;div&gt;
+    &lt;div class=&quot;mdl-mega-footer__drop-down-section&quot;&gt;
+      &lt;input class=&quot;mdl-mega-footer__heading-checkbox&quot; type=&quot;checkbox&quot; checked&gt;
+      &lt;h1 class=&quot;mdl-mega-footer__heading&quot;&gt;Details&lt;&#x2F;h1&gt;
+      &lt;ul class=&quot;mdl-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Specs&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tools&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Resources&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;div&gt;
 
+    &lt;div class=&quot;mdl-mega-footer__drop-down-section&quot;&gt;
+      &lt;input class=&quot;mdl-mega-footer__heading-checkbox&quot; type=&quot;checkbox&quot; checked&gt;
+      &lt;h1 class=&quot;mdl-mega-footer__heading&quot;&gt;Technology&lt;&#x2F;h1&gt;
+      &lt;ul class=&quot;mdl-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;How it works&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Patterns&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Usage&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Products&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contracts&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;div&gt;
 
-		&lt;&#x2F;aside&gt;
-	&lt;&#x2F;div&gt;
-	&lt;p class=&quot;credit bg-darken-2 center py2&quot;&gt;&amp;#169; 2015 &lt;a class=&quot;site-link&quot; href=&quot;#&quot; rel=&quot;home&quot;&gt;Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-	&lt;!-- .credit --&gt;
+    &lt;div class=&quot;mdl-mega-footer__drop-down-section&quot;&gt;
+      &lt;input class=&quot;mdl-mega-footer__heading-checkbox&quot; type=&quot;checkbox&quot; checked&gt;
+      &lt;h1 class=&quot;mdl-mega-footer__heading&quot;&gt;FAQ&lt;&#x2F;h1&gt;
+      &lt;ul class=&quot;mdl-mega-footer__link-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Questions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Answers&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact us&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;div&gt;
+
+  &lt;&#x2F;div&gt;
+
+  &lt;div class=&quot;mdl-mega-footer__bottom-section&quot;&gt;
+    &lt;ul class=&quot;mdl-mega-footer__link-list&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Doicese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;div&gt;
+
 &lt;&#x2F;footer&gt;
 &lt;&#x2F;div&gt;
                   </code>

@@ -1,9 +1,13 @@
-<header class="app-bar promote-layer hide@md">
-	<div class="app-bar-container">
-		<button class="menu">
-			{{> atoms-hamburger }}
-		</button>
-	</div>
-</header>
-
+ <header class="mdl-layout__header mdl-layout__header--waterfall white">
+    <!-- Top row, always visible -->
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#">{{> atoms-logo }} {{ title }}</a></span>
+{{> molecules-search }}
+    </div>
+    <!-- Bottom row, not visible on scroll -->
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
 {{> molecules-primary-nav }}
+    </div>
+  </header>

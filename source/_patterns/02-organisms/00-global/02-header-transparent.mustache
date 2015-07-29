@@ -1,0 +1,13 @@
+  <header class="mdl-layout__header mdl-layout__header--transparent mdl-layout__header--scroll white">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title link-bare"><a class="border0 white" href="#">{{> atoms-logo }} {{ title }}</a></span>
+      <div class="mdl-layout-spacer"></div>
+{{> molecules-search }}
+    </div>
+    <!-- Bottom row, not visible on scroll -->
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
+{{> molecules-primary-nav }}
+    </div>
+  </header>

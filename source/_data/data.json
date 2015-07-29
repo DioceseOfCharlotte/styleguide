@@ -1,5 +1,5 @@
 {
-	"title" : "Diocese",
+	"title" : "Diocese of Charlotte",
 	"htmlClass": "pl",
 	"bodyClass": "body",
 	"img": {
@@ -10,6 +10,18 @@
 		"landscape-16x9": {
 			"src": "../../images/fpo_16x9.png",
 			"alt": "16x9 Image"
+		},
+		"entrance": {
+			"src": "../../images/entrance_blur_full.jpg",
+			"alt": "Square Thumbnail"
+		},
+		"bishop": {
+			"src": "../../images/bishop-bio.png",
+			"alt": "Square Thumbnail"
+		},
+		"stpats": {
+			"src": "../../images/StPats3.jpg",
+			"alt": "Square Thumbnail"
 		},
 		"square": {
 			"src": "../../images/fpo_square.png",

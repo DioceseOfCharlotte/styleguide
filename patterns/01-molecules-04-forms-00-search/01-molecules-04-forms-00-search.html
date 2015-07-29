@@ -23,6 +23,8 @@
 		Therefore all calls to assets should have the ../../ in order to work in an apache-less environment
 	-->
 	<link rel="stylesheet" href="../../css/style.css" media="all" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	
 	<style>
 		.has-comment, .has-comment a {
@@ -32,23 +34,24 @@
 	
 </head>
 <body class="sg-single-pattern">	
-	<!-- Start of Pattern --><form action="#" method="post" class="inline-form search-form">           
-    <fieldset>
-	    <legend class="is-vishidden">Search</legend>
-	    <label for="search-field" class="is-vishidden">Search</label>
-	    <input type="search" placeholder="Search" id="search-field" class="search-field" />
-	    <button class="search-submit">
-	    	<span class="icon-search" aria-hidden="true"></span>
-	    	<span class="is-vishidden">Search</span>
-	    </button>
-    </fieldset>
+	<!-- Start of Pattern --><!-- Expandable Textfield -->
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable textfield-demo">
+    <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+      <i class="material-icons">search</i>
+    </label>
+    <div class="mdl-textfield__expandable-holder">
+      <input class="mdl-textfield__input" type="search" id="sample6" />
+      <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+    </div>
+  </div>
 </form>	<!-- End of Pattern -->
 	
 	<!--
 		Remember that patterns are displayed from two-levels deep (e.g. patterns/patterntype-patternsubtype-patternname/patterntype-patternsubtype-patternname.html)
 		Therefore all calls to assets should have the ../../ in order to work in an apache-less environment
 	-->
-	
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
 	<!-- DO NOT MODIFY -->
 	<script>
 		// handle injection of items from PHP

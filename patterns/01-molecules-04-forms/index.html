@@ -18,31 +18,33 @@
           <div class="sg-pattern">
             <h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-04-forms-00-search&#x2F;01-molecules-04-forms-00-search.html" class="patternLink" data-patternpartial="">search</a></h2>
             <div class="sg-pattern-body">
-              <form action="#" method="post" class="inline-form search-form">           
-    <fieldset>
-	    <legend class="is-vishidden">Search</legend>
-	    <label for="search-field" class="is-vishidden">Search</label>
-	    <input type="search" placeholder="Search" id="search-field" class="search-field" />
-	    <button class="search-submit">
-	    	<span class="icon-search" aria-hidden="true"></span>
-	    	<span class="is-vishidden">Search</span>
-	    </button>
-    </fieldset>
+              <!-- Expandable Textfield -->
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable textfield-demo">
+    <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+      <i class="material-icons">search</i>
+    </label>
+    <div class="mdl-textfield__expandable-holder">
+      <input class="mdl-textfield__input" type="search" id="sample6" />
+      <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+    </div>
+  </div>
 </form>
               <div class="sg-code" style="display: none">
                 <h3 class="sg-code-head">HTML</h3>
                 <pre class="sg-code-html">
                   <code>
-                    &lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;           
-    &lt;fieldset&gt;
-	    &lt;legend class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;legend&gt;
-	    &lt;label for=&quot;search-field&quot; class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;label&gt;
-	    &lt;input type=&quot;search&quot; placeholder=&quot;Search&quot; id=&quot;search-field&quot; class=&quot;search-field&quot; &#x2F;&gt;
-	    &lt;button class=&quot;search-submit&quot;&gt;
-	    	&lt;span class=&quot;icon-search&quot; aria-hidden=&quot;true&quot;&gt;&lt;&#x2F;span&gt;
-	    	&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;&#x2F;span&gt;
-	    &lt;&#x2F;button&gt;
-    &lt;&#x2F;fieldset&gt;
+                    &lt;!-- Expandable Textfield --&gt;
+&lt;form action=&quot;#&quot;&gt;
+  &lt;div class=&quot;mdl-textfield mdl-js-textfield mdl-textfield--expandable textfield-demo&quot;&gt;
+    &lt;label class=&quot;mdl-button mdl-js-button mdl-button--icon&quot; for=&quot;sample6&quot;&gt;
+      &lt;i class=&quot;material-icons&quot;&gt;search&lt;&#x2F;i&gt;
+    &lt;&#x2F;label&gt;
+    &lt;div class=&quot;mdl-textfield__expandable-holder&quot;&gt;
+      &lt;input class=&quot;mdl-textfield__input&quot; type=&quot;search&quot; id=&quot;sample6&quot; &#x2F;&gt;
+      &lt;label class=&quot;mdl-textfield__label&quot; for=&quot;sample-expandable&quot;&gt;Expandable Input&lt;&#x2F;label&gt;
+    &lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
 &lt;&#x2F;form&gt;
                   </code>
                 </pre>

@@ -3,6 +3,9 @@
 
 .color-1 { color: $color-1 }
 .color-2 { color: $color-2 }
+.color-2--dark { color: $color-2--dark }
+.color-2--light { color: $color-2--light }
+.color-2--lighter { color: lighten($color-2, 20);}
 .color-3 { color: $color-3 }
 
 .color-text { color: $color-text; }
@@ -16,13 +19,44 @@
 .bg-1--dark { background-color: darken($color-1, 10); }
 .bg-2--dark { background-color: darken($color-2, 10); }
 .bg-3--dark { background-color: darken($color-3, 10); }
-.bg-1--glass { background-color: rgba($color-1--dark, 0.90); }
-.bg-2--glass { background-color: rgba($color-2--dark, 0.90); }
-.bg-3--glass { background-color: rgba($color-3--dark, 0.90); }
+
+.bg-1--glass { 
+    background-color: rgba($color-1--dark, 0.85); 
+    .icon {
+        fill: lighten($color-1, 30);
+    }
+}
+
+.bg-2--glass { 
+    background-color: rgba($color-2--dark, 0.85);
+    .icon {
+        fill: lighten($color-2, 30);
+    } 
+}
+
+.bg-3--glass { 
+    background-color: rgba($color-3--dark, 0.85);
+    .icon {
+        fill: lighten($color-3, 30);
+    } 
+}
+
+a.bg-1--glass:hover { 
+    background-color: rgba($color-1--dark, 0.90); 
+}
+
+a.bg-2--glass:hover { 
+    background-color: rgba($color-2--dark, 0.90); 
+}
+
+a.bg-3--glass:hover { 
+    background-color: rgba($color-3--dark, 0.90); 
+}
 
 .fill-1 { fill: $color-1 }
 .fill-2 { fill: $color-2 }
 .fill-3 { fill: $color-3 }
+
 
 .black  { 
 	color: $black;

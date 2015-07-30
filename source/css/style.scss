@@ -105,9 +105,23 @@ P"Ybmmd"  `Mbmo`Ybmd9'  MMbmmd'      .JMML.   .JMML.YMMMMMb .JMML  JMML.`Mbmo   
  @import "styles/trumps.plugins";
 
 
+.card-row {
+    transition-duration: 0.5s;
+    transition-timing-function: $transition-timing;
+    transition-property: all;
+    transform: translateY(0);
+}
 
-.mdl-layout__header--waterfall {
-  background-color: rgba($color-1,.9);
+.card-row.active {
+    transition-duration: 0.5s;
+    transition-timing-function: $transition-timing;
+    transition-property: all;
+    transform: translateY(-290px);
+}
+
+
+section.row, .mdl-layout__header--waterfall {
+    border-bottom: 7px solid $color-text;
 }
 
 .card-row {
@@ -128,11 +142,12 @@ letter-spacing:-0.31em;
 
 .mdl-layout__header--waterfall {
 
-.mdl-layout-title {
+.bottom-row .mdl-layout-title {
     max-height: 160px;
      // position: absolute;
       // transform: translateX(30vw);
       font-size: 40px;
+          transform: translateY(-20%);
 }
 
 .top-row .mdl-layout-title {
@@ -542,4 +557,17 @@ body .demo-blog {
 
 .u-tile {
   position: relative;
+  margin-left: $space-1;
+  margin-right: $space-1;
+
+  &:hover .mdl-button--icon {
+    background-color: $darken-2;
+  }
+
+  .mdl-button--icon {
+    margin: 5px;
+    &:hover, &:active, &:focus {
+      background-color: $darken-3;
+    }
+  }
 }

@@ -7,7 +7,7 @@
 // Theme Colors
 
 $color-1: $blue;
-$color-2: $olive;
+$color-2: $green;
 $color-3: $yellow;
 
 $color-1--light : lighten($color-1, 10);
@@ -65,17 +65,17 @@ $button-line-height: 1.125rem;
 $button-padding-y: .5rem;
 $button-padding-x: 1rem;
 
-$container-width: 64em;
+$container-width: 1300px;
 
 $darken-1: rgba($blue-grey-900,.0625);
 $darken-2: rgba($blue-grey-900,.125);
-$darken-3: rgba($blue-grey-900,.5);
+$darken-3: rgba($blue-grey-900,.25);
 $darken-4: rgba($blue-grey-900,.75);
 
-$lighten-1: rgba($grey-50,.0625);
-$lighten-2: rgba($grey-50,.125);
-$lighten-3: rgba($grey-50,.5);
-$lighten-4: rgba($grey-50,.75);
+$lighten-1: rgba($blue-grey-50,.0625);
+$lighten-2: rgba($blue-grey-50,.125);
+$lighten-3: rgba($blue-grey-50,.25);
+$lighten-4: rgba($blue-grey-50,.75);
 
 $border-width: 1px;
 $border-radius: 2px;

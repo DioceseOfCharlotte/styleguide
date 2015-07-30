@@ -7,6 +7,12 @@
     transition-property: all;
 }
 
+.transition-slow {
+	transition-duration: 0.7s;
+    transition-timing-function: $transition-timing;
+    transition-property: all;
+}
+
 .hover-fade {
 	opacity: 1;
 	transition-duration: $transition-duration;

@@ -11170,7 +11170,7 @@ button.button--colored:focus:not(:active) {
   margin-bottom: 1rem;
   padding: 2rem;
 }
-.u-tile.active {
+.u-tile:hover, .u-tile.active {
   opacity: 1;
 }
 
@@ -12334,7 +12334,6 @@ input[type="submit"] {
 }
 .link-bare:hover, .link-bare a:hover {
   text-decoration: none;
-  border: 0;
 }
 
 .transition {

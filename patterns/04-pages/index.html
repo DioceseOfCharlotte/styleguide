@@ -49,10 +49,17 @@
               <div class="page" id="page">
  <header class="mdl-layout__header mdl-layout__header--waterfall white">
     <!-- Top row, always visible -->
-    <div class="mdl-layout__header-row">
+    <div class="mdl-layout__header-row top-row">
       <!-- Title -->
-      <span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> </a></span>
-      <div class="ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+<span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#"></a></span>
+
+  <!-- Navigation -->
+      <nav class="mr2 ml-auto waterfall-demo-header-nav mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
         <label class="mdl-button mdl-js-button mdl-button--icon"
                for="waterfall-exp">
@@ -64,15 +71,9 @@
         </div>
       </div>    </div>
     <!-- Bottom row, not visible on scroll -->
-    <div class="mdl-layout__header-row">
-      <div class="mdl-layout-spacer"></div>
-  <!-- Navigation -->
-      <nav class="waterfall-demo-header-nav mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-      </nav>    </div>
+    <div class="mdl-layout__header-row bottom-row">
+      <span class="transition mdl-layout-title link-bare py2"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> </a></span>
+    </div>
   </header>
   <div class="container container--content container--wide mt0 mt2 mt3@md">
         <div class="row row--layout grid">
@@ -392,10 +393,17 @@
                     &lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
  &lt;header class=&quot;mdl-layout__header mdl-layout__header--waterfall white&quot;&gt;
     &lt;!-- Top row, always visible --&gt;
-    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
+    &lt;div class=&quot;mdl-layout__header-row top-row&quot;&gt;
       &lt;!-- Title --&gt;
-      &lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; &lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
-      &lt;div class=&quot;ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+&lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+
+  &lt;!-- Navigation --&gt;
+      &lt;nav class=&quot;mr2 ml-auto waterfall-demo-header-nav mdl-navigation&quot;&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+      &lt;&#x2F;nav&gt;      &lt;div class=&quot;mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right&quot;&gt;
         &lt;label class=&quot;mdl-button mdl-js-button mdl-button--icon&quot;
                for=&quot;waterfall-exp&quot;&gt;
@@ -407,15 +415,9 @@
         &lt;&#x2F;div&gt;
       &lt;&#x2F;div&gt;    &lt;&#x2F;div&gt;
     &lt;!-- Bottom row, not visible on scroll --&gt;
-    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
-      &lt;div class=&quot;mdl-layout-spacer&quot;&gt;&lt;&#x2F;div&gt;
-  &lt;!-- Navigation --&gt;
-      &lt;nav class=&quot;waterfall-demo-header-nav mdl-navigation&quot;&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-      &lt;&#x2F;nav&gt;    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;mdl-layout__header-row bottom-row&quot;&gt;
+      &lt;span class=&quot;transition mdl-layout-title link-bare py2&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; &lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+    &lt;&#x2F;div&gt;
   &lt;&#x2F;header&gt;
   &lt;div class=&quot;container container--content container--wide mt0 mt2 mt3@md&quot;&gt;
         &lt;div class=&quot;row row--layout grid&quot;&gt;
@@ -739,10 +741,17 @@
               <div class="page" id="page">
  <header class="mdl-layout__header mdl-layout__header--waterfall white">
     <!-- Top row, always visible -->
-    <div class="mdl-layout__header-row">
+    <div class="mdl-layout__header-row top-row">
       <!-- Title -->
-      <span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> </a></span>
-      <div class="ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+<span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#"></a></span>
+
+  <!-- Navigation -->
+      <nav class="mr2 ml-auto waterfall-demo-header-nav mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
         <label class="mdl-button mdl-js-button mdl-button--icon"
                for="waterfall-exp">
@@ -754,15 +763,9 @@
         </div>
       </div>    </div>
     <!-- Bottom row, not visible on scroll -->
-    <div class="mdl-layout__header-row">
-      <div class="mdl-layout-spacer"></div>
-  <!-- Navigation -->
-      <nav class="waterfall-demo-header-nav mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-      </nav>    </div>
+    <div class="mdl-layout__header-row bottom-row">
+      <span class="transition mdl-layout-title link-bare py2"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> </a></span>
+    </div>
   </header>	<div role="main">
 		<div class="l-two-col">
 			<div class="l-main">
@@ -951,10 +954,17 @@
                     &lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
  &lt;header class=&quot;mdl-layout__header mdl-layout__header--waterfall white&quot;&gt;
     &lt;!-- Top row, always visible --&gt;
-    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
+    &lt;div class=&quot;mdl-layout__header-row top-row&quot;&gt;
       &lt;!-- Title --&gt;
-      &lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; &lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
-      &lt;div class=&quot;ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+&lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+
+  &lt;!-- Navigation --&gt;
+      &lt;nav class=&quot;mr2 ml-auto waterfall-demo-header-nav mdl-navigation&quot;&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+      &lt;&#x2F;nav&gt;      &lt;div class=&quot;mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right&quot;&gt;
         &lt;label class=&quot;mdl-button mdl-js-button mdl-button--icon&quot;
                for=&quot;waterfall-exp&quot;&gt;
@@ -966,15 +976,9 @@
         &lt;&#x2F;div&gt;
       &lt;&#x2F;div&gt;    &lt;&#x2F;div&gt;
     &lt;!-- Bottom row, not visible on scroll --&gt;
-    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
-      &lt;div class=&quot;mdl-layout-spacer&quot;&gt;&lt;&#x2F;div&gt;
-  &lt;!-- Navigation --&gt;
-      &lt;nav class=&quot;waterfall-demo-header-nav mdl-navigation&quot;&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-      &lt;&#x2F;nav&gt;    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;mdl-layout__header-row bottom-row&quot;&gt;
+      &lt;span class=&quot;transition mdl-layout-title link-bare py2&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; &lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+    &lt;&#x2F;div&gt;
   &lt;&#x2F;header&gt;	&lt;div role=&quot;main&quot;&gt;
 		&lt;div class=&quot;l-two-col&quot;&gt;
 			&lt;div class=&quot;l-main&quot;&gt;

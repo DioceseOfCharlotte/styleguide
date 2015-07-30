@@ -1676,7 +1676,7 @@ p q r s t u v w x y z { | } ~
 					<div class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-04-forms-00-search&#x2F;01-molecules-04-forms-00-search.html" class="patternLink " data-patternpartial="">search</a></h2>
 						<div class="sg-pattern-body">
-							      <div class="ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+							      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
         <label class="mdl-button mdl-js-button mdl-button--icon"
                for="waterfall-exp">
@@ -1691,7 +1691,7 @@ p q r s t u v w x y z { | } ~
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										      &lt;div class=&quot;ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+										      &lt;div class=&quot;mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right&quot;&gt;
         &lt;label class=&quot;mdl-button mdl-js-button mdl-button--icon&quot;
                for=&quot;waterfall-exp&quot;&gt;
@@ -1795,7 +1795,7 @@ p q r s t u v w x y z { | } ~
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-05-navigation-00-primary-nav&#x2F;01-molecules-05-navigation-00-primary-nav.html" class="patternLink " data-patternpartial="">primary-nav</a></h2>
 						<div class="sg-pattern-body">
 							  <!-- Navigation -->
-      <nav class="waterfall-demo-header-nav mdl-navigation">
+      <nav class="mr2 ml-auto waterfall-demo-header-nav mdl-navigation">
         <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
@@ -1806,7 +1806,7 @@ p q r s t u v w x y z { | } ~
 								<pre class="sg-code-html">
 									<code>
 										  &lt;!-- Navigation --&gt;
-      &lt;nav class=&quot;waterfall-demo-header-nav mdl-navigation&quot;&gt;
+      &lt;nav class=&quot;mr2 ml-auto waterfall-demo-header-nav mdl-navigation&quot;&gt;
         &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
         &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
         &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
@@ -2082,10 +2082,17 @@ p q r s t u v w x y z { | } ~
 						<div class="sg-pattern-body">
 							 <header class="mdl-layout__header mdl-layout__header--waterfall white">
     <!-- Top row, always visible -->
-    <div class="mdl-layout__header-row">
+    <div class="mdl-layout__header-row top-row">
       <!-- Title -->
-      <span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> Diocese of Charlotte</a></span>
-      <div class="ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+<span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#">Diocese of Charlotte</a></span>
+
+  <!-- Navigation -->
+      <nav class="mr2 ml-auto waterfall-demo-header-nav mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
         <label class="mdl-button mdl-js-button mdl-button--icon"
                for="waterfall-exp">
@@ -2097,15 +2104,9 @@ p q r s t u v w x y z { | } ~
         </div>
       </div>    </div>
     <!-- Bottom row, not visible on scroll -->
-    <div class="mdl-layout__header-row">
-      <div class="mdl-layout-spacer"></div>
-  <!-- Navigation -->
-      <nav class="waterfall-demo-header-nav mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-      </nav>    </div>
+    <div class="mdl-layout__header-row bottom-row">
+      <span class="transition mdl-layout-title link-bare py2"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> Diocese of Charlotte</a></span>
+    </div>
   </header>
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
@@ -2113,10 +2114,17 @@ p q r s t u v w x y z { | } ~
 									<code>
 										 &lt;header class=&quot;mdl-layout__header mdl-layout__header--waterfall white&quot;&gt;
     &lt;!-- Top row, always visible --&gt;
-    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
+    &lt;div class=&quot;mdl-layout__header-row top-row&quot;&gt;
       &lt;!-- Title --&gt;
-      &lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
-      &lt;div class=&quot;ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+&lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+
+  &lt;!-- Navigation --&gt;
+      &lt;nav class=&quot;mr2 ml-auto waterfall-demo-header-nav mdl-navigation&quot;&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+      &lt;&#x2F;nav&gt;      &lt;div class=&quot;mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right&quot;&gt;
         &lt;label class=&quot;mdl-button mdl-js-button mdl-button--icon&quot;
                for=&quot;waterfall-exp&quot;&gt;
@@ -2128,15 +2136,9 @@ p q r s t u v w x y z { | } ~
         &lt;&#x2F;div&gt;
       &lt;&#x2F;div&gt;    &lt;&#x2F;div&gt;
     &lt;!-- Bottom row, not visible on scroll --&gt;
-    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
-      &lt;div class=&quot;mdl-layout-spacer&quot;&gt;&lt;&#x2F;div&gt;
-  &lt;!-- Navigation --&gt;
-      &lt;nav class=&quot;waterfall-demo-header-nav mdl-navigation&quot;&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-      &lt;&#x2F;nav&gt;    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;mdl-layout__header-row bottom-row&quot;&gt;
+      &lt;span class=&quot;transition mdl-layout-title link-bare py2&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+    &lt;&#x2F;div&gt;
   &lt;&#x2F;header&gt;
 									</code>
 								</pre>
@@ -2275,7 +2277,7 @@ p q r s t u v w x y z { | } ~
       <!-- Title -->
       <span class="mdl-layout-title link-bare"><a class="border0 white" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> Diocese of Charlotte</a></span>
       <div class="mdl-layout-spacer"></div>
-      <div class="ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
         <label class="mdl-button mdl-js-button mdl-button--icon"
                for="waterfall-exp">
@@ -2290,7 +2292,7 @@ p q r s t u v w x y z { | } ~
     <div class="mdl-layout__header-row">
       <div class="mdl-layout-spacer"></div>
   <!-- Navigation -->
-      <nav class="waterfall-demo-header-nav mdl-navigation">
+      <nav class="mr2 ml-auto waterfall-demo-header-nav mdl-navigation">
         <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
@@ -2306,7 +2308,7 @@ p q r s t u v w x y z { | } ~
       &lt;!-- Title --&gt;
       &lt;span class=&quot;mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
       &lt;div class=&quot;mdl-layout-spacer&quot;&gt;&lt;&#x2F;div&gt;
-      &lt;div class=&quot;ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+      &lt;div class=&quot;mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right&quot;&gt;
         &lt;label class=&quot;mdl-button mdl-js-button mdl-button--icon&quot;
                for=&quot;waterfall-exp&quot;&gt;
@@ -2321,7 +2323,7 @@ p q r s t u v w x y z { | } ~
     &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
       &lt;div class=&quot;mdl-layout-spacer&quot;&gt;&lt;&#x2F;div&gt;
   &lt;!-- Navigation --&gt;
-      &lt;nav class=&quot;waterfall-demo-header-nav mdl-navigation&quot;&gt;
+      &lt;nav class=&quot;mr2 ml-auto waterfall-demo-header-nav mdl-navigation&quot;&gt;
         &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
         &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
         &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
@@ -2754,14 +2756,21 @@ p q r s t u v w x y z { | } ~
 					<div class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/03-templates-00-tiles&#x2F;03-templates-00-tiles.html" class="patternLink " data-patternpartial="">tiles</a></h2>
 						<div class="sg-pattern-body">
-							<div class="row row--layout grid mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+							<div class="row row--layout grid mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button" style="background-image: url(..&#x2F;..&#x2F;images&#x2F;entrance_blur_full.jpg)">
 
  <header class="mdl-layout__header mdl-layout__header--waterfall white">
     <!-- Top row, always visible -->
-    <div class="mdl-layout__header-row">
+    <div class="mdl-layout__header-row top-row">
       <!-- Title -->
-      <span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> Diocese of Charlotte</a></span>
-      <div class="ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+<span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#">Diocese of Charlotte</a></span>
+
+  <!-- Navigation -->
+      <nav class="mr2 ml-auto waterfall-demo-header-nav mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
         <label class="mdl-button mdl-js-button mdl-button--icon"
                for="waterfall-exp">
@@ -2773,15 +2782,9 @@ p q r s t u v w x y z { | } ~
         </div>
       </div>    </div>
     <!-- Bottom row, not visible on scroll -->
-    <div class="mdl-layout__header-row">
-      <div class="mdl-layout-spacer"></div>
-  <!-- Navigation -->
-      <nav class="waterfall-demo-header-nav mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-      </nav>    </div>
+    <div class="mdl-layout__header-row bottom-row">
+      <span class="transition mdl-layout-title link-bare py2"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> Diocese of Charlotte</a></span>
+    </div>
   </header>
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">Diocese of Charlotte</span>
@@ -2794,13 +2797,13 @@ p q r s t u v w x y z { | } ~
   </div>
   <main class="mdl-layout__content" role="main" itemprop="mainContentOfPage">
                 <article id="post-12" class="entry page publish author-admin post-12 " itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
-                    <section class="hero text-shadow section-first flex flex-column flex-center bg-cover bg-center bg-fixed bg-no-repeat" style="background-image: url(..&#x2F;..&#x2F;images&#x2F;entrance_blur_full.jpg)">
+                    <section class="hero text-shadow section-first flex flex-column flex-center bg-lighten-3">
 
                         <section class="white row py3 py4@md">
                             <div class="card-row">
 
 
-                                <div class="u-1/1 white grid__item link-bare flex flex-wrap flex-justify-around center">
+                                <div class="u-1/1 black grid__item link-bare flex flex-wrap flex-justify-around center">
 
                                         <a class="collapse-toggle u-tile u-tile--wide bg-1--glass shadow1 shadow-hover inline-block" data-collapse="#parish" data-group="accordion" href="#">
 <svg class="icon toggle-icon" viewBox="0 0 44.879002 48"><path d="M44.168 28.832l-9.166-2.688V16.31c0-.44-.29-.827-.71-.95l-10.863-3.186V5.52h3.258c.547 0 .99-.443.99-.99s-.443-.99-.99-.99h-3.26V.99c0-.547-.442-.99-.99-.99s-.99.443-.99.99v2.55h-3.256c-.547 0-.99.443-.99.99 0 .546.442.99.99.99h3.257v6.607L10.585 15.36c-.42.126-.708.51-.708.95v9.795l-9.17 2.728c-.42.126-.708.512-.708.95V47.01c0 .547.442.99.99.99h14.638v-8.876c0-3.677 3.055-6.667 6.81-6.667 3.756 0 6.812 2.99 6.812 6.667V48h14.64c.546 0 .99-.443.99-.99V29.78c0-.437-.29-.824-.712-.948zm-21.73-.82c-2.82 0-5.116-2.297-5.116-5.118s2.295-5.118 5.117-5.118 5.117 2.296 5.117 5.118-2.296 5.117-5.118 5.117z"/></svg>
@@ -2888,7 +2891,7 @@ p q r s t u v w x y z { | } ~
                                 <div class="card overflow-hidden flex flex-wrap br">
                                     <div class="card__figure u-1/3@md">
                                         <a href="#/page-one/">
-                                            <img src="images/bishop-bio.png" alt="Page One" class="landscape thumbnail bempress-sm" itemprop="image" />
+<a href="/"><img src="../../images/bishop-bio.png" class="bishop-img" alt="Logo Alt Text" /></a>
                                         </a>
                                     </div>
 
@@ -2905,9 +2908,9 @@ p q r s t u v w x y z { | } ~
                         <i class="material-icons center u-1/1 white h1 absolute bottom-0">keyboard_arrow_down</i>
                     </section>
 
-                    <section class="bg-2 black row pt3 pt4@md pb4@md pages-highlight">
+                    <section class="bg-2--glass white row pt3 pt4@md pb4@md pages-highlight">
                         <div class="h1 center mb3 animated fadeInDown">This is the Main WYSIWYG</div>
-                        <div class="card-row container fadeInUp animated">
+                        <div class="card-row container black fadeInUp animated">
                             <div class="u-1/3@md grid__item px2 mb3">
                                 <div class="bg-white card shadow2 overflow-hidden br">
                                     <div class="card__figure">
@@ -2955,7 +2958,7 @@ p q r s t u v w x y z { | } ~
                         </div>
                         <i class="material-icons center u-1/1 white h1 absolute bottom-0">keyboard_arrow_down</i>
                     </section>
-                    <section class="bg-1 white row pt3 pt4@md pb4@md pages-highlight">
+                    <section class="bg-silver black row pt3 pt4@md pb4@md pages-highlight">
                         <div class="card-row container">
                             <div class="h1 center mb3">This Is a Two Card Row!</div>
                             <div class="u-1/2@md grid__item px2 mb3">
@@ -2989,12 +2992,12 @@ p q r s t u v w x y z { | } ~
                         </div>
                         <i class="material-icons center u-1/1 white h1 absolute bottom-0">keyboard_arrow_down</i>
                     </section>
-                    <section class="bg-silver black row pt3 pt4@md pb4@md pages-highlight">
+                    <section class="bg-1--glass white row pt3 pt4@md pb4@md pages-highlight">
                         <div class="card-row container">
                             <div class="h1 center mb3">This One Has Four!</div>
 
                             <div class="u-1/4@md grid__item px2 mb3">
-                                <div class="black card overflow-hidden br">
+                                <div class="card overflow-hidden br">
                                     <div class="card__figure">
                                         <a href="#/page-two/">
                                             <img src="https://placeimg.com/640/480/any" alt="Page Two" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
@@ -3007,7 +3010,7 @@ p q r s t u v w x y z { | } ~
                                 </div>
                             </div>
                             <div class="u-1/4@md grid__item px2 mb3">
-                                <div class="black card overflow-hidden br">
+                                <div class="card overflow-hidden br">
                                     <div class="card__figure">
                                         <a href="#/page-one/">
                                             <img src="https://placeimg.com/640/480/any" alt="Page One" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
@@ -3021,7 +3024,7 @@ p q r s t u v w x y z { | } ~
                             </div>
 
                             <div class="u-1/4@md grid__item px2 mb3">
-                                <div class="black card overflow-hidden br">
+                                <div class="card overflow-hidden br">
                                     <div class="card__figure">
                                         <a href="#/page-two/">
                                             <img src="https://placeimg.com/640/480/any" alt="Page Two" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
@@ -3034,7 +3037,7 @@ p q r s t u v w x y z { | } ~
                                 </div>
                             </div>
                             <div class="u-1/4@md grid__item px2 mb3">
-                                <div class="black cardoverflow-hidden br">
+                                <div class="cardoverflow-hidden br">
                                     <div class="card__figure">
                                         <a href="#/page-one/">
                                             <img src="https://placeimg.com/640/480/any" alt="Page One" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
@@ -3113,14 +3116,21 @@ p q r s t u v w x y z { | } ~
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;div class=&quot;row row--layout grid mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button&quot;&gt;
+										&lt;div class=&quot;row row--layout grid mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button&quot; style=&quot;background-image: url(..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;entrance_blur_full.jpg)&quot;&gt;
 
  &lt;header class=&quot;mdl-layout__header mdl-layout__header--waterfall white&quot;&gt;
     &lt;!-- Top row, always visible --&gt;
-    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
+    &lt;div class=&quot;mdl-layout__header-row top-row&quot;&gt;
       &lt;!-- Title --&gt;
-      &lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
-      &lt;div class=&quot;ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+&lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+
+  &lt;!-- Navigation --&gt;
+      &lt;nav class=&quot;mr2 ml-auto waterfall-demo-header-nav mdl-navigation&quot;&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+      &lt;&#x2F;nav&gt;      &lt;div class=&quot;mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right&quot;&gt;
         &lt;label class=&quot;mdl-button mdl-js-button mdl-button--icon&quot;
                for=&quot;waterfall-exp&quot;&gt;
@@ -3132,15 +3142,9 @@ p q r s t u v w x y z { | } ~
         &lt;&#x2F;div&gt;
       &lt;&#x2F;div&gt;    &lt;&#x2F;div&gt;
     &lt;!-- Bottom row, not visible on scroll --&gt;
-    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
-      &lt;div class=&quot;mdl-layout-spacer&quot;&gt;&lt;&#x2F;div&gt;
-  &lt;!-- Navigation --&gt;
-      &lt;nav class=&quot;waterfall-demo-header-nav mdl-navigation&quot;&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-      &lt;&#x2F;nav&gt;    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;mdl-layout__header-row bottom-row&quot;&gt;
+      &lt;span class=&quot;transition mdl-layout-title link-bare py2&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+    &lt;&#x2F;div&gt;
   &lt;&#x2F;header&gt;
   &lt;div class=&quot;mdl-layout__drawer&quot;&gt;
     &lt;span class=&quot;mdl-layout-title&quot;&gt;Diocese of Charlotte&lt;&#x2F;span&gt;
@@ -3153,13 +3157,13 @@ p q r s t u v w x y z { | } ~
   &lt;&#x2F;div&gt;
   &lt;main class=&quot;mdl-layout__content&quot; role=&quot;main&quot; itemprop=&quot;mainContentOfPage&quot;&gt;
                 &lt;article id=&quot;post-12&quot; class=&quot;entry page publish author-admin post-12 &quot; itemscope=&quot;itemscope&quot; itemtype=&quot;http:&#x2F;&#x2F;schema.org&#x2F;CreativeWork&quot;&gt;
-                    &lt;section class=&quot;hero text-shadow section-first flex flex-column flex-center bg-cover bg-center bg-fixed bg-no-repeat&quot; style=&quot;background-image: url(..&amp;#x2F;..&amp;#x2F;images&amp;#x2F;entrance_blur_full.jpg)&quot;&gt;
+                    &lt;section class=&quot;hero text-shadow section-first flex flex-column flex-center bg-lighten-3&quot;&gt;
 
                         &lt;section class=&quot;white row py3 py4@md&quot;&gt;
                             &lt;div class=&quot;card-row&quot;&gt;
 
 
-                                &lt;div class=&quot;u-1&#x2F;1 white grid__item link-bare flex flex-wrap flex-justify-around center&quot;&gt;
+                                &lt;div class=&quot;u-1&#x2F;1 black grid__item link-bare flex flex-wrap flex-justify-around center&quot;&gt;
 
                                         &lt;a class=&quot;collapse-toggle u-tile u-tile--wide bg-1--glass shadow1 shadow-hover inline-block&quot; data-collapse=&quot;#parish&quot; data-group=&quot;accordion&quot; href=&quot;#&quot;&gt;
 &lt;svg class=&quot;icon toggle-icon&quot; viewBox=&quot;0 0 44.879002 48&quot;&gt;&lt;path d=&quot;M44.168 28.832l-9.166-2.688V16.31c0-.44-.29-.827-.71-.95l-10.863-3.186V5.52h3.258c.547 0 .99-.443.99-.99s-.443-.99-.99-.99h-3.26V.99c0-.547-.442-.99-.99-.99s-.99.443-.99.99v2.55h-3.256c-.547 0-.99.443-.99.99 0 .546.442.99.99.99h3.257v6.607L10.585 15.36c-.42.126-.708.51-.708.95v9.795l-9.17 2.728c-.42.126-.708.512-.708.95V47.01c0 .547.442.99.99.99h14.638v-8.876c0-3.677 3.055-6.667 6.81-6.667 3.756 0 6.812 2.99 6.812 6.667V48h14.64c.546 0 .99-.443.99-.99V29.78c0-.437-.29-.824-.712-.948zm-21.73-.82c-2.82 0-5.116-2.297-5.116-5.118s2.295-5.118 5.117-5.118 5.117 2.296 5.117 5.118-2.296 5.117-5.118 5.117z&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;
@@ -3247,7 +3251,7 @@ p q r s t u v w x y z { | } ~
                                 &lt;div class=&quot;card overflow-hidden flex flex-wrap br&quot;&gt;
                                     &lt;div class=&quot;card__figure u-1&#x2F;3@md&quot;&gt;
                                         &lt;a href=&quot;#&#x2F;page-one&#x2F;&quot;&gt;
-                                            &lt;img src=&quot;images&#x2F;bishop-bio.png&quot; alt=&quot;Page One&quot; class=&quot;landscape thumbnail bempress-sm&quot; itemprop=&quot;image&quot; &#x2F;&gt;
+&lt;a href=&quot;&#x2F;&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;bishop-bio.png&quot; class=&quot;bishop-img&quot; alt=&quot;Logo Alt Text&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
                                         &lt;&#x2F;a&gt;
                                     &lt;&#x2F;div&gt;
 
@@ -3264,9 +3268,9 @@ p q r s t u v w x y z { | } ~
                         &lt;i class=&quot;material-icons center u-1&#x2F;1 white h1 absolute bottom-0&quot;&gt;keyboard_arrow_down&lt;&#x2F;i&gt;
                     &lt;&#x2F;section&gt;
 
-                    &lt;section class=&quot;bg-2 black row pt3 pt4@md pb4@md pages-highlight&quot;&gt;
+                    &lt;section class=&quot;bg-2--glass white row pt3 pt4@md pb4@md pages-highlight&quot;&gt;
                         &lt;div class=&quot;h1 center mb3 animated fadeInDown&quot;&gt;This is the Main WYSIWYG&lt;&#x2F;div&gt;
-                        &lt;div class=&quot;card-row container fadeInUp animated&quot;&gt;
+                        &lt;div class=&quot;card-row container black fadeInUp animated&quot;&gt;
                             &lt;div class=&quot;u-1&#x2F;3@md grid__item px2 mb3&quot;&gt;
                                 &lt;div class=&quot;bg-white card shadow2 overflow-hidden br&quot;&gt;
                                     &lt;div class=&quot;card__figure&quot;&gt;
@@ -3314,7 +3318,7 @@ p q r s t u v w x y z { | } ~
                         &lt;&#x2F;div&gt;
                         &lt;i class=&quot;material-icons center u-1&#x2F;1 white h1 absolute bottom-0&quot;&gt;keyboard_arrow_down&lt;&#x2F;i&gt;
                     &lt;&#x2F;section&gt;
-                    &lt;section class=&quot;bg-1 white row pt3 pt4@md pb4@md pages-highlight&quot;&gt;
+                    &lt;section class=&quot;bg-silver black row pt3 pt4@md pb4@md pages-highlight&quot;&gt;
                         &lt;div class=&quot;card-row container&quot;&gt;
                             &lt;div class=&quot;h1 center mb3&quot;&gt;This Is a Two Card Row!&lt;&#x2F;div&gt;
                             &lt;div class=&quot;u-1&#x2F;2@md grid__item px2 mb3&quot;&gt;
@@ -3348,12 +3352,12 @@ p q r s t u v w x y z { | } ~
                         &lt;&#x2F;div&gt;
                         &lt;i class=&quot;material-icons center u-1&#x2F;1 white h1 absolute bottom-0&quot;&gt;keyboard_arrow_down&lt;&#x2F;i&gt;
                     &lt;&#x2F;section&gt;
-                    &lt;section class=&quot;bg-silver black row pt3 pt4@md pb4@md pages-highlight&quot;&gt;
+                    &lt;section class=&quot;bg-1--glass white row pt3 pt4@md pb4@md pages-highlight&quot;&gt;
                         &lt;div class=&quot;card-row container&quot;&gt;
                             &lt;div class=&quot;h1 center mb3&quot;&gt;This One Has Four!&lt;&#x2F;div&gt;
 
                             &lt;div class=&quot;u-1&#x2F;4@md grid__item px2 mb3&quot;&gt;
-                                &lt;div class=&quot;black card overflow-hidden br&quot;&gt;
+                                &lt;div class=&quot;card overflow-hidden br&quot;&gt;
                                     &lt;div class=&quot;card__figure&quot;&gt;
                                         &lt;a href=&quot;#&#x2F;page-two&#x2F;&quot;&gt;
                                             &lt;img src=&quot;https:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;480&#x2F;any&quot; alt=&quot;Page Two&quot; class=&quot;landscape thumbnail bempress-sm&quot; width=&quot;640&quot; height=&quot;360&quot; itemprop=&quot;image&quot; &#x2F;&gt;
@@ -3366,7 +3370,7 @@ p q r s t u v w x y z { | } ~
                                 &lt;&#x2F;div&gt;
                             &lt;&#x2F;div&gt;
                             &lt;div class=&quot;u-1&#x2F;4@md grid__item px2 mb3&quot;&gt;
-                                &lt;div class=&quot;black card overflow-hidden br&quot;&gt;
+                                &lt;div class=&quot;card overflow-hidden br&quot;&gt;
                                     &lt;div class=&quot;card__figure&quot;&gt;
                                         &lt;a href=&quot;#&#x2F;page-one&#x2F;&quot;&gt;
                                             &lt;img src=&quot;https:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;480&#x2F;any&quot; alt=&quot;Page One&quot; class=&quot;landscape thumbnail bempress-sm&quot; width=&quot;640&quot; height=&quot;360&quot; itemprop=&quot;image&quot; &#x2F;&gt;
@@ -3380,7 +3384,7 @@ p q r s t u v w x y z { | } ~
                             &lt;&#x2F;div&gt;
 
                             &lt;div class=&quot;u-1&#x2F;4@md grid__item px2 mb3&quot;&gt;
-                                &lt;div class=&quot;black card overflow-hidden br&quot;&gt;
+                                &lt;div class=&quot;card overflow-hidden br&quot;&gt;
                                     &lt;div class=&quot;card__figure&quot;&gt;
                                         &lt;a href=&quot;#&#x2F;page-two&#x2F;&quot;&gt;
                                             &lt;img src=&quot;https:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;480&#x2F;any&quot; alt=&quot;Page Two&quot; class=&quot;landscape thumbnail bempress-sm&quot; width=&quot;640&quot; height=&quot;360&quot; itemprop=&quot;image&quot; &#x2F;&gt;
@@ -3393,7 +3397,7 @@ p q r s t u v w x y z { | } ~
                                 &lt;&#x2F;div&gt;
                             &lt;&#x2F;div&gt;
                             &lt;div class=&quot;u-1&#x2F;4@md grid__item px2 mb3&quot;&gt;
-                                &lt;div class=&quot;black cardoverflow-hidden br&quot;&gt;
+                                &lt;div class=&quot;cardoverflow-hidden br&quot;&gt;
                                     &lt;div class=&quot;card__figure&quot;&gt;
                                         &lt;a href=&quot;#&#x2F;page-one&#x2F;&quot;&gt;
                                             &lt;img src=&quot;https:&#x2F;&#x2F;placeimg.com&#x2F;640&#x2F;480&#x2F;any&quot; alt=&quot;Page One&quot; class=&quot;landscape thumbnail bempress-sm&quot; width=&quot;640&quot; height=&quot;360&quot; itemprop=&quot;image&quot; &#x2F;&gt;
@@ -3483,7 +3487,7 @@ p q r s t u v w x y z { | } ~
       <!-- Title -->
       <span class="mdl-layout-title link-bare"><a class="border0 white" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> Diocese of Charlotte</a></span>
       <div class="mdl-layout-spacer"></div>
-      <div class="ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
         <label class="mdl-button mdl-js-button mdl-button--icon"
                for="waterfall-exp">
@@ -3498,7 +3502,7 @@ p q r s t u v w x y z { | } ~
     <div class="mdl-layout__header-row">
       <div class="mdl-layout-spacer"></div>
   <!-- Navigation -->
-      <nav class="waterfall-demo-header-nav mdl-navigation">
+      <nav class="mr2 ml-auto waterfall-demo-header-nav mdl-navigation">
         <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
@@ -3675,7 +3679,7 @@ p q r s t u v w x y z { | } ~
       &lt;!-- Title --&gt;
       &lt;span class=&quot;mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
       &lt;div class=&quot;mdl-layout-spacer&quot;&gt;&lt;&#x2F;div&gt;
-      &lt;div class=&quot;ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+      &lt;div class=&quot;mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right&quot;&gt;
         &lt;label class=&quot;mdl-button mdl-js-button mdl-button--icon&quot;
                for=&quot;waterfall-exp&quot;&gt;
@@ -3690,7 +3694,7 @@ p q r s t u v w x y z { | } ~
     &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
       &lt;div class=&quot;mdl-layout-spacer&quot;&gt;&lt;&#x2F;div&gt;
   &lt;!-- Navigation --&gt;
-      &lt;nav class=&quot;waterfall-demo-header-nav mdl-navigation&quot;&gt;
+      &lt;nav class=&quot;mr2 ml-auto waterfall-demo-header-nav mdl-navigation&quot;&gt;
         &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
         &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
         &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
@@ -3867,10 +3871,17 @@ p q r s t u v w x y z { | } ~
 							<div class="page" id="page">
  <header class="mdl-layout__header mdl-layout__header--waterfall white">
     <!-- Top row, always visible -->
-    <div class="mdl-layout__header-row">
+    <div class="mdl-layout__header-row top-row">
       <!-- Title -->
-      <span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> Diocese of Charlotte</a></span>
-      <div class="ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+<span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#">Diocese of Charlotte</a></span>
+
+  <!-- Navigation -->
+      <nav class="mr2 ml-auto waterfall-demo-header-nav mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
         <label class="mdl-button mdl-js-button mdl-button--icon"
                for="waterfall-exp">
@@ -3882,15 +3893,9 @@ p q r s t u v w x y z { | } ~
         </div>
       </div>    </div>
     <!-- Bottom row, not visible on scroll -->
-    <div class="mdl-layout__header-row">
-      <div class="mdl-layout-spacer"></div>
-  <!-- Navigation -->
-      <nav class="waterfall-demo-header-nav mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-      </nav>    </div>
+    <div class="mdl-layout__header-row bottom-row">
+      <span class="transition mdl-layout-title link-bare py2"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> Diocese of Charlotte</a></span>
+    </div>
   </header>	<div role="main">
 		<div class="l-two-col">
 			<div class="l-main">
@@ -4079,10 +4084,17 @@ p q r s t u v w x y z { | } ~
 										&lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
  &lt;header class=&quot;mdl-layout__header mdl-layout__header--waterfall white&quot;&gt;
     &lt;!-- Top row, always visible --&gt;
-    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
+    &lt;div class=&quot;mdl-layout__header-row top-row&quot;&gt;
       &lt;!-- Title --&gt;
-      &lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
-      &lt;div class=&quot;ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+&lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+
+  &lt;!-- Navigation --&gt;
+      &lt;nav class=&quot;mr2 ml-auto waterfall-demo-header-nav mdl-navigation&quot;&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+      &lt;&#x2F;nav&gt;      &lt;div class=&quot;mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right&quot;&gt;
         &lt;label class=&quot;mdl-button mdl-js-button mdl-button--icon&quot;
                for=&quot;waterfall-exp&quot;&gt;
@@ -4094,15 +4106,9 @@ p q r s t u v w x y z { | } ~
         &lt;&#x2F;div&gt;
       &lt;&#x2F;div&gt;    &lt;&#x2F;div&gt;
     &lt;!-- Bottom row, not visible on scroll --&gt;
-    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
-      &lt;div class=&quot;mdl-layout-spacer&quot;&gt;&lt;&#x2F;div&gt;
-  &lt;!-- Navigation --&gt;
-      &lt;nav class=&quot;waterfall-demo-header-nav mdl-navigation&quot;&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-      &lt;&#x2F;nav&gt;    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;mdl-layout__header-row bottom-row&quot;&gt;
+      &lt;span class=&quot;transition mdl-layout-title link-bare py2&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; Diocese of Charlotte&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+    &lt;&#x2F;div&gt;
   &lt;&#x2F;header&gt;	&lt;div role=&quot;main&quot;&gt;
 		&lt;div class=&quot;l-two-col&quot;&gt;
 			&lt;div class=&quot;l-main&quot;&gt;
@@ -4323,10 +4329,17 @@ p q r s t u v w x y z { | } ~
 							<div class="page" id="page">
  <header class="mdl-layout__header mdl-layout__header--waterfall white">
     <!-- Top row, always visible -->
-    <div class="mdl-layout__header-row">
+    <div class="mdl-layout__header-row top-row">
       <!-- Title -->
-      <span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> </a></span>
-      <div class="ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+<span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#"></a></span>
+
+  <!-- Navigation -->
+      <nav class="mr2 ml-auto waterfall-demo-header-nav mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
         <label class="mdl-button mdl-js-button mdl-button--icon"
                for="waterfall-exp">
@@ -4338,15 +4351,9 @@ p q r s t u v w x y z { | } ~
         </div>
       </div>    </div>
     <!-- Bottom row, not visible on scroll -->
-    <div class="mdl-layout__header-row">
-      <div class="mdl-layout-spacer"></div>
-  <!-- Navigation -->
-      <nav class="waterfall-demo-header-nav mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-      </nav>    </div>
+    <div class="mdl-layout__header-row bottom-row">
+      <span class="transition mdl-layout-title link-bare py2"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> </a></span>
+    </div>
   </header>
   <div class="container container--content container--wide mt0 mt2 mt3@md">
         <div class="row row--layout grid">
@@ -4666,10 +4673,17 @@ p q r s t u v w x y z { | } ~
 										&lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
  &lt;header class=&quot;mdl-layout__header mdl-layout__header--waterfall white&quot;&gt;
     &lt;!-- Top row, always visible --&gt;
-    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
+    &lt;div class=&quot;mdl-layout__header-row top-row&quot;&gt;
       &lt;!-- Title --&gt;
-      &lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; &lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
-      &lt;div class=&quot;ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+&lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+
+  &lt;!-- Navigation --&gt;
+      &lt;nav class=&quot;mr2 ml-auto waterfall-demo-header-nav mdl-navigation&quot;&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+      &lt;&#x2F;nav&gt;      &lt;div class=&quot;mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right&quot;&gt;
         &lt;label class=&quot;mdl-button mdl-js-button mdl-button--icon&quot;
                for=&quot;waterfall-exp&quot;&gt;
@@ -4681,15 +4695,9 @@ p q r s t u v w x y z { | } ~
         &lt;&#x2F;div&gt;
       &lt;&#x2F;div&gt;    &lt;&#x2F;div&gt;
     &lt;!-- Bottom row, not visible on scroll --&gt;
-    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
-      &lt;div class=&quot;mdl-layout-spacer&quot;&gt;&lt;&#x2F;div&gt;
-  &lt;!-- Navigation --&gt;
-      &lt;nav class=&quot;waterfall-demo-header-nav mdl-navigation&quot;&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-      &lt;&#x2F;nav&gt;    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;mdl-layout__header-row bottom-row&quot;&gt;
+      &lt;span class=&quot;transition mdl-layout-title link-bare py2&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; &lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+    &lt;&#x2F;div&gt;
   &lt;&#x2F;header&gt;
   &lt;div class=&quot;container container--content container--wide mt0 mt2 mt3@md&quot;&gt;
         &lt;div class=&quot;row row--layout grid&quot;&gt;
@@ -5013,10 +5021,17 @@ p q r s t u v w x y z { | } ~
 							<div class="page" id="page">
  <header class="mdl-layout__header mdl-layout__header--waterfall white">
     <!-- Top row, always visible -->
-    <div class="mdl-layout__header-row">
+    <div class="mdl-layout__header-row top-row">
       <!-- Title -->
-      <span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> </a></span>
-      <div class="ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+<span class="transition mdl-layout-title link-bare"><a class="border0 white logo-link" href="#"></a></span>
+
+  <!-- Navigation -->
+      <nav class="mr2 ml-auto waterfall-demo-header-nav mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
         <label class="mdl-button mdl-js-button mdl-button--icon"
                for="waterfall-exp">
@@ -5028,15 +5043,9 @@ p q r s t u v w x y z { | } ~
         </div>
       </div>    </div>
     <!-- Bottom row, not visible on scroll -->
-    <div class="mdl-layout__header-row">
-      <div class="mdl-layout-spacer"></div>
-  <!-- Navigation -->
-      <nav class="waterfall-demo-header-nav mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-      </nav>    </div>
+    <div class="mdl-layout__header-row bottom-row">
+      <span class="transition mdl-layout-title link-bare py2"><a class="border0 white logo-link" href="#"><img src="../../images/logo.svg" class="logo-img transition" alt="" /> </a></span>
+    </div>
   </header>	<div role="main">
 		<div class="l-two-col">
 			<div class="l-main">
@@ -5225,10 +5234,17 @@ p q r s t u v w x y z { | } ~
 										&lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
  &lt;header class=&quot;mdl-layout__header mdl-layout__header--waterfall white&quot;&gt;
     &lt;!-- Top row, always visible --&gt;
-    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
+    &lt;div class=&quot;mdl-layout__header-row top-row&quot;&gt;
       &lt;!-- Title --&gt;
-      &lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; &lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
-      &lt;div class=&quot;ml-auto mdl-textfield mdl-js-textfield mdl-textfield--expandable
+&lt;span class=&quot;transition mdl-layout-title link-bare&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+
+  &lt;!-- Navigation --&gt;
+      &lt;nav class=&quot;mr2 ml-auto waterfall-demo-header-nav mdl-navigation&quot;&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
+      &lt;&#x2F;nav&gt;      &lt;div class=&quot;mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right&quot;&gt;
         &lt;label class=&quot;mdl-button mdl-js-button mdl-button--icon&quot;
                for=&quot;waterfall-exp&quot;&gt;
@@ -5240,15 +5256,9 @@ p q r s t u v w x y z { | } ~
         &lt;&#x2F;div&gt;
       &lt;&#x2F;div&gt;    &lt;&#x2F;div&gt;
     &lt;!-- Bottom row, not visible on scroll --&gt;
-    &lt;div class=&quot;mdl-layout__header-row&quot;&gt;
-      &lt;div class=&quot;mdl-layout-spacer&quot;&gt;&lt;&#x2F;div&gt;
-  &lt;!-- Navigation --&gt;
-      &lt;nav class=&quot;waterfall-demo-header-nav mdl-navigation&quot;&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-        &lt;a class=&quot;mdl-navigation__link&quot; href=&quot;&quot;&gt;Link&lt;&#x2F;a&gt;
-      &lt;&#x2F;nav&gt;    &lt;&#x2F;div&gt;
+    &lt;div class=&quot;mdl-layout__header-row bottom-row&quot;&gt;
+      &lt;span class=&quot;transition mdl-layout-title link-bare py2&quot;&gt;&lt;a class=&quot;border0 white logo-link&quot; href=&quot;#&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;images&#x2F;logo.svg&quot; class=&quot;logo-img transition&quot; alt=&quot;&quot; &#x2F;&gt; &lt;&#x2F;a&gt;&lt;&#x2F;span&gt;
+    &lt;&#x2F;div&gt;
   &lt;&#x2F;header&gt;	&lt;div role=&quot;main&quot;&gt;
 		&lt;div class=&quot;l-two-col&quot;&gt;
 			&lt;div class=&quot;l-main&quot;&gt;

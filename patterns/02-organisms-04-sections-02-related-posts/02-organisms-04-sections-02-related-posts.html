@@ -51,6 +51,22 @@
 		Therefore all calls to assets should have the ../../ in order to work in an apache-less environment
 	-->
 	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+
+<script>
+	// init controller
+var controller = new ScrollMagic.Controller();
+
+// create a scene
+var scene = new ScrollMagic.Scene({
+  triggerElement: '#bishop', // starting scene, when reaching this element
+})
+.setClassToggle("#card-up", "active") // add class toggle
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+</script>
+
 	<!-- DO NOT MODIFY -->
 	<script>
 		// handle injection of items from PHP

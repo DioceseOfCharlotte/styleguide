@@ -1,4 +1,4 @@
-<div class="row row--layout grid mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+<div class="row row--layout grid mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button" style="background-image: url({{ img.entrance.src }})">
 
     {{> organisms-header }}
 
@@ -6,13 +6,13 @@
 
   <main class="mdl-layout__content" role="main" itemprop="mainContentOfPage">
                 <article id="post-12" class="entry page publish author-admin post-12 " itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
-                    <section class="hero text-shadow section-first flex flex-column flex-center bg-cover bg-center bg-fixed bg-no-repeat" style="background-image: url({{ img.entrance.src }})">
+                    <section class="hero text-shadow section-first flex flex-column flex-center bg-lighten-3">
 
                         <section class="white row py3 py4@md">
                             <div class="card-row">
 
 
-                                <div class="u-1/1 white grid__item link-bare flex flex-wrap flex-justify-around center">
+                                <div class="u-1/1 black grid__item link-bare flex flex-wrap flex-justify-around center">
 
                                         <a class="collapse-toggle u-tile u-tile--wide bg-1--glass shadow1 shadow-hover inline-block" data-collapse="#parish" data-group="accordion" href="#">
                                             {{> atoms-parish }}
@@ -96,7 +96,7 @@
                                 <div class="card overflow-hidden flex flex-wrap br">
                                     <div class="card__figure u-1/3@md">
                                         <a href="#/page-one/">
-                                            <img src="images/bishop-bio.png" alt="Page One" class="landscape thumbnail bempress-sm" itemprop="image" />
+                                            {{> atoms-bishop }}
                                         </a>
                                     </div>
 
@@ -113,9 +113,9 @@
                         <i class="material-icons center u-1/1 white h1 absolute bottom-0">keyboard_arrow_down</i>
                     </section>
 
-                    <section class="bg-2 black row pt3 pt4@md pb4@md pages-highlight">
+                    <section class="bg-2--glass white row pt3 pt4@md pb4@md pages-highlight">
                         <div class="h1 center mb3 animated fadeInDown">This is the Main WYSIWYG</div>
-                        <div class="card-row container fadeInUp animated">
+                        <div class="card-row container black fadeInUp animated">
                             <div class="u-1/3@md grid__item px2 mb3">
                                 <div class="bg-white card shadow2 overflow-hidden br">
                                     <div class="card__figure">
@@ -163,7 +163,7 @@
                         </div>
                         <i class="material-icons center u-1/1 white h1 absolute bottom-0">keyboard_arrow_down</i>
                     </section>
-                    <section class="bg-1 white row pt3 pt4@md pb4@md pages-highlight">
+                    <section class="bg-silver black row pt3 pt4@md pb4@md pages-highlight">
                         <div class="card-row container">
                             <div class="h1 center mb3">This Is a Two Card Row!</div>
                             <div class="u-1/2@md grid__item px2 mb3">
@@ -197,12 +197,12 @@
                         </div>
                         <i class="material-icons center u-1/1 white h1 absolute bottom-0">keyboard_arrow_down</i>
                     </section>
-                    <section class="bg-silver black row pt3 pt4@md pb4@md pages-highlight">
+                    <section class="bg-1--glass white row pt3 pt4@md pb4@md pages-highlight">
                         <div class="card-row container">
                             <div class="h1 center mb3">This One Has Four!</div>
 
                             <div class="u-1/4@md grid__item px2 mb3">
-                                <div class="black card overflow-hidden br">
+                                <div class="card overflow-hidden br">
                                     <div class="card__figure">
                                         <a href="#/page-two/">
                                             <img src="https://placeimg.com/640/480/any" alt="Page Two" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
@@ -215,7 +215,7 @@
                                 </div>
                             </div>
                             <div class="u-1/4@md grid__item px2 mb3">
-                                <div class="black card overflow-hidden br">
+                                <div class="card overflow-hidden br">
                                     <div class="card__figure">
                                         <a href="#/page-one/">
                                             <img src="https://placeimg.com/640/480/any" alt="Page One" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
@@ -229,7 +229,7 @@
                             </div>
 
                             <div class="u-1/4@md grid__item px2 mb3">
-                                <div class="black card overflow-hidden br">
+                                <div class="card overflow-hidden br">
                                     <div class="card__figure">
                                         <a href="#/page-two/">
                                             <img src="https://placeimg.com/640/480/any" alt="Page Two" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />
@@ -242,7 +242,7 @@
                                 </div>
                             </div>
                             <div class="u-1/4@md grid__item px2 mb3">
-                                <div class="black cardoverflow-hidden br">
+                                <div class="cardoverflow-hidden br">
                                     <div class="card__figure">
                                         <a href="#/page-one/">
                                             <img src="https://placeimg.com/640/480/any" alt="Page One" class="landscape thumbnail bempress-sm" width="640" height="360" itemprop="image" />

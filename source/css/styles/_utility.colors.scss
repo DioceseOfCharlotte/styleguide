@@ -16,29 +16,38 @@
 .bg-1--dark { background-color: darken($color-1, 10); }
 .bg-2--dark { background-color: darken($color-2, 10); }
 .bg-3--dark { background-color: darken($color-3, 10); }
-.bg-1--glass { background-color: rgba($color-1--dark, 0.95); }
-.bg-2--glass { background-color: rgba($color-2--dark, 0.95); }
-.bg-3--glass { background-color: rgba($color-3--dark, 0.95); }
+.bg-1--glass { background-color: rgba($color-1--dark, 0.90); }
+.bg-2--glass { background-color: rgba($color-2--dark, 0.90); }
+.bg-3--glass { background-color: rgba($color-3--dark, 0.90); }
 
 .fill-1 { fill: $color-1 }
 .fill-2 { fill: $color-2 }
 .fill-3 { fill: $color-3 }
 
-.black  { color: $black }
+.black  { 
+	color: $black;
+	a {
+     color: $black;
+	}
+}
 .gray   { color: $gray }
 .silver { color: $silver }
 
 .white  {
     color: $white;
- }
 
-.white a {
-     color: white;
+    a {
+     color: $white;
+ 	}
  }
 
 .muted { opacity: $opacity; }
 
 .color-inherit * {
+    color: inherit;
+}
+
+.color-inherit a {
     color: inherit;
 }
 

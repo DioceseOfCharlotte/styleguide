@@ -11512,7 +11512,7 @@ input[type="submit"] {
 }
 
 .ml-auto {
-  margin-left: auto;
+  margin-left: auto !important;
 }
 
 .p0 {
@@ -11801,15 +11801,15 @@ input[type="submit"] {
 }
 
 .bg-1--glass {
-  background-color: rgba(0, 89, 166, 0.95);
+  background-color: rgba(0, 89, 166, 0.9);
 }
 
 .bg-2--glass {
-  background-color: rgba(46, 117, 85, 0.95);
+  background-color: rgba(46, 117, 85, 0.9);
 }
 
 .bg-3--glass {
-  background-color: rgba(204, 176, 0, 0.95);
+  background-color: rgba(204, 176, 0, 0.9);
 }
 
 .fill-1 {
@@ -11827,6 +11827,9 @@ input[type="submit"] {
 .black {
   color: #111;
 }
+.black a {
+  color: #111;
+}
 
 .gray {
   color: #808080;
@@ -11839,9 +11842,8 @@ input[type="submit"] {
 .white {
   color: #fff;
 }
-
 .white a {
-  color: white;
+  color: #fff;
 }
 
 .muted {
@@ -11849,6 +11851,10 @@ input[type="submit"] {
 }
 
 .color-inherit * {
+  color: inherit;
+}
+
+.color-inherit a {
   color: inherit;
 }
 
@@ -12324,7 +12330,6 @@ input[type="submit"] {
 
 .link-bare, .link-bare a {
   text-decoration: none;
-  border: 0;
   color: inherit;
 }
 .link-bare:hover, .link-bare a:hover {
@@ -12466,24 +12471,50 @@ body.custom-background {
   display: block;
 }
 
+.mdl-layout__header--waterfall {
+  background-color: rgba(0, 116, 217, 0.9);
+}
+
+.card-row {
+  letter-spacing: -0.31em;
+}
+.card-row * {
+  letter-spacing: normal;
+}
+
+.bottom-row {
+  height: 100%;
+  justify-content: center;
+}
+
 .logo-img {
   max-height: 60px;
 }
 
 .mdl-layout__header--waterfall .mdl-layout-title {
   max-height: 160px;
-  position: absolute;
-  transform: translateX(30vw);
   font-size: 40px;
+}
+.mdl-layout__header--waterfall .top-row .mdl-layout-title {
+  opacity: 0;
+  transform: translateX(10%);
 }
 .mdl-layout__header--waterfall .logo-img {
   position: relative;
   max-height: 125px;
 }
-.mdl-layout__header--waterfall.is-compact .mdl-layout-title {
+.mdl-layout__header--waterfall.is-compact .top-row .mdl-layout-title {
   max-height: 60px;
   font-size: 20px;
+  display: block;
   transform: translateX(0);
+  opacity: 1;
+}
+.mdl-layout__header--waterfall.is-compact .bottom-row .mdl-layout-title {
+  max-height: 60px;
+  font-size: 20px;
+  transform: translateX(-50%);
+  opacity: 0;
 }
 .mdl-layout__header--waterfall.is-compact .logo-img {
   max-height: 60px;

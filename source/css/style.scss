@@ -106,9 +106,21 @@ P"Ybmmd"  `Mbmo`Ybmd9'  MMbmmd'      .JMML.   .JMML.YMMMMMb .JMML  JMML.`Mbmo   
 
 
 
+.mdl-layout__header--waterfall {
+  background-color: rgba($color-1,.9);
+}
 
+.card-row {
+letter-spacing:-0.31em;
+* {
+  letter-spacing: normal;
+}
+}
 
-
+.bottom-row {
+  height: 100%;
+  justify-content: center;
+}
 
 .logo-img {
   max-height: 60px;
@@ -118,9 +130,14 @@ P"Ybmmd"  `Mbmo`Ybmd9'  MMbmmd'      .JMML.   .JMML.YMMMMMb .JMML  JMML.`Mbmo   
 
 .mdl-layout-title {
     max-height: 160px;
-        position: absolute;
-      transform: translateX(30vw);
+     // position: absolute;
+      // transform: translateX(30vw);
       font-size: 40px;
+}
+
+.top-row .mdl-layout-title {
+  opacity: 0;
+  transform: translateX(10%);
 }
 
 .logo-img {
@@ -129,10 +146,19 @@ P"Ybmmd"  `Mbmo`Ybmd9'  MMbmmd'      .JMML.   .JMML.YMMMMMb .JMML  JMML.`Mbmo   
 }
 
 &.is-compact {
- .mdl-layout-title {
+ .top-row .mdl-layout-title {
     max-height: 60px;
     font-size: 20px;
+    display: block;
     transform: translateX(0);
+    opacity: 1;
+  }
+
+ .bottom-row .mdl-layout-title {
+    max-height: 60px;
+    font-size: 20px;
+    transform: translateX(-50%);
+    opacity: 0;
   }
 
   .logo-img {

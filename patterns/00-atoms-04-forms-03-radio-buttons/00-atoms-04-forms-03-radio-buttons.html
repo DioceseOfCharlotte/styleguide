@@ -56,14 +56,31 @@
 <script>
 	// init controller
 var controller = new ScrollMagic.Controller();
-
 // create a scene
 var scene = new ScrollMagic.Scene({
   triggerElement: '#bishop', // starting scene, when reaching this element
 })
-.setClassToggle("#card-up", "active") // add class toggle
-					.addIndicators() // add indicators (requires plugin)
-					.addTo(controller);
+.setClassToggle("#card-up", "fadeInUp")
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: '#cards-move', // starting scene, when reaching this element
+})
+.setClassToggle("#card-left1", "fadeInLeft") 
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: '#cards-move', // starting scene, when reaching this element
+})
+.setClassToggle("#card-left2", "fadeInUp") 
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: '#cards-move', // starting scene, when reaching this element
+})
+.setClassToggle("#card-left3", "fadeInRight") 
+.addTo(controller);
+
 </script>
 
 	<!-- DO NOT MODIFY -->

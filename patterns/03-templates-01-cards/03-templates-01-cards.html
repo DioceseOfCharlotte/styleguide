@@ -156,12 +156,6 @@
           </div>
           <nav class="demo-nav mdl-cell mdl-cell--12-col">
             <div class="section-spacer"></div>
-            <a href="entry.html" class="demo-nav__button" title="show more">
-              More
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                <i class="material-icons" role="presentation">arrow_forward</i>
-              </button>
-            </a>
           </nav>
         </div>
 <footer class="mdl-mega-footer">
@@ -234,14 +228,31 @@
 <script>
 	// init controller
 var controller = new ScrollMagic.Controller();
-
 // create a scene
 var scene = new ScrollMagic.Scene({
   triggerElement: '#bishop', // starting scene, when reaching this element
 })
-.setClassToggle("#card-up", "active") // add class toggle
-					.addIndicators() // add indicators (requires plugin)
-					.addTo(controller);
+.setClassToggle("#card-up", "fadeInUp")
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: '#cards-move', // starting scene, when reaching this element
+})
+.setClassToggle("#card-left1", "fadeInLeft") 
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: '#cards-move', // starting scene, when reaching this element
+})
+.setClassToggle("#card-left2", "fadeInUp") 
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: '#cards-move', // starting scene, when reaching this element
+})
+.setClassToggle("#card-left3", "fadeInRight") 
+.addTo(controller);
+
 </script>
 
 	<!-- DO NOT MODIFY -->

@@ -47,14 +47,31 @@
 <script>
 	// init controller
 var controller = new ScrollMagic.Controller();
-
 // create a scene
 var scene = new ScrollMagic.Scene({
   triggerElement: '#bishop', // starting scene, when reaching this element
 })
-.setClassToggle("#card-up", "active") // add class toggle
-					.addIndicators() // add indicators (requires plugin)
-					.addTo(controller);
+.setClassToggle("#card-up", "fadeInUp")
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: '#cards-move', // starting scene, when reaching this element
+})
+.setClassToggle("#card-left1", "fadeInLeft") 
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: '#cards-move', // starting scene, when reaching this element
+})
+.setClassToggle("#card-left2", "fadeInUp") 
+.addTo(controller);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: '#cards-move', // starting scene, when reaching this element
+})
+.setClassToggle("#card-left3", "fadeInRight") 
+.addTo(controller);
+
 </script>
 
 	<!-- DO NOT MODIFY -->
@@ -62,7 +79,7 @@ var scene = new ScrollMagic.Scene({
 		// handle injection of items from PHP
 		var patternPartial = "atoms-bishop-hat";
 		var lineage = [];
-		var lineageR = [{"lineagePattern":"templates-tiles","lineagePath":"../../patterns/03-templates-00-tiles/03-templates-00-tiles.html"}];
+		var lineageR = [];
 		var patternState = ""
 		var cssEnabled = false; //TODO
 	</script>
